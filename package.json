@@ -1,0 +1,35 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my resume",
+  "main": "components/main.jsx",
+  "scripts": {
+    "build-js": "browserify -t [ babelify --presets [ react ] ] components/main.jsx -o bundle.js",
+    "build": "npm run build-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ender74/resume.git"
+  },
+  "keywords": [
+    "Resume",
+    "react",
+    "babel",
+    "browserify"
+  ],
+  "author": "Heiko Hüter",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ender74/resume/issues"
+  },
+  "dependencies": {
+    "react-dom": "~0.14.7",
+    "react": "~0.14.7"
+  },
+  "devDependencies": {
+    "babelify": "~7.2.0",
+    "babel-preset-react": "~6.5.0",
+    "browserify": "~13.0.0",
+    "browserify-shim": "~3.8.12"
+  }
+}

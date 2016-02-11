@@ -1,0 +1,9 @@
+.group {
+    width: 100%;
+    padding: 0em 0em 0em 0em;
+    border: 0em 0em 0em 0em;
+}
+
+.groupHeader {
+    background-color: #EFEFEF;
+}

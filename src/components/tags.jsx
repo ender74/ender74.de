@@ -7,23 +7,21 @@ var Tags = React.createClass({
     };
     var tagList = this.props.tags.map(function (entry, index) {
         return (
-            <Tag tag={entry} nr={index} />  
+            <Tag tag={entry} nr={index} key={index} />  
           );
         });
+    
     if (this.props.title) {
-        return (
-            <div style={listStyle}>
-                <h4>{this.props.title}</h4>
-                {tagList}
-            </div>
-        );
+        title = <h4>{this.props.title}</h4>
     } else {
-        return (
-            <div style={listStyle}>
-               {tagList}
-            </div>
-        );
+        title = ""
     }
+    return (
+        <div style={listStyle}>
+            {title}
+            {tagList}
+        </div>
+    );
   }
 });
 

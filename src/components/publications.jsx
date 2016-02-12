@@ -31,6 +31,7 @@ var Publications = React.createClass({
     var publications = this.props.publications.map(function (publication, index) {
       return (
         <PublicationEntry
+          key={index}  
           name={publication.name}
           publisher={publication.publisher}
           releaseDate={publication.releaseDate} 

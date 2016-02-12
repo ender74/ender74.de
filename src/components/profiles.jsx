@@ -17,6 +17,7 @@ var Profiles = React.createClass({
     var profiles = this.props.profiles.map(function (profile, index) {
       return (
         <ProfileEntry
+          key={index}
           network={profile.network}
           url={profile.url}
           username={profile.username} />

@@ -17,6 +17,7 @@ var Skills = React.createClass({
     var skills = this.props.skills.map(function (skill, index) {
       return (
         <SkillEntry
+          key={index}
           name={skill.name}
           level={skill.level}
           keywords={skill.keywords} />

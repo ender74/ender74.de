@@ -8,6 +8,7 @@ var Work = React.createClass({
     var work = this.props.work.map(function (work, index) {
       return (
         <WorkEntry
+          key={index}
           company={work.company}
           position={work.position}
           website={work.website} 

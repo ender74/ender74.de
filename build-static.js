@@ -13,7 +13,7 @@ var Footer = '</body></html>'
 var ResumeHTML = ReactDOM.renderToString(Resume({ data: data }));
 fs.mkdir(tgtFolder, function (e) {
     if (!e || (e && e.code === 'EEXIST')) {
-        fs.writeFile(tgtFolder + '/resume.html', Header + ResumeHTML + Footer, function (err) {
+        fs.writeFile(tgtFolder + '/index.html', Header + ResumeHTML + Footer, function (err) {
             if (err) {
                 return console.log(err);
             }

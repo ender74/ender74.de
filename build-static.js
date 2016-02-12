@@ -6,7 +6,7 @@ var ReactDOM = require('react-dom/server')
 require('node-jsx').install()
 var Resume = React.createFactory(require(srcFolder + '/components/resume.jsx'))
 var fs = require('fs-extra')
-var data = require(srcFolder + '/resume_private.json')
+var data = require(srcFolder + '/resume.json')
 
 var Header = '<!DOCTYPE HTML><html><head><meta charset="utf-8" /><title>Über mich</title><link rel="stylesheet" href="resume.css" /></head><body>'
 var Footer = '</body></html>'
@@ -18,7 +18,7 @@ fs.mkdir(tgtFolder, function (e) {
                 return console.log(err);
             }
 
-            console.log('resume.html saved.');
+            console.log('index.html saved.');
         });
         var toCopy = ['portrait.jpg', 'resume.css', 'foaf.rdf', 'resume.json', 'diplom']
         toCopy.forEach(function (f) {

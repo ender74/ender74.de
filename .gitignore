@@ -1,6 +1,6 @@
 .vscode
 node_modules
 static-website
-bundle.js
+dynamic-website
 src/resume_private.json
 src/portrait.jpg

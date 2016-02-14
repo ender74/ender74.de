@@ -11,9 +11,10 @@ var data = require(srcFolder + '/resume.json')
 var Header = '<!DOCTYPE HTML><html><head><meta charset="utf-8" /><title>Über mich</title><link rel="stylesheet" href="resume.css" /></head><body>'
 var Footer = '</body></html>'
 var ResumeHTML = ReactDOM.renderToString(Resume({ data: data }));
+var IndexHTML = Header + ResumeHTML + Footer
 fs.mkdir(tgtFolder, function (e) {
     if (!e || (e && e.code === 'EEXIST')) {
-        fs.writeFile(tgtFolder + '/index.html', Header + ResumeHTML + Footer, function (err) {
+        fs.writeFile(tgtFolder + '/index.html', IndexHTML, function (err) {
             if (err) {
                 return console.log(err);
             }

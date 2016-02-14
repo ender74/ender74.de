@@ -29,7 +29,8 @@
     "node-jsx": "~0.13.3",
     "leaflet": "~0.7.7",
     "react-leaflet": "~0.10.0",
-    "nominatim": "~0.1.0"
+    "nominatim": "~0.1.0",
+    "leaflet-routing-machine": "~2.6.2"
   },
   "devDependencies": {
     "babelify": "~7.2.0",

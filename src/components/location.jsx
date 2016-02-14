@@ -3,13 +3,20 @@ var Nominatim = require('nominatim')
 var Map = require('./map.jsx')
 
 var Location = React.createClass({
-        geocode: function(Map) {
+        initMap: function(Map) {
             var query = this.props.location.address + ',' + this.props.location.city 
             Nominatim.search({ q: query}, function(err, opts, results) {
                 var newLoc = results[0]
                 newLoc.zoom = 16
                 Map.setLocation(newLoc)
             })
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(pos) {
+                    Map.findRoute(pos)
+                });
+            } else {
+                console.log("geolocation api not available")
+            }
         },
         render: function () {
             const Location = {lat: 51.3, lon: 0.7}
@@ -25,7 +32,7 @@ var Location = React.createClass({
                 padding: '1.0em 1.0em 1.0em 1.0em',
                 overflow: 'hidden',
                 position: 'relative'
-            };        
+            };
             return (
                 <div className='group'>
                     <h2 className='groupHeader'>Adresse (Arbeit)</h2>
@@ -33,7 +40,7 @@ var Location = React.createClass({
                         <div>{this.props.location.address}</div>
                         <div>{this.props.location.postalCode} {this.props.location.city}</div>
                     </div>
-                    <Map style={mapStyle} location={Location} ref={this.geocode} />
+                    <Map style={mapStyle} location={Location} ref={this.initMap} />
                 </div>
         );
     }

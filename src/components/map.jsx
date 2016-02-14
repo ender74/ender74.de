@@ -1,13 +1,14 @@
 var React = require('react')
 if (typeof window != 'undefined') {
     var L = require('leaflet')
+    require('leaflet-routing-machine')
 
     var Map = React.createClass({
         uid: function() {
-            var uid = 0;
+            var uid = 0
             return function(){
-                return uid++;
-            };
+                return uid++
+            }
         },
         getInitialState: function() {
             return {
@@ -16,8 +17,22 @@ if (typeof window != 'undefined') {
         },
         setLocation: function(newLoc) {
             var latLon = new L.LatLng(newLoc.lat, newLoc.lon)
-            this.state.map.setView(latLon,newLoc.zoom);
+            this.state.map.setView(latLon,newLoc.zoom)
             this.state.marker.setLatLng(latLon)
+            return this.setState({
+                location: latLon
+            })
+        },
+        findRoute: function(pos) {
+            console.log(pos)
+            var latLon = new L.LatLng(pos.coords.latitude, pos.coords.longitude)
+            var routingControl = L.Routing.control({
+                show: false,
+                waypoints: [
+                    latLon,
+                    this.state.location
+                ]
+            }).addTo(this.state.map)
         },
         componentDidMount: function() {
             L.Icon.Default.imagePath = 'http://api.tiles.mapbox.com/mapbox.js/v1.0.0beta0.0/images'

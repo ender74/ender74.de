@@ -1,6 +1,6 @@
-var React = require("react")
+import React from "react"
 
-var Link = React.createClass({
+const Link = React.createClass({
   render: function () {
       if (this.props.href) {
         return (
@@ -14,4 +14,4 @@ var Link = React.createClass({
   }
 });
 
-module.exports = Link
+export default Link

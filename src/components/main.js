@@ -1,6 +1,6 @@
-var React = require("react")
-var ReactDOM = require("react-dom")
-var Resume = require("./resume.jsx")
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Resume from './resume'
 
 $.getJSON( "resume.json", function( data ) {
     ReactDOM.render(<Resume data={data} />, document.getElementById("container"));

@@ -1,8 +1,8 @@
-var React = require("react")
-var Link = require("./link.jsx")
-var Contact = require("./contact.jsx")
+import React from 'react'
+import Link from './link'
+import Contact from './contact'
 
-var Title = React.createClass({
+const Title = React.createClass({
   render: function () {
     var titleStyle = {
         width: '100%',
@@ -31,6 +31,7 @@ var Title = React.createClass({
         width: '20.0em',
         height: '6.0em'
     };
+    var portrait
     if (this.props.basics.picture) {
         portrait = <img style={portraitStyle} src={this.props.basics.picture} />
     } else {
@@ -52,4 +53,4 @@ var Title = React.createClass({
   }
 });
 
-module.exports = Title
+export default Title

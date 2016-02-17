@@ -1,8 +1,8 @@
-var React = require('react')
-var Nominatim = require('nominatim')
-var Map = require('./map.jsx')
+import React from 'react'
+import Nominatim from 'nominatim'
+import Map from './map'
 
-var Location = React.createClass({
+const Location = React.createClass({
         initMap: function(Map) {
             var query = this.props.location.address + ',' + this.props.location.city 
             Nominatim.search({ q: query}, function(err, opts, results) {
@@ -20,10 +20,10 @@ var Location = React.createClass({
         },
         render: function () {
             const Location = {lat: 51.3, lon: 0.7}
-            var adressStyle = {
+            const adressStyle = {
                 width: '20.0em'
-            };      
-            var mapStyle = {
+            }      
+            const mapStyle = {
                 width: '40.0em',
                 height: '30.0em',
                 top: '1.0em',
@@ -32,7 +32,7 @@ var Location = React.createClass({
                 padding: '1.0em 1.0em 1.0em 1.0em',
                 overflow: 'hidden',
                 position: 'relative'
-            };
+            }
             return (
                 <div className='group'>
                     <h2 className='groupHeader'>Adresse (Arbeit)</h2>
@@ -46,4 +46,4 @@ var Location = React.createClass({
     }
 });
 
-module.exports = Location
+export default Location

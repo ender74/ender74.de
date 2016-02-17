@@ -1,7 +1,7 @@
-var React = require("react")
-var Link = require("./link.jsx")
+import React from 'react'
+import Link from './link'
 
-var ProfileEntry = React.createClass({
+const ProfileEntry = React.createClass({
   render: function () {
     return (
       <div className="profileEntry">
@@ -12,7 +12,7 @@ var ProfileEntry = React.createClass({
   }
 });
 
-var Profiles = React.createClass({
+const Profiles = React.createClass({
   render: function () {
     var profiles = this.props.profiles.map(function (profile, index) {
       return (
@@ -32,4 +32,4 @@ var Profiles = React.createClass({
   }
 });
 
-module.exports = Profiles
+export default Profiles

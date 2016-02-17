@@ -1,7 +1,7 @@
-var React = require("react")
-var Link = require("./link.jsx")
+import React from 'react'
+import Link from './link'
 
-var PublicationEntry = React.createClass({
+const PublicationEntry = React.createClass({
   render: function () {
     var labelStyle = {
         position: 'relative',
@@ -26,7 +26,7 @@ var PublicationEntry = React.createClass({
   }
 });
 
-var Publications = React.createClass({
+const Publications = React.createClass({
   render: function () {
     var publications = this.props.publications.map(function (publication, index) {
       return (
@@ -48,4 +48,4 @@ var Publications = React.createClass({
   }
 });
 
-module.exports = Publications
+export default Publications

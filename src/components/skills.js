@@ -1,7 +1,7 @@
-var React = require("react")
-var Tags = require("./tags.jsx")
+import React from 'react'
+import Tags from './tags'
 
-var SkillEntry = React.createClass({
+const SkillEntry = React.createClass({
   render: function () {
     return (
       <div className="skillEntry">
@@ -12,7 +12,7 @@ var SkillEntry = React.createClass({
   }
 });
 
-var Skills = React.createClass({
+const Skills = React.createClass({
   render: function () {
     var skills = this.props.skills.map(function (skill, index) {
       return (
@@ -32,4 +32,4 @@ var Skills = React.createClass({
   }
 });
 
-module.exports = Skills
+export default Skills

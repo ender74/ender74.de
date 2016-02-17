@@ -1,8 +1,8 @@
-var React = require("react")
-var Link = require("./link.jsx")
-var Tags = require("./tags.jsx")
+import React from 'react'
+import Link from './link'
+import Tags from './tags'
 
-var Work = React.createClass({
+const Work = React.createClass({
   render: function () {
     var maxIndex = this.props.work.length
     var work = this.props.work.map(function (work, index) {
@@ -28,7 +28,7 @@ var Work = React.createClass({
   }
 });
 
-var WorkEntry = React.createClass({
+const WorkEntry = React.createClass({
   render: function () {
     var entryStyle = {
 //        fontSize: 0.9 + 0.05*this.props.nr + 'em'
@@ -45,4 +45,4 @@ var WorkEntry = React.createClass({
   }
 });
 
-module.exports = Work
+export default Work

@@ -1,15 +1,15 @@
-var React = require("react")
-var About = require("./about.jsx")
-var Education = require("./education.jsx")
-var Footer = require("./footer.jsx")
-var Location = require("./location.jsx")
-var Profiles = require("./profiles.jsx")
-var Publications = require("./publications.jsx")
-var Skills = require("./skills.jsx")
-var Title = require("./title.jsx")
-var Work = require("./work.jsx")
+import React from 'react'
+import About from './about'
+import Education from './education'
+import Footer from './footer'
+import Location from './location'
+import Profiles from './profiles'
+import Publications from './publications'
+import Skills from './skills'
+import Title from './title'
+import Work from './work'
 
-var Resume = React.createClass({
+const Resume = React.createClass({
   render: function () {
     var style = {
         width: '100%',
@@ -33,4 +33,4 @@ var Resume = React.createClass({
   }
 });
 
-module.exports = Resume
+export default Resume

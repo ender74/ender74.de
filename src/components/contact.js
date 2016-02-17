@@ -1,7 +1,7 @@
-var React = require("react")
-var Link = require("./link.jsx")
+import React from "react"
+import Link from "./link"
 
-var Contact = React.createClass({
+const Contact = React.createClass({
   render: function () {
     var labelStyle = {
         position: 'relative',
@@ -26,4 +26,4 @@ var Contact = React.createClass({
   }
 });
 
-module.exports = Contact
+export default Contact

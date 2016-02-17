@@ -1,7 +1,7 @@
-var React = require("react")
-var Link = require("./link.jsx")
+import React from "react"
+import Link from "./link"
 
-var Footer = React.createClass({
+const Footer = React.createClass({
   render: function () {
     var footerStyle = {
         position: "relative",
@@ -18,4 +18,4 @@ var Footer = React.createClass({
   }
 });
 
-module.exports = Footer
+export default Footer

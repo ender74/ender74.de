@@ -1,6 +1,6 @@
-var React = require("react")
+import React from 'react'
 
-var Tags = React.createClass({
+const Tags = React.createClass({
   render: function () {
     var listStyle = {
         overflow: 'hidden'
@@ -10,7 +10,7 @@ var Tags = React.createClass({
             <Tag tag={entry} nr={index} key={index} />  
           );
         });
-    
+    var title
     if (this.props.title) {
         title = <h4>{this.props.title}</h4>
     } else {
@@ -25,7 +25,7 @@ var Tags = React.createClass({
   }
 });
 
-var Tag = React.createClass({
+const Tag = React.createClass({
   render: function () {
     var tagStyle = {
         float: 'left'
@@ -42,4 +42,4 @@ var Tag = React.createClass({
   }
 });
 
-module.exports = Tags
+export default Tags

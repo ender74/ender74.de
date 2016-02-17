@@ -2,9 +2,9 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "my resume",
-  "main": "components/main.jsx",
+  "main": "components/main.js",
   "scripts": {
-    "build-js": "browserify -t [ babelify --presets [ react ] ] src/components/main.jsx -o dynamic-website/bundle.js",
+    "build-js": "browserify -t [ babelify --presets [ react es2015 ] ] src/components/main.js -o dynamic-website/bundle.js",
     "build": "npm run build-js",
     "build-static": "node ./build-static.js"
   },
@@ -36,6 +36,7 @@
     "babelify": "~7.2.0",
     "babel-preset-react": "~6.5.0",
     "browserify": "~13.0.0",
-    "fs-extra": "~0.26.5"
+    "fs-extra": "~0.26.5",
+    "babel-preset-es2015": "~6.5.0"
   }
 }

@@ -3,8 +3,8 @@ var tgtFolder = 'static-website'
 
 var React = require('react')
 var ReactDOM = require('react-dom/server')
-require('node-jsx').install()
-var Resume = React.createFactory(require(srcFolder + '/components/resume.jsx'))
+require('node-jsx-babel').install({extension: '.js'})
+var Resume = React.createFactory(require(srcFolder + '/components/resume.js'))
 var fs = require('fs-extra')
 var data = require(srcFolder + '/resume.json')
 

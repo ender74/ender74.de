@@ -1,7 +1,7 @@
-var React = require("react")
-var Tags = require("./tags.jsx")
+import React from "react"
+import Tags from "./tags"
 
-var Education = React.createClass({
+const Education = React.createClass({
   render: function () {
     var education = this.props.education.map(function (education, index) {
       return (
@@ -25,7 +25,7 @@ var Education = React.createClass({
   }
 });
 
-var EducationEntry = React.createClass({
+const EducationEntry = React.createClass({
   render: function () {
     return (
       <div className="educationEntry">
@@ -38,4 +38,4 @@ var EducationEntry = React.createClass({
   }
 });
 
-module.exports = Education
+export default Education

@@ -1,6 +1,6 @@
-var React = require("react")
+import React from "react"
 
-var About = React.createClass({
+const About = React.createClass({
   render: function () {
     return (
       <div className="group">
@@ -11,4 +11,4 @@ var About = React.createClass({
   }
 });
 
-module.exports = About
+export default About

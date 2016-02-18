@@ -1,4 +1,5 @@
 import React from 'react'
+import WithGroupHeader from './withGroupHeader'
 import Link from './link'
 
 const PublicationEntry = React.createClass({
@@ -9,9 +10,9 @@ const PublicationEntry = React.createClass({
         textAlign: 'left',
         width: '8.0em',
         paddingRight: '0.5em'
-    };    
+    }    
     var valueStyle = {
-    };
+    }
     return (
       <div className="publicationEntry">
         <h3>{this.props.name}</h3>
@@ -22,9 +23,9 @@ const PublicationEntry = React.createClass({
         <div style={labelStyle}>Link</div>
         <div style={valueStyle}><Link href={this.props.website} text="PDF"/></div>
       </div>
-    );
+    )
   }
-});
+})
 
 const Publications = React.createClass({
   render: function () {
@@ -37,15 +38,14 @@ const Publications = React.createClass({
           releaseDate={publication.releaseDate} 
           website={publication.website} 
           summary={publication.summary} />
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Veröffentlichungen</h2>
+      <WithGroupHeader title='Veröffentlichungen'>
         {publications}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
 export default Publications

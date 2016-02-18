@@ -1,5 +1,6 @@
-import React from "react"
-import Tags from "./tags"
+import React from 'react'
+import WithGroupHeader from './withGroupHeader'
+import Tags from './tags'
 
 const Education = React.createClass({
   render: function () {
@@ -14,16 +15,15 @@ const Education = React.createClass({
           endDate={education.endDate}
           gpa={education.gpa}
           courses={education.courses}/>
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Ausbildung</h2>
+      <WithGroupHeader title='Ausbildung'>
         {education}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
 const EducationEntry = React.createClass({
   render: function () {
@@ -34,8 +34,8 @@ const EducationEntry = React.createClass({
         <div>{this.props.institution}</div>
         <Tags title="Schwerpunkte" tags={this.props.courses} />
       </div>
-    );
+    )
   }
-});
+})
 
 export default Education

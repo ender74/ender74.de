@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from './link'
-import Contact from './contact'
 
 const Title = React.createClass({
   render: function () {
@@ -24,13 +23,6 @@ const Title = React.createClass({
         width: '20.0em',        
         display: 'inline-block'
     };
-    var contactStyle = {
-        position: 'absolute',
-        top: '0.0em',
-        left: '35.0em',
-        width: '20.0em',
-        height: '6.0em'
-    };
     var portrait
     if (this.props.basics.picture) {
         portrait = <img style={portraitStyle} src={this.props.basics.picture} />
@@ -44,9 +36,6 @@ const Title = React.createClass({
             <h1><Link href="" text={this.props.basics.name} /></h1>
             <h3>{this.props.basics.label}</h3>
             <Link href="foaf.rdf" text="FOAF" />
-        </div>
-        <div style={contactStyle}>
-            <Contact basics={this.props.basics} />
         </div>
       </div>
     );

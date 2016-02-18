@@ -1,4 +1,5 @@
 import React from 'react'
+import WithGroupHeader from './withGroupHeader'
 import Tags from './tags'
 
 const SkillEntry = React.createClass({
@@ -8,9 +9,9 @@ const SkillEntry = React.createClass({
         <h3>{this.props.name}</h3>
         <Tags title="" tags={this.props.keywords} />
       </div>
-    );
+    )
   }
-});
+})
 
 const Skills = React.createClass({
   render: function () {
@@ -21,15 +22,14 @@ const Skills = React.createClass({
           name={skill.name}
           level={skill.level}
           keywords={skill.keywords} />
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Fähigkeiten</h2>
+      <WithGroupHeader title='Fähigkeiten'>
         {skills}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
 export default Skills

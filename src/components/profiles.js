@@ -1,4 +1,5 @@
 import React from 'react'
+import WithGroupHeader from './withGroupHeader'
 import Link from './link'
 
 const ProfileEntry = React.createClass({
@@ -8,9 +9,9 @@ const ProfileEntry = React.createClass({
         <h3>{this.props.network}</h3>
         <Link href={this.props.url} text={this.props.username} />
       </div>
-    );
+    )
   }
-});
+})
 
 const Profiles = React.createClass({
   render: function () {
@@ -21,15 +22,14 @@ const Profiles = React.createClass({
           network={profile.network}
           url={profile.url}
           username={profile.username} />
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Profile</h2>
+      <WithGroupHeader title='Profile'>
         {profiles}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
 export default Profiles

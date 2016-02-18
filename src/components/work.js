@@ -1,4 +1,5 @@
 import React from 'react'
+import WithGroupHeader from './withGroupHeader'
 import Link from './link'
 import Tags from './tags'
 
@@ -17,32 +18,28 @@ const Work = React.createClass({
           summary={work.summary}
           highlights={work.highlights}
           nr={maxIndex - index}/>
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Berufserfahrung</h2>
+      <WithGroupHeader title='Berufserfahrung'>
         {work}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
 const WorkEntry = React.createClass({
   render: function () {
-    var entryStyle = {
-//        fontSize: 0.9 + 0.05*this.props.nr + 'em'
-    };
     return (
-      <div style={entryStyle}>
+      <div>
         <h3><u>{this.props.startDate} - {this.props.endDate}</u></h3>
         <div>{this.props.position}</div>
         <Link href={this.props.website} text={this.props.company} />
         <div>{this.props.summary}</div>
         <Tags title="Schwerpunkte" tags={this.props.highlights} />
       </div>
-    );
+    )
   }
-});
+})
 
 export default Work

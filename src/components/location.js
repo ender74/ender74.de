@@ -8,6 +8,7 @@ const Location = React.createClass({
         if (Map) {
             var query = this.props.location.address + ',' + this.props.location.city
             Map.runGeocodeQuery(query)
+            this.setState({map: Map})
         }
     },
     getInitialState: function () {
@@ -18,10 +19,16 @@ const Location = React.createClass({
             mapVisible: !this.state.mapVisible
         })  
     },
+    bringMeThere: function() {
+        if (this.state.map) {
+            this.state.map.bringMeThere()
+        }
+    },
     render: function () {
         const Location = { lat: 51.3, lon: 0.7 }
         const adressStyle = {
-            width: '20.0em'
+            width: '20.0em',
+            paddingBottom: '1.0em'
         }
         const mapStyle = {
             width: '40.0em',
@@ -39,7 +46,17 @@ const Location = React.createClass({
                     <div>{ this.props.location.address } </div>
                     <div>{ this.props.location.postalCode } {this.props.location.city } </div>
                 </div>
-                <button onClick={ this.toggleMap }>Karte</button>
+                <div>
+                    <WithCondition condition= { this.state.mapVisible }>
+                        <div>
+                            <button onClick={ this.toggleMap }><img src='images/erioll_world_bw.png' alt='Karte ausblenden'/></button>
+                            <button onClick={ this.bringMeThere }><img src='images/erioll_world_routing.png' alt='Bring mich hin'/></button>
+                        </div>
+                    </WithCondition>    
+                    <WithCondition condition= { !this.state.mapVisible }>
+                        <button onClick={ this.toggleMap }><img src='images/erioll_world.png' alt='Karte einblenden'/></button>
+                    </WithCondition>    
+                </div>
                 <WithCondition condition= { this.state.mapVisible }>
                     <Map style= { mapStyle } location = { Location } ref= { this.initMap } />
                 </WithCondition>

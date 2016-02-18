@@ -32,7 +32,6 @@ const Map = React.createClass({
         })
     },
     findRoute: function (pos) {
-        console.log(pos)
         var latLon = new L.LatLng(pos.coords.latitude, pos.coords.longitude)
         var routingControl = L.Routing.control({
             show: false,
@@ -44,15 +43,13 @@ const Map = React.createClass({
     },
     bringMeThere: function () {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (pos) {
-                Map.findRoute(pos)
-            })
+            navigator.geolocation.getCurrentPosition(this.findRoute)
         } else {
-            console.log("geolocation api not available")
+            window.alert('Ihre aktuelle Position konnte nicht ermittelt werden.')
         }
     },
     componentDidMount: function () {
-        L.Icon.Default.imagePath = 'http://api.tiles.mapbox.com/mapbox.js/v1.0.0beta0.0/images'
+        L.Icon.Default.imagePath = './leaflet/images'
         var map = L.map('map-' + this.state.uid)
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors.'

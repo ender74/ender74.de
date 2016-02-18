@@ -32,6 +32,9 @@ const Map = React.createClass({
         })
     },
     findRoute: function (pos) {
+        if (this.state.routingControl) 
+            this.state.routingControl.removeFrom(this.state.map)
+        
         var latLon = new L.LatLng(pos.coords.latitude, pos.coords.longitude)
         var routingControl = L.Routing.control({
             show: false,
@@ -40,6 +43,9 @@ const Map = React.createClass({
                 this.state.location
             ]
         }).addTo(this.state.map)
+        this.setState({
+            routingControl: routingControl
+        })
     },
     bringMeThere: function () {
         if (navigator.geolocation) {

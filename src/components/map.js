@@ -51,7 +51,7 @@ const Map = React.createClass({
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(this.findRoute)
         } else {
-            window.alert('Ihre aktuelle Position konnte nicht ermittelt werden.')
+            alert('Ihre aktuelle Position konnte nicht ermittelt werden.')
         }
     },
     componentDidMount: function () {

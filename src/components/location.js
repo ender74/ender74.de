@@ -1,5 +1,6 @@
 import React from 'react'
 import Map from './map'
+import Button from './button'
 import WithCondition from './withCondition'
 import WithGroupHeader from './withGroupHeader'
 
@@ -49,12 +50,12 @@ const Location = React.createClass({
                 <div>
                     <WithCondition condition= { this.state.mapVisible }>
                         <div>
-                            <button onClick={ this.toggleMap }><img src='images/erioll_world_bw.png' alt='Karte ausblenden'/></button>
-                            <button onClick={ this.bringMeThere }><img src='images/erioll_world_routing.png' alt='Bring mich hin'/></button>
+                            <Button onClick={ this.toggleMap } image='images/erioll_world_bw.png' alt='Karte ausblenden'/>
+                            <Button onClick={ this.bringMeThere } image='images/erioll_world_routing.png' alt='Bring mich hin'/>
                         </div>
                     </WithCondition>    
                     <WithCondition condition= { !this.state.mapVisible }>
-                        <button onClick={ this.toggleMap }><img src='images/erioll_world.png' alt='Karte einblenden'/></button>
+                        <Button onClick={ this.toggleMap } image='images/erioll_world.png' alt='Karte einblenden'/>
                     </WithCondition>    
                 </div>
                 <WithCondition condition= { this.state.mapVisible }>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Map from './map'
-import Button from './button'
-import WithCondition from './withCondition'
-import WithGroupHeader from './withGroupHeader'
+import Button from '../../lib/components/button'
+import WithCondition from '../../lib/components/withCondition'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
 
 const Location = React.createClass({
     initMap: function (Map) {

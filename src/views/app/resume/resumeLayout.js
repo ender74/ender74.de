@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from './footer'
-import Title from './title'
+import Footer from './components/footer'
+import Title from './components/title'
 
 const ResumeLayout = React.createClass({
   render: function () {

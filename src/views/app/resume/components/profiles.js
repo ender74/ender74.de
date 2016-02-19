@@ -1,6 +1,6 @@
 import React from 'react'
-import WithGroupHeader from './withGroupHeader'
-import Link from './link'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
+import Link from '../../lib/components/link'
 
 const ProfileEntry = React.createClass({
   render: function () {

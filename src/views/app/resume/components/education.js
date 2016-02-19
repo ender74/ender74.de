@@ -1,5 +1,5 @@
 import React from 'react'
-import WithGroupHeader from './withGroupHeader'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './tags'
 
 const Education = React.createClass({

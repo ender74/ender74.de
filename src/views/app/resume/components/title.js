@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from './link'
+import Link from '../../lib/components/link'
 
 const Title = React.createClass({
   render: function () {

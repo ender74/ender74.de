@@ -1,5 +1,5 @@
 import React from 'react'
-import WithGroupHeader from './withGroupHeader'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
 
 const About = React.createClass({
   render: function () {

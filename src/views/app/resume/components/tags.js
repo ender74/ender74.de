@@ -1,5 +1,5 @@
 import React from 'react'
-import WithCondition from './withCondition'
+import WithCondition from '../../lib/components/withCondition'
 
 const Tags = React.createClass({
   render: function () {

@@ -1,7 +1,8 @@
-var React = require("react")
-var Tags = require("./tags.jsx")
+import React from 'react'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
+import Tags from './tags'
 
-var Education = React.createClass({
+const Education = React.createClass({
   render: function () {
     var education = this.props.education.map(function (education, index) {
       return (
@@ -14,18 +15,17 @@ var Education = React.createClass({
           endDate={education.endDate}
           gpa={education.gpa}
           courses={education.courses}/>
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Ausbildung</h2>
+      <WithGroupHeader title='Ausbildung'>
         {education}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
-var EducationEntry = React.createClass({
+const EducationEntry = React.createClass({
   render: function () {
     return (
       <div className="educationEntry">
@@ -34,8 +34,8 @@ var EducationEntry = React.createClass({
         <div>{this.props.institution}</div>
         <Tags title="Schwerpunkte" tags={this.props.courses} />
       </div>
-    );
+    )
   }
-});
+})
 
-module.exports = Education
+export default Education

@@ -1,18 +1,19 @@
-var React = require("react")
-var Tags = require("./tags.jsx")
+import React from 'react'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
+import Tags from './tags'
 
-var SkillEntry = React.createClass({
+const SkillEntry = React.createClass({
   render: function () {
     return (
       <div className="skillEntry">
         <h3>{this.props.name}</h3>
         <Tags title="" tags={this.props.keywords} />
       </div>
-    );
+    )
   }
-});
+})
 
-var Skills = React.createClass({
+const Skills = React.createClass({
   render: function () {
     var skills = this.props.skills.map(function (skill, index) {
       return (
@@ -21,15 +22,14 @@ var Skills = React.createClass({
           name={skill.name}
           level={skill.level}
           keywords={skill.keywords} />
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Fähigkeiten</h2>
+      <WithGroupHeader title='Fähigkeiten'>
         {skills}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
-module.exports = Skills
+export default Skills

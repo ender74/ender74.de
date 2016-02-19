@@ -1,8 +1,7 @@
-var React = require("react")
-var Link = require("./link.jsx")
-var Contact = require("./contact.jsx")
+import React from 'react'
+import Link from '../../lib/components/link'
 
-var Title = React.createClass({
+const Title = React.createClass({
   render: function () {
     var titleStyle = {
         width: '100%',
@@ -24,13 +23,7 @@ var Title = React.createClass({
         width: '20.0em',        
         display: 'inline-block'
     };
-    var contactStyle = {
-        position: 'absolute',
-        top: '0.0em',
-        left: '35.0em',
-        width: '20.0em',
-        height: '6.0em'
-    };
+    var portrait
     if (this.props.basics.picture) {
         portrait = <img style={portraitStyle} src={this.props.basics.picture} />
     } else {
@@ -44,12 +37,9 @@ var Title = React.createClass({
             <h3>{this.props.basics.label}</h3>
             <Link href="foaf.rdf" text="FOAF" />
         </div>
-        <div style={contactStyle}>
-            <Contact basics={this.props.basics} />
-        </div>
       </div>
     );
   }
 });
 
-module.exports = Title
+export default Title

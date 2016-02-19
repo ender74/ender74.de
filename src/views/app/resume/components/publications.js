@@ -1,7 +1,8 @@
-var React = require("react")
-var Link = require("./link.jsx")
+import React from 'react'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
+import Link from '../../lib/components/link'
 
-var PublicationEntry = React.createClass({
+const PublicationEntry = React.createClass({
   render: function () {
     var labelStyle = {
         position: 'relative',
@@ -9,9 +10,9 @@ var PublicationEntry = React.createClass({
         textAlign: 'left',
         width: '8.0em',
         paddingRight: '0.5em'
-    };    
+    }    
     var valueStyle = {
-    };
+    }
     return (
       <div className="publicationEntry">
         <h3>{this.props.name}</h3>
@@ -22,11 +23,11 @@ var PublicationEntry = React.createClass({
         <div style={labelStyle}>Link</div>
         <div style={valueStyle}><Link href={this.props.website} text="PDF"/></div>
       </div>
-    );
+    )
   }
-});
+})
 
-var Publications = React.createClass({
+const Publications = React.createClass({
   render: function () {
     var publications = this.props.publications.map(function (publication, index) {
       return (
@@ -37,15 +38,14 @@ var Publications = React.createClass({
           releaseDate={publication.releaseDate} 
           website={publication.website} 
           summary={publication.summary} />
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Veröffentlichungen</h2>
+      <WithGroupHeader title='Veröffentlichungen'>
         {publications}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
-module.exports = Publications
+export default Publications

@@ -1,8 +1,9 @@
-var React = require("react")
-var Link = require("./link.jsx")
-var Tags = require("./tags.jsx")
+import React from 'react'
+import WithGroupHeader from '../../lib/components/withGroupHeader'
+import Link from '../../lib/components/link'
+import Tags from './tags'
 
-var Work = React.createClass({
+const Work = React.createClass({
   render: function () {
     var maxIndex = this.props.work.length
     var work = this.props.work.map(function (work, index) {
@@ -17,32 +18,28 @@ var Work = React.createClass({
           summary={work.summary}
           highlights={work.highlights}
           nr={maxIndex - index}/>
-      );
-    });
+      )
+    })
     return (
-      <div className="group">
-        <h2 className="groupHeader">Berufserfahrung</h2>
+      <WithGroupHeader title='Berufserfahrung'>
         {work}
-      </div>
-    );
+      </WithGroupHeader>
+    )
   }
-});
+})
 
-var WorkEntry = React.createClass({
+const WorkEntry = React.createClass({
   render: function () {
-    var entryStyle = {
-//        fontSize: 0.9 + 0.05*this.props.nr + 'em'
-    };
     return (
-      <div style={entryStyle}>
+      <div>
         <h3><u>{this.props.startDate} - {this.props.endDate}</u></h3>
         <div>{this.props.position}</div>
         <Link href={this.props.website} text={this.props.company} />
         <div>{this.props.summary}</div>
         <Tags title="Schwerpunkte" tags={this.props.highlights} />
       </div>
-    );
+    )
   }
-});
+})
 
-module.exports = Work
+export default Work

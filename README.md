@@ -1,6 +1,7 @@
 # Resume
 
 - [Summary](#summary)
+- [Map implementation](#map)
 - [TODO List](#todo-list)
 
 #### Summary
@@ -16,7 +17,9 @@ To build the project you need to have node.js installed. [You can get it from he
 
 The build is automated with gulp. First you need to install it globally:
 
+```
 npm -g install gulp
+```
 
 After that you need to install the project dependencies. The needed dependencies can be installed with
 the following command: 
@@ -37,6 +40,25 @@ If everything works as expected, there should be a new directory
 named dist which contains an index.html file together with
 some needed resources. Simply open this file in your browser or copy
 the whole directory to your webserver.
+
+#### Map implementation
+
+the map is based on the following open source projects:
+
+- [leafletjs.com](http://leafletjs.com/)
+- [leaflet-routing-machine](http://www.liedman.net/leaflet-routing-machine/)
+
+together with these open services:
+
+- [osm tilemap service](http://wiki.openstreetmap.org/wiki/Standard_tile_layer)
+- [openroutingservice.org](http://openrouteservice.org)
+- [nominatim](https://nominatim.openstreetmap.org/)
+
+and open data:
+
+- [openstreetmap.org](http://www.openstreetmap.org)
+
+have a look into [map.js](blob/master/src/views/app/resume/components/map.js) to see the implementation.
 
 #### TODO List
 - [ ] support missing sections from json

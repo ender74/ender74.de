@@ -5,7 +5,6 @@
 - [TODO List](#todo-list)
 
 #### Summary
-
 This project is based on react. Its purpose is to display an resume. 
 The data to be displayed is loaded from a json file (see [jsonresume.org](https://jsonresume.org/) for the schema).
 
@@ -42,7 +41,6 @@ some needed resources. Simply open this file in your browser or copy
 the whole directory to your webserver.
 
 #### Map implementation
-
 the map is based on the following open source projects:
 
 - [leafletjs.com](http://leafletjs.com/)
@@ -58,7 +56,7 @@ and open data:
 
 - [openstreetmap.org](http://www.openstreetmap.org)
 
-have a look into [map.js](blob/master/src/views/app/resume/components/map.js) to see the implementation.
+have a look into [map.js](src/views/app/resume/components/map.js) to see the implementation.
 
 #### TODO List
 - [ ] support missing sections from json

@@ -3,10 +3,8 @@ import React from 'react'
 const Button = React.createClass({
   render: function () {
     const imgStyle = {
-        width: '2.0em',
-        height: '2.0em',
-        padding: '0.5em',
-        margin: '0.2em',
+        padding: '0.6em',
+        marginRight: '0.2em',
         background: '#CCCCCC',
         border: '1px solid #888888'
     }

@@ -25,6 +25,18 @@ gulp.task('copy', function () {
         .pipe(gulp.dest(path.DEST));
 })
 
+gulp.task('build-dev', function () {
+    browserify({
+        entries: [path.ENTRY_POINT]
+    }).
+        transform(babelify.configure({
+            presets: ["es2015", "react"]
+        }))
+        .bundle()
+        .pipe(source(path.MINIFIED_OUT))
+        .pipe(gulp.dest(path.DEST_BUILD));
+})
+
 gulp.task('build', function () {
     browserify({
         entries: [path.ENTRY_POINT]
@@ -40,4 +52,6 @@ gulp.task('build', function () {
 
 gulp.task('release', ['copy', 'build']);
 
-gulp.task('default', ['release'])
+gulp.task('dev', ['copy', 'build-dev']);
+
+gulp.task('default', ['dev'])

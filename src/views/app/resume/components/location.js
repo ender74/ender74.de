@@ -8,6 +8,9 @@ class Location extends Component {
     constructor(props) {
         super(props);
         this.state = { mapVisible: false }
+        this.initMap = this.initMap.bind(this)
+        this.toggleMap = this.toggleMap.bind(this)
+        this.bringMeThere = this.bringMeThere.bind(this)
     }
     
     initMap(Map) {

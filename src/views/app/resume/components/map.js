@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
+ 
 import L from 'leaflet'
 import 'leaflet-routing-machine'
+
 import Nominatim from 'nominatim'
 
 class Map extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = { uid: this.uid() }
+        this.runGeocodeQuery = this.runGeocodeQuery.bind(this)
+        this.setLocationWithGeocoder = this.setLocationWithGeocoder.bind(this)
+        this.setLocation = this.setLocation.bind(this)
+        this.findRoute = this.findRoute.bind(this)
+        this.bringMeThere = this.bringMeThere.bind(this)
     }
     uid() {
         var uid = 0
@@ -71,7 +78,7 @@ class Map extends Component {
     }
     render() {
         return (
-            <div style={ this.props.style } className= 'map' id= { 'map-'+this.state.uid } > </div>
+            <div style={ this.props.style } className= 'map' id= { 'map-' + this.state.uid } > </div>
             )
     }
 }

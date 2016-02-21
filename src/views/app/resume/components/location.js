@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-import Map from './map'
+
 import Button from '../../lib/components/button'
 import WithCondition from '../../lib/components/withCondition'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
+
+const isBrowser = typeof window !== 'undefined'
+const Map=isBrowser ? require('./map') : <div></div>
 
 class Location extends Component {
     constructor(props) {
@@ -53,17 +56,17 @@ class Location extends Component {
                     <div>{ this.props.location.postalCode } {this.props.location.city } </div>
                 </div>
                 <div>
-                    <WithCondition condition= { this.state.mapVisible }>
+                    <WithCondition condition= { isBrowser && this.state.mapVisible }>
                         <div>
                             <Button onClick={ this.toggleMap } image='images/erioll_world_bw.png' alt='Karte ausblenden'/>
                             <Button onClick={ this.bringMeThere } image='images/erioll_world_routing.png' alt='Bring mich hin'/>
                         </div>
                     </WithCondition>    
-                    <WithCondition condition= { !this.state.mapVisible }>
+                    <WithCondition condition= { isBrowser && !this.state.mapVisible }>
                         <Button onClick={ this.toggleMap } image='images/erioll_world.png' alt='Karte einblenden'/>
                     </WithCondition>    
                 </div>
-                <WithCondition condition= { this.state.mapVisible }>
+                <WithCondition condition= { isBrowser && this.state.mapVisible }>
                     <Map style= { mapStyle } location = { Location } ref= { this.initMap } />
                 </WithCondition>
             </WithGroupHeader>

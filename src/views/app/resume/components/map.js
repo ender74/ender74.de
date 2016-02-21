@@ -84,3 +84,4 @@ class Map extends Component {
 }
 
 export default Map
+module.exports=Map

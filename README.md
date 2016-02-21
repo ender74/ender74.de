@@ -1,7 +1,7 @@
 # Resume
 
 - [Summary](#summary)
-- [Map implementation](#map)
+- [Map implementation](#map-implementation)
 - [TODO List](#todo-list)
 
 #### Summary
@@ -39,6 +39,8 @@ If everything works as expected, there should be a new directory
 named dist which contains an index.html file together with
 some needed resources. Simply open this file in your browser or copy
 the whole directory to your webserver.
+
+To create an un-uglified version you may use ```gulp dev``` or just ```gulp```.
 
 #### Map implementation
 the map is based on the following open source projects:

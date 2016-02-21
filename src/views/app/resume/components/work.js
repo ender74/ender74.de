@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 import Tags from './tags'
 
-const Work = React.createClass({
-  render: function () {
-    var maxIndex = this.props.work.length
-    var work = this.props.work.map(function (work, index) {
+class Work extends Component {
+  render() {
+    const maxIndex = this.props.work.length
+    const work = this.props.work.map(function (work, index) {
       return (
         <WorkEntry
           key={index}
@@ -26,10 +26,10 @@ const Work = React.createClass({
       </WithGroupHeader>
     )
   }
-})
+}
 
-const WorkEntry = React.createClass({
-  render: function () {
+class WorkEntry extends Component {
+  render() {
     return (
       <div>
         <h3><u>{this.props.startDate} - {this.props.endDate}</u></h3>
@@ -40,6 +40,6 @@ const WorkEntry = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Work

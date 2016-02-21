@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Button = React.createClass({
-  render: function () {
+class Button extends Component {
+  render() {
     const imgStyle = {
         padding: '0.6em',
         marginRight: '0.2em',
@@ -12,6 +12,6 @@ const Button = React.createClass({
         <img onClick={ this.props.onClick } style={imgStyle} src={ this.props.image } alt= { this.props.alt }/>
     )
   }
-})
+}
 
 export default Button

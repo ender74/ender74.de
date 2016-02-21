@@ -1,31 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Map from './map'
 import Button from '../../lib/components/button'
 import WithCondition from '../../lib/components/withCondition'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 
-const Location = React.createClass({
-    initMap: function (Map) {
+class Location extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { mapVisible: false }
+    }
+    
+    initMap(Map) {
         if (Map) {
             var query = this.props.location.address + ',' + this.props.location.city
             Map.runGeocodeQuery(query)
             this.setState({map: Map})
         }
-    },
-    getInitialState: function () {
-        return { mapVisible: false };
-    },
-    toggleMap: function() {
+    }
+    toggleMap() {
         this.setState({
             mapVisible: !this.state.mapVisible
         })  
-    },
-    bringMeThere: function() {
+    }
+    bringMeThere() {
         if (this.state.map) {
             this.state.map.bringMeThere()
         }
-    },
-    render: function () {
+    }
+    render() {
         const Location = { lat: 51.3, lon: 0.7 }
         const adressStyle = {
             width: '20.0em',
@@ -64,6 +66,6 @@ const Location = React.createClass({
             </WithGroupHeader>
         )
     }
-})
+}
 
 export default Location

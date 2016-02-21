@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from '../../lib/components/link'
 
-const Title = React.createClass({
-  render: function () {
-    var titleStyle = {
+class Title extends Component {
+  render() {
+    const titleStyle = {
         width: '100%',
         height: '15.0em',
         background: '#EFEFEF',
         padding: '1.0em 1.0em 1.0em 1.0em',
         overflow: 'hidden',
         position: 'relative'
-    };
-    var portraitStyle = {
+    }
+    const portraitStyle = {
         height: '15.0em',
         float: 'left',
         marginRight: '1.0em'
-    };
-    var nameTitleStyle = {
+    }
+    const nameTitleStyle = {
         position: 'absolute',
         top: '0em',
         left: '13.0em',
         width: '20.0em',        
         display: 'inline-block'
-    };
+    }
     var portrait
     if (this.props.basics.picture) {
         portrait = <img style={portraitStyle} src={this.props.basics.picture} />
@@ -40,6 +40,6 @@ const Title = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default Title

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './tags'
 
-const SkillEntry = React.createClass({
-  render: function () {
+class SkillEntry extends Component {
+  render() {
     return (
       <div className="skillEntry">
         <h3>{this.props.name}</h3>
@@ -11,11 +11,11 @@ const SkillEntry = React.createClass({
       </div>
     )
   }
-})
+}
 
-const Skills = React.createClass({
-  render: function () {
-    var skills = this.props.skills.map(function (skill, index) {
+class Skills extends Component {
+  render() {
+    const skills = this.props.skills.map(function (skill, index) {
       return (
         <SkillEntry
           key={index}
@@ -30,6 +30,6 @@ const Skills = React.createClass({
       </WithGroupHeader>
     )
   }
-})
+}
 
 export default Skills

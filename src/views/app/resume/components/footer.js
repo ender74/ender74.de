@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from '../../lib/components/link'
 
-const Footer = React.createClass({
-  render: function () {
+class Footer extends Component {
+  render() {
     var footerStyle = {
         position: "relative",
         top: "2.0em",
@@ -16,6 +16,6 @@ const Footer = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Footer

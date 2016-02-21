@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
-const ProfileEntry = React.createClass({
-  render: function () {
+class ProfileEntry extends Component {
+  render() {
     return (
       <div className="profileEntry">
         <h3>{this.props.network}</h3>
@@ -11,11 +11,11 @@ const ProfileEntry = React.createClass({
       </div>
     )
   }
-})
+}
 
-const Profiles = React.createClass({
-  render: function () {
-    var profiles = this.props.profiles.map(function (profile, index) {
+class Profiles extends Component {
+  render() {
+    const profiles = this.props.profiles.map(function (profile, index) {
       return (
         <ProfileEntry
           key={index}
@@ -30,6 +30,6 @@ const Profiles = React.createClass({
       </WithGroupHeader>
     )
   }
-})
+}
 
 export default Profiles

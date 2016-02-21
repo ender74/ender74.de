@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ResumeLayout from './resumeLayout'
 import About from './components/about'
 import Contact from './components/contact'
@@ -9,8 +9,8 @@ import Publications from './components/publications'
 import Skills from './components/skills'
 import Work from './components/work'
 
-const Resume = React.createClass({
-  render: function () {
+class Resume extends Component {
+  render() {
     return (
       <ResumeLayout data={this.props.data}>
         <About basics={this.props.data.basics} />
@@ -24,6 +24,6 @@ const Resume = React.createClass({
       </ResumeLayout>
     )
   }
-})
+}
 
 export default Resume

@@ -1,40 +1,39 @@
-import React from 'react'
+import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet-routing-machine'
 import Nominatim from 'nominatim'
 
-const Map = React.createClass({
-    uid: function () {
+class Map extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { uid: this.uid() }
+    }
+    uid() {
         var uid = 0
         return function () {
             return uid++
         }
-    },
-    getInitialState: function () {
-        return {
-            uid: this.uid()
-        }
-    },
-    runGeocodeQuery: function(query) {
-        Nominatim.search({ q: query}, this.setLocationWithGeocoder)
-    },
-    setLocationWithGeocoder: function(err, opts, results) {
+    }
+    runGeocodeQuery(query) {
+        Nominatim.search({ q: query }, this.setLocationWithGeocoder)
+    }
+    setLocationWithGeocoder(err, opts, results) {
         var newLoc = results[0]
         newLoc.zoom = 16
         this.setLocation(newLoc)
-    },
-    setLocation: function (newLoc) {
+    }
+    setLocation(newLoc) {
         var latLon = new L.LatLng(newLoc.lat, newLoc.lon)
         this.state.map.setView(latLon, newLoc.zoom)
         this.state.marker.setLatLng(latLon)
         return this.setState({
             location: latLon
         })
-    },
-    findRoute: function (pos) {
-        if (this.state.routingControl) 
+    }
+    findRoute(pos) {
+        if (this.state.routingControl)
             this.state.routingControl.removeFrom(this.state.map)
-        
+
         var latLon = new L.LatLng(pos.coords.latitude, pos.coords.longitude)
         var routingControl = L.Routing.control({
             show: false,
@@ -46,15 +45,15 @@ const Map = React.createClass({
         this.setState({
             routingControl: routingControl
         })
-    },
-    bringMeThere: function () {
+    }
+    bringMeThere() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(this.findRoute)
         } else {
             alert('Ihre aktuelle Position konnte nicht ermittelt werden.')
         }
-    },
-    componentDidMount: function () {
+    }
+    componentDidMount() {
         L.Icon.Default.imagePath = './leaflet/images'
         var map = L.map('map-' + this.state.uid)
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -69,12 +68,12 @@ const Map = React.createClass({
             map: map,
             marker: marker
         })
-    },
-    render: function () {
+    }
+    render() {
         return (
             <div style={ this.props.style } className= 'map' id= { 'map-'+this.state.uid } > </div>
             )
-        }
-    })
+    }
+}
 
 export default Map

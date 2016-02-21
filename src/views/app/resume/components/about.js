@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 
-const About = React.createClass({
-  render: function () {
+class About extends Component {
+  render() {
     return (
       <WithGroupHeader title='Über mich'>
         {this.props.basics.summary}
       </WithGroupHeader>
     )
   }
-})
+}
 
 export default About

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './tags'
 
-const Education = React.createClass({
-  render: function () {
+class Education extends Component {
+  render() {
     var education = this.props.education.map(function (education, index) {
       return (
         <EducationEntry
@@ -23,10 +23,10 @@ const Education = React.createClass({
       </WithGroupHeader>
     )
   }
-})
+}
 
-const EducationEntry = React.createClass({
-  render: function () {
+class EducationEntry extends Component {
+  render() {
     return (
       <div className="educationEntry">
         <h3>{this.props.startDate} - {this.props.endDate}</h3>
@@ -36,6 +36,6 @@ const EducationEntry = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Education

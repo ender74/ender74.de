@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Link = React.createClass({
-  render: function () {
+class Link extends Component {
+  render() {
       if (this.props.href) {
         return (
             <a href={this.props.href} target="_blank">{this.props.text}</a>
@@ -12,6 +12,6 @@ const Link = React.createClass({
         )
       }
   }
-})
+}
 
 export default Link

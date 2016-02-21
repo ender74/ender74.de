@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const WithGroupHeader = React.createClass({
-    render: function () {
+class WithGroupHeader extends Component {
+    render() {
         return (
             <div className='group' >
                 <h2 className='groupHeader'>{this.props.title}</h2>
                 {this.props.children}
             </div>
-        );
+        )
     }
-});
+}
 
 export default WithGroupHeader

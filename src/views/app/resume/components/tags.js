@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithCondition from '../../lib/components/withCondition'
 
-const Tags = React.createClass({
-  render: function () {
+class Tags extends Component {
+  render() {
     var listStyle = {
         overflow: 'hidden'
     }
@@ -20,11 +20,11 @@ const Tags = React.createClass({
         </div>
     )
   }
-})
+}
 
-const Tag = React.createClass({
-  render: function () {
-    var tagStyle = {
+class Tag extends Component {
+  render() {
+    const tagStyle = {
         float: 'left'
     }
     if (this.props.nr === 0) 
@@ -36,6 +36,6 @@ const Tag = React.createClass({
             <div style={tagStyle}>&nbsp;/&nbsp;{this.props.tag}</div>
         )
   }
-})
+}
 
 export default Tags

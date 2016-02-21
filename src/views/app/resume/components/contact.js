@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
-const Contact = React.createClass({
-  render: function () {
+class Contact extends Component {
+  render() {
     var labelStyle = {
         position: 'relative',
         float: 'left',
@@ -24,6 +24,6 @@ const Contact = React.createClass({
         </WithGroupHeader>
     )
   }
-})
+}
 
 export default Contact

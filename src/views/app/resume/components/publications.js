@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
-const PublicationEntry = React.createClass({
-  render: function () {
-    var labelStyle = {
+class PublicationEntry extends Component {
+  render() {
+    const labelStyle = {
         position: 'relative',
         float: 'left',
         textAlign: 'left',
         width: '8.0em',
         paddingRight: '0.5em'
     }    
-    var valueStyle = {
+    const valueStyle = {
     }
     return (
       <div className="publicationEntry">
@@ -25,11 +25,11 @@ const PublicationEntry = React.createClass({
       </div>
     )
   }
-})
+}
 
-const Publications = React.createClass({
-  render: function () {
-    var publications = this.props.publications.map(function (publication, index) {
+class Publications extends Component {
+  render() {
+    const publications = this.props.publications.map(function (publication, index) {
       return (
         <PublicationEntry
           key={index}  
@@ -46,6 +46,6 @@ const Publications = React.createClass({
       </WithGroupHeader>
     )
   }
-})
+}
 
 export default Publications

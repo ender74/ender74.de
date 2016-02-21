@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Footer from './components/footer'
 import Title from './components/title'
 
-const ResumeLayout = React.createClass({
-  render: function () {
-    var style = {
+class ResumeLayout extends Component {
+  render() {
+    const style = {
         width: '100%',
         background: 'white',
         fontFamily: 'Arial,Helvetica Neue,Helvetica,sans-serif',
@@ -24,6 +24,6 @@ const ResumeLayout = React.createClass({
       </section>
     )
   }
-})
+}
 
 export default ResumeLayout

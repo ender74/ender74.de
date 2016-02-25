@@ -8,3 +8,6 @@ import Resume from './views/app/resume/resume'
 const data = require('./static/resume.json')
 const react = ReactDOM.renderToString(<Resume data={data} />)
 console.log(react.length)
+
+export default react
+module.exports = react

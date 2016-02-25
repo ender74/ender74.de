@@ -27,3 +27,4 @@ class Resume extends Component {
 }
 
 export default Resume
+module.exports = Resume

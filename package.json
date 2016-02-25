@@ -4,7 +4,8 @@
   "description": "my resume",
   "main": "components/main.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "build-min": "gulp release"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,10 @@
   "keywords": [
     "Resume",
     "react",
-    "babel",
-    "browserify"
+    "leaflet",
+    "osm",
+    "nominatim",
+    "routing"
   ],
   "author": "Heiko Hüter",
   "license": "BSD-2-Clause",
@@ -44,6 +47,9 @@
     "gulp-streamify": "~1.0.2",
     "babel-register": "~6.5.2",
     "babel-core": "~6.5.2",
-    "fs-extra": "~0.26.5"
+    "fs-extra": "~0.26.5",
+    "gulp-react-render": "~1.0.1",
+    "gulp-util": "~3.0.7",
+    "gulp-template": "~3.1.0"
   }
 }

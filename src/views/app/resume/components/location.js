@@ -56,13 +56,13 @@ class Location extends Component {
                     <div>{ this.props.location.postalCode } {this.props.location.city } </div>
                 </div>
                 <div>
-                    <WithCondition condition= { isBrowser && this.state.mapVisible }>
+                    <WithCondition condition= { this.state.mapVisible }>
                         <div>
                             <Button onClick={ this.toggleMap } image='images/erioll_world_bw.png' alt='Karte ausblenden'/>
                             <Button onClick={ this.bringMeThere } image='images/erioll_world_routing.png' alt='Bring mich hin'/>
                         </div>
                     </WithCondition>    
-                    <WithCondition condition= { isBrowser && !this.state.mapVisible }>
+                    <WithCondition condition= { !this.state.mapVisible }>
                         <Button onClick={ this.toggleMap } image='images/erioll_world.png' alt='Karte einblenden'/>
                     </WithCondition>    
                 </div>

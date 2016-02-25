@@ -65,6 +65,6 @@ gulp.task('renderStatic', function () {
 
 gulp.task('release', ['copy', 'build', 'renderStatic']);
 
-gulp.task('dev', ['copy', 'build-dev']);
+gulp.task('dev', ['copy', 'build-dev', 'renderStatic']);
 
 gulp.task('default', ['dev'])

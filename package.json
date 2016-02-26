@@ -28,8 +28,8 @@
     "react-dom": "~0.14.7",
     "react": "~0.14.7",
     "leaflet": "~0.7.7",
-    "nominatim": "~0.1.0",
     "leaflet-routing-machine": "~2.6.2",
+    "nominatim": "~0.1.0",
     "jquery": "~2.2.0"
   },
   "devDependencies": {
@@ -40,15 +40,12 @@
     "gulp": "~3.9.1",
     "gulp-minify-html": "~1.0.5",
     "gulp-uglify": "~1.5.2",
-    "gulp-react": "~3.1.0",
     "gulp-html-replace": "~1.5.5",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.7.0",
     "gulp-streamify": "~1.0.2",
     "babel-register": "~6.5.2",
     "babel-core": "~6.5.2",
-    "fs-extra": "~0.26.5",
-    "gulp-react-render": "~1.0.1",
     "gulp-util": "~3.0.7",
     "gulp-template": "~3.1.0"
   }

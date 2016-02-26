@@ -1,13 +1,14 @@
 'use strict'
 
-import fs from 'fs-extra'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
-import Resume from './views/app/resume/resume'
 
-const data = require('./static/resume.json')
-const react = ReactDOM.renderToString(<Resume data={data} />)
-console.log(react.length)
+function renderToString(reactComponent, data) {
+    const component = require(reactComponent)
+    const react = ReactDOM.renderToString(React.createElement(component, data))
+    console.log(react.length)
+    return react   
+}
 
-export default react
-module.exports = react
+export default renderToString
+module.exports = renderToString

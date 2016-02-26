@@ -12,15 +12,15 @@ import Work from './components/work'
 class Resume extends Component {
   render() {
     return (
-      <ResumeLayout data={this.props.data}>
-        <About basics={this.props.data.basics} />
-        <Contact basics={this.props.data.basics} />
-        <Location location={this.props.data.basics.location} />
-        <Education education={this.props.data.education} />
-        <Publications publications={this.props.data.publications} />
-        <Skills skills={this.props.data.skills} />
-        <Profiles profiles={this.props.data.basics.profiles} />
-        <Work work={this.props.data.work} />
+      <ResumeLayout data={this.props}>
+        <About basics={this.props.basics} />
+        <Contact basics={this.props.basics} />
+        <Location location={this.props.basics.location} />
+        <Education education={this.props.education} />
+        <Publications publications={this.props.publications} />
+        <Skills skills={this.props.skills} />
+        <Profiles profiles={this.props.basics.profiles} />
+        <Work work={this.props.work} />
       </ResumeLayout>
     )
   }

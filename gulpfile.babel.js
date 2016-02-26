@@ -10,7 +10,6 @@ import browserify from 'browserify'
 import watchify from 'watchify'
 import babelify from 'babelify'
 import streamify from 'gulp-streamify'
-import react_render from 'gulp-react-render'
 
 var path = {
     HTML: 'src/static/index.html',
@@ -25,38 +24,37 @@ var path = {
     STATIC_INDEX: 'index.html'
 }
 
+function baseBuild() {
+    return browserify({
+        entries: [path.ENTRY_POINT]
+    }).
+        transform(babelify.configure({
+            presets: ["es2015", "react"]
+        }))
+        .bundle()
+        .pipe(source(path.MINIFIED_OUT));
+}
+
 gulp.task('copy', function () {
     gulp.src(path.STATIC)
         .pipe(gulp.dest(path.DEST));
 })
 
 gulp.task('build-dev', function () {
-    browserify({
-        entries: [path.ENTRY_POINT]
-    }).
-        transform(babelify.configure({
-            presets: ["es2015", "react"]
-        }))
-        .bundle()
-        .pipe(source(path.MINIFIED_OUT))
+    baseBuild()
         .pipe(gulp.dest(path.DEST_BUILD));
 })
 
 gulp.task('build', function () {
-    browserify({
-        entries: [path.ENTRY_POINT]
-    }).
-        transform(babelify.configure({
-            presets: ["es2015", "react"]
-        }))
-        .bundle()
-        .pipe(source(path.MINIFIED_OUT))
+    baseBuild()
         .pipe(streamify(uglify()))
         .pipe(gulp.dest(path.DEST_BUILD));
 })
 
 gulp.task('renderStatic', function () {
-    var staticReact = require('./src/renderToString')
+    var staticReact = require('./src/renderToString')(
+        './views/app/resume/resume', 
+        require('./src/static/resume.json'))
 
     return gulp.src(path.TEMPLATE_INDEX).
         pipe(template({ staticReact: staticReact })).

@@ -6,5 +6,5 @@ import $ from 'jquery'
 import Resume from './views/app/resume/resume'
 
 $.getJSON( "resume.json", function( data ) {
-    ReactDOM.render(<Resume data={data} />, document.getElementById("container"))
+    ReactDOM.render(<Resume {...data} />, document.getElementById("container"))
 })

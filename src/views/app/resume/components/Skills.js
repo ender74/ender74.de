@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
-import Tags from './tags'
+import Tags from './Tags'
 
 class SkillEntry extends Component {
   render() {

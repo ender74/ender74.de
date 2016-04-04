@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
 
-import Button from '../../lib/components/button'
 import WithCondition from '../../lib/components/withCondition'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 
 const isBrowser = typeof window !== 'undefined'
-const Map=isBrowser ? require('./map') : <div></div>
+const Map=isBrowser ? require('./Map') : <div></div>
 
 class Location extends Component {
     constructor(props) {
@@ -40,7 +40,7 @@ class Location extends Component {
             paddingBottom: '1.0em'
         }
         const mapStyle = {
-            width: '40.0em',
+            width: '100%',
             height: '30.0em',
             top: '1.0em',
             left: '0.0em',
@@ -58,13 +58,13 @@ class Location extends Component {
                 <div>
                     <WithCondition condition= { this.state.mapVisible }>
                         <div>
-                            <Button onClick={ this.toggleMap } image='images/erioll_world_bw.png' alt='Karte ausblenden'/>
-                            <Button onClick={ this.bringMeThere } image='images/erioll_world_routing.png' alt='Bring mich hin'/>
+                            <Button onClick={ this.toggleMap }><img src='/images/erioll_world_bw.png' alt='Karte ausblenden'/></Button>
+                            <Button onClick={ this.bringMeThere }><img src='/images/erioll_world_routing.png' alt='Bring mich hin'/></Button>
                         </div>
-                    </WithCondition>    
+                    </WithCondition>
                     <WithCondition condition= { !this.state.mapVisible }>
-                        <Button onClick={ this.toggleMap } image='images/erioll_world.png' alt='Karte einblenden'/>
-                    </WithCondition>    
+                        <Button onClick={ this.toggleMap }><img src='/images/erioll_world.png' alt='Karte einblenden'/></Button>
+                    </WithCondition>
                 </div>
                 <WithCondition condition= { isBrowser && this.state.mapVisible }>
                     <Map style= { mapStyle } location = { Location } ref= { this.initMap } />

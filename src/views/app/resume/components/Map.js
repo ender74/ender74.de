@@ -61,7 +61,7 @@ class Map extends Component {
         }
     }
     componentDidMount() {
-        L.Icon.Default.imagePath = './leaflet/images'
+        L.Icon.Default.imagePath = '/leaflet/images'
         var map = L.map('map-' + this.state.uid)
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors.'

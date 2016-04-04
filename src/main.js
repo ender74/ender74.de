@@ -2,9 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import $ from 'jquery'
-import Resume from './views/app/resume/resume'
 
-$.getJSON( "resume.json", function( data ) {
-    ReactDOM.render(<Resume {...data} />, document.getElementById("container"))
-})
+import AppView from './views/app/AppView'
+
+ReactDOM.render(<AppView />, document.getElementById("container"))

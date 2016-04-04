@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
-import Tags from './tags'
+import Tags from './Tags'
 
 class Work extends Component {
   render() {

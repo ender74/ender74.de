@@ -1,28 +1,30 @@
 import React, { Component } from 'react'
+import { Row, Col, Label } from 'react-bootstrap'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
 class PublicationEntry extends Component {
   render() {
-    const labelStyle = {
-        position: 'relative',
-        float: 'left',
-        textAlign: 'left',
-        width: '8.0em',
-        paddingRight: '0.5em'
-    }    
-    const valueStyle = {
-    }
     return (
-      <div className="publicationEntry">
-        <h3>{this.props.name}</h3>
-        <div style={labelStyle}>Titel</div>
-        <div style={valueStyle}>{this.props.summary}</div>
-        <div style={labelStyle}>Veröffentlicht am</div>
-        <div style={valueStyle}>{this.props.releaseDate}</div>
-        <div style={labelStyle}>Link</div>
-        <div style={valueStyle}><Link href={this.props.website} text="PDF"/></div>
-      </div>
+        <div>
+            <Row>
+                <Col sm={12}>
+                    <h3>{this.props.name}</h3>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm={2}><Label>Titel</Label></Col>
+                <Col sm={10}>{this.props.summary}</Col>
+            </Row>
+            <Row>
+                <Col sm={2}><Label>Veröffentlicht</Label></Col>
+                <Col sm={10}>{this.props.releaseDate}</Col>
+            </Row>
+            <Row>
+                <Col sm={2}><Label>Link</Label></Col>
+                <Col sm={10}><Link href={this.props.website} text="PDF"/></Col>
+            </Row>
+        </div>
     )
   }
 }

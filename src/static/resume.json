@@ -1,130 +1,232 @@
 {
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
-    "picture": "",
-    "email": "richard.hendriks@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "name": "Heiko Hüter",
+    "label": "Technischer Projektleiter und Softwarearchitekt",
+    "picture": "/portrait.jpg",
+    "email": "heiko.hueter@ender74.de",
+    "phone": "+49(361)654 99-52",
+    "website": "http://www.ender74.de",
+    "summary": "Ich bin seit über 15 Jahren als Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt sind dabei Java basierte Serveranwendung und Webanwendungen. Seit 2007 habe ich auch etliche Projekte in der Rolle des Projektleiters vorangetrieben. Hier betreue ich die Projekte angefangen von der Aquise und Anforderungsanalyse mit dem Kunden bis hin zur Umsetzung und Leitung des Projektteams.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Melchior-Bauer-Straße 5",
+      "postalCode": "99092",
+      "city": "Erfurt",
+      "countryCode": "DE",
+      "region": "Thüringen"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "network": "Github",
+        "username": "ender74",
+        "url": "https://github.com/ender74"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Xing",
+        "username": "Heiko Hüter",
+        "url": "https://www.xing.com/profile/Heiko_Hueter"
       }
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "NOVASIB GmbH",
+      "position": "Leiter Technologie und Strategie SIB",
+      "website": "http://www.novasib.de",
+      "startDate": "01.01.2013",
+      "endDate": "Heute",
+      "summary": "",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Projektleitung", "Webanwendung", "OSGI", "Eclipse RAP", "Openlayers"
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "company": "NOVASIB GmbH",
+      "position": "Projektleiter Serviceorientierte Anwendungen",
+      "website": "http://www.novasib.de",
+      "startDate": "2007",
+      "endDate": "01.01.2013",
+      "summary": "",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Projektleitung", "Mehrschichtenarchitektur", "SOAP", "JAX-RS", "Datenbanken"
+      ]
+    },
+    {
+      "company": "NOVASIB GmbH",
+      "position": "Softwareentwickler",
+      "website": "http://www.novasib.de",
+      "startDate": "1.10.1999",
+      "endDate": "2007",
+      "summary": "",
+      "highlights": [
+        "Java", "Java EE", "OGC", "Oracle", "Sql Server"
+      ]
+    },
+    {
+      "company": "Technotrend Systemtechnik GmbH",
+      "position": "Softwareentwickler / Praktikant",
+      "website": "",
+      "startDate": "1997",
+      "endDate": "1999",
+      "summary": "",
+      "highlights": [
+        "C++", "DVB-S", "Direct View", "Centura Sql Windows"
+      ]
+    },
+    {
+      "company": "Fachgebiet Rechnerarchitekturen der TU-Ilmenau",
+      "position": "Studentische Hilfskraft",
+      "website": "https://www.tu-ilmenau.de/ra/",
+      "startDate": "1996",
+      "endDate": "1997",
+      "summary": "",
+      "highlights": [
+        "Petri Netze", "Peneca", "DATEV", "Pascal"
+      ]
+    },
+    {
+      "company": "OWiS Software GmbH Ilmenau",
+      "position": "Software-Entwickler / Praktikant",
+      "website": "",
+      "startDate": "07/1996",
+      "endDate": "09/1996",
+      "summary": "",
+      "highlights": [
+        "UML", "Pascal", "Poet", "OODBMS"
       ]
     }
   ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
+      "institution": "Technische Universität Ilmenau",
+      "area": "Abschluss als Dipl. Informatiker",
+      "studyType": "Diplom",
+      "startDate": "1.10.1994",
+      "endDate": "30.09.1999",
+      "gpa": "",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+          "Nebenfach Mathematik", "Graphische Datenverarbeitung", "Neuroinformatik"
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
+  "awards": [],
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "Diplomarbeit",
+      "publisher": "",
+      "releaseDate": "1999",
+      "website": "/diplom/diplomarbeit.pdf",
+      "summary": "Entwurf und Umsetzung einer Softwarearchitektur für ein Flottenmanagementsystem im Inter-/Intranet mit mobiler Kommunikation"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Projektleitung",
+      "level": "Erfahren",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Klassische Projektplanung",
+        "Scrum",
+        "Anforderungsanalyse",
+        "Pflichtenhefterstellung",
+        "UML"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Java Entwicklung",
+      "level": "Experte",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Java EE",
+        "Servlets", "JPA", "JAX-RS", "JAX-WS", "JAXB", "Java Mail", "Java Security",
+        "Spring Framework",
+        "Hibernate",
+        "OSGI"
+      ]
+    },
+    {
+      "name": "Softwaretests",
+      "level": "Erfahren",
+      "keywords": [
+        "JUnit",
+        "Easymock",
+        "SOAP-UI",
+        "Selenium",
+        "Gatling"
+      ]
+    },
+    {
+      "name": "Serviceorientierte Architekturen",
+      "level": "Experte",
+      "keywords": [
+        "INSPIRE",
+        "GDI",
+        "OKSTRA",
+        "XÖV / OSCI Transport",
+        "WS-Security",
+        "SOAP"        
+      ]
+    },
+    {
+      "name": "Datenbanken",
+      "level": "Experte",
+      "keywords": [
+        "Oracle",
+        "SQL Server",
+        "Postgresql",
+        "Mongo DB",
+        "Derby"
+      ]
+    },
+    {
+      "name": "Web Entwicklung",
+      "level": "Experte",
+      "keywords": [
+        "Eclipse RAP",
+        "React",
+        "JSON",
+        "HTML5",
+        "JavaScript",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Web GIS",
+      "level": "Experte",
+      "keywords": [
+        "OGC (u.a. WFS,WMS,SLD)",
+        "Open Layers",
+        "Leaflet",
+        "OSM",
+        "node.js"
+      ]
+    },
+    {
+      "name": "Weitere Programmiersprachen",
+      "level": "Erfahren",
+      "keywords": [
+        "C# (Mono)",
+        "Scala",
+        "ECMA script 2015"
       ]
     }
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    },
+    {
+      "language": "Englisch",
+      "fluency": "Sehr gut"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Breitensport",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Mitglied im Vorstand des 1. Polizei Motorsportclubs Erfurt e.V.",
+        "DMSB Trainerlizenz Stufe C"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+  "references": []
 }

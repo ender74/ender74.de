@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
+import { ButtonToolbar, Label } from 'react-bootstrap'
 import WithCondition from '../../lib/components/withCondition'
+
+const Tag = ( { tag } ) => {
+    return (
+        <span style={{ padding: '5px 5px 5px 5px'}}><Label>{tag}</Label></span>
+    )
+}
 
 class Tags extends Component {
   render() {
@@ -14,28 +21,19 @@ class Tags extends Component {
     return (
         <div style={listStyle}>
             <WithCondition condition={this.props.title}>
-                <h4>{this.props.title}</h4>
+                <h5>{this.props.title}</h5>
             </WithCondition>
-            {tagList}
+            <div style={styles.tags}>{tagList}</div>
         </div>
     )
   }
 }
 
-class Tag extends Component {
-  render() {
-    const tagStyle = {
-        float: 'left'
+const styles = {
+    tags: {
+        display: 'flex',
+        flexWrap: 'wrap'
     }
-    if (this.props.nr === 0) 
-        return (
-            <div style={tagStyle}>{this.props.tag}</div>
-        )
-    else 
-        return (
-            <div style={tagStyle}>&nbsp;/&nbsp;{this.props.tag}</div>
-        )
-  }
 }
 
 export default Tags

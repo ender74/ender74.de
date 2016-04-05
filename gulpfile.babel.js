@@ -1,5 +1,6 @@
 'use strict'
 
+import React from 'react'
 import gulp from 'gulp'
 import gutil from 'gulp-util'
 import template from 'gulp-template'
@@ -11,9 +12,12 @@ import watchify from 'watchify'
 import babelify from 'babelify'
 import streamify from 'gulp-streamify'
 
+import App from './src/views/app/components/App'
+import Start from './src/views/app/start/Start'
+
 var path = {
-    HTML: 'src/static/index.html',
-    STATIC: ['src/static/**/*.*'],
+    HTML: 'src/templates/index.html',
+    STATIC: 'src/static/**/*.*',
     ALL: ['src/**/*.js', 'src/static/**/*.*'],
     ENTRY_POINT: ['src/main.js'],
     MINIFIED_OUT: 'build.min.js',
@@ -22,6 +26,19 @@ var path = {
     DEST: 'dist',
     TEMPLATE_INDEX: 'src/templates/index.html',
     STATIC_INDEX: 'index.html'
+}
+
+function bundler() {
+    const transformer = babelify.configure({
+        presets: ["es2015", "react"]
+    })
+    var props = {
+        cache: {}, packageCache: {}, fullPaths: true,
+        entries: [path.ENTRY_POINT],
+        transform: [transformer],
+        debug: true
+    }
+    return browserify(props)
 }
 
 function baseBuild() {
@@ -35,8 +52,24 @@ function baseBuild() {
         .pipe(source(path.MINIFIED_OUT));
 }
 
+gulp.task('build-watch', function () {
+    gulp.watch(path.STATIC, ['copy'])
+    const myBundler = watchify(bundler())
+    const bundle = function () {
+        myBundler.bundle()
+            .on('error',function(e){
+                gutil.log(e);
+            })
+            .pipe(source(path.MINIFIED_OUT))
+            .pipe(gulp.dest(path.DEST_BUILD))
+        console.log("updated")
+    }
+    myBundler.on('update', bundle)
+    bundle();
+})
+
 gulp.task('copy', function () {
-    gulp.src(path.STATIC)
+    gulp.src([path.STATIC, path.HTML])
         .pipe(gulp.dest(path.DEST));
 })
 
@@ -52,9 +85,9 @@ gulp.task('build', function () {
 })
 
 gulp.task('renderStatic', function () {
+    var staticContent = <App><Start /></App>
     var staticReact = require('./src/renderToString')(
-        './views/app/resume/resume', 
-        require('./src/static/resume.json'))
+        staticContent)
 
     return gulp.src(path.TEMPLATE_INDEX).
         pipe(template({ staticReact: staticReact })).
@@ -63,6 +96,8 @@ gulp.task('renderStatic', function () {
 
 gulp.task('release', ['copy', 'build', 'renderStatic']);
 
-gulp.task('dev', ['copy', 'build-dev', 'renderStatic']);
+gulp.task('watch', ['copy', 'build-watch']);
 
-gulp.task('default', ['dev'])
+gulp.task('dev', ['copy', 'build-dev']);
+
+gulp.task('default', ['watch'])

@@ -3,9 +3,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/server'
 
-function renderToString(reactComponent, data) {
-    const component = require(reactComponent)
-    const react = ReactDOM.renderToString(React.createElement(component, data))
+function renderToString(reactComponent) {
+    const react = ReactDOM.renderToString(reactComponent)
     console.log(react.length)
     return react   
 }

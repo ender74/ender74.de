@@ -1,0 +1,21 @@
+version: '2'
+services:
+    node:
+        build: ./node
+        image: ender74/node
+        command: /bin/true
+
+    build:
+        container_name: ender74-build
+        build: ./build
+        volumes:
+            - ../:/var/lib/project/:rw
+
+    www: 
+        container_name: ender74-www
+        image: nginx
+        volumes: 
+            - ./www/nginx.conf:/etc/nginx/nginx.conf:ro
+            - ../dist:/usr/share/nginx/html:ro
+        ports:
+            - "8080:80"

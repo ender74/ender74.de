@@ -20,8 +20,8 @@ const Header = () => {
                 <Nav>
                     <LinkContainer to='/app/start'><NavItem>Start</NavItem></LinkContainer>
                     <LinkContainer to='/app/resume'><NavItem>Über mich</NavItem></LinkContainer>
-                    <LinkContainer to='/app/work'><NavItem>Projekte</NavItem></LinkContainer>
-                    <LinkContainer to='/app/disclaimer'><NavItem>Disclaimer</NavItem></LinkContainer>
+                    <LinkContainer to='/app/projects'><NavItem>Projekte</NavItem></LinkContainer>
+                    <LinkContainer to='/app/disclaimer'><NavItem>Impressum</NavItem></LinkContainer>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

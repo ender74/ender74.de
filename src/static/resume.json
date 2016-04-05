@@ -181,11 +181,9 @@
       "level": "Experte",
       "keywords": [
         "Eclipse RAP",
-        "JQuery",
-        "Open Layers",
         "React",
         "JSON",
-        "HTML",
+        "HTML5",
         "JavaScript",
         "CSS"
       ]
@@ -196,14 +194,18 @@
       "keywords": [
         "OGC (u.a. WFS,WMS,SLD)",
         "Open Layers",
-        "OSM"
+        "Leaflet",
+        "OSM",
+        "node.js"
       ]
     },
     {
       "name": "Weitere Programmiersprachen",
       "level": "Erfahren",
       "keywords": [
-        "C# (Mono)"
+        "C# (Mono)",
+        "Scala",
+        "ECMA script 2015"
       ]
     }
   ],

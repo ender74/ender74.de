@@ -4,7 +4,7 @@ import { Router, Route, Redirect, browserHistory } from 'react-router'
 
 import App from './components/App'
 import BoundResume from './resume/BoundResume'
-import Work from './work/Work'
+import BoundProjects from './projects/BoundProjects'
 import Disclaimer from './legal/Disclaimer'
 import Start from './start/Start'
 
@@ -16,7 +16,7 @@ const AppView =() => {
                 <Route path='/app'>
                     <Route path='start' component= { Start } />
                     <Route path='resume' component= { BoundResume } />
-                    <Route path='work' component= { Work } />
+                    <Route path='projects' component= { BoundProjects } />
                     <Route path='disclaimer' component= { Disclaimer } />
                 </Route>
             </Route>

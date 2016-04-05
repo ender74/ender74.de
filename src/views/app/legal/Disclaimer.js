@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 const Disclaimer = () => {
     return (
         <article>
+            <h1>Impressum</h1>
+            <p>Dies ist meine private Homepage. Für Hinweise und Anregungen erreichen Sie mich unter <a href="mailto:webmaster@ender74.de">webmaster@ender74.de</a>.</p>
             <h1>Disclaimer – rechtliche Hinweise</h1>
 <p><strong>1. Haftungsbeschränkung</strong></p>
 <p>Die Inhalte des Internetauftritts wurden mit größtmöglicher Sorgfalt und nach bestem Gewissen erstellt. Dennoch übernimmt der Anbieter dieser Webseite keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit der bereitgestellten Seiten und Inhalte.</p>

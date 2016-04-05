@@ -5,7 +5,9 @@
 - [TODO List](#todo-list)
 
 #### Summary
-This project is based on react. Its purpose is to display an resume. 
+This projects hosts the sources for my private homepage http://www.ender74.de.
+
+The project is based on react. Its purpose is to display an resume.
 The data to be displayed is loaded from a json file (see [jsonresume.org](https://jsonresume.org/) for the schema).
 
 To use this project simply copy your resume.json to the src folder.

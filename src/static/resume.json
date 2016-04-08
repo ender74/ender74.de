@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Heiko Hüter",
-    "label": "Technischer Projektleiter und Softwarearchitekt",
+    "label": "Erfolg bedingt lebenslanges Lernen.",
     "picture": "/portrait.jpg",
     "email": "heiko.hueter@ender74.de",
     "phone": "+49(361)654 99-52",
     "website": "http://www.ender74.de",
-    "summary": "Ich bin seit über 15 Jahren als Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt sind dabei Java basierte Serveranwendung und Webanwendungen. Seit 2007 habe ich auch etliche Projekte in der Rolle des Projektleiters vorangetrieben. Hier betreue ich die Projekte angefangen von der Aquise und Anforderungsanalyse mit dem Kunden bis hin zur Umsetzung und Leitung des Projektteams.",
+    "summary": "Ich bin seit über 15 Jahren als Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt ist dabei die Umsetzung Java basierte Server- und Webanwendungen. Seit 2007 habe ich auch an etlichen Projekten in der Rolle des Projektleiters mitgewirkt. Meine abwechslungsreichen Aufgaben umfassen die fachliche Beratung unserer Kunden, die Anforderungsanalyse und darauf aufbauend die Erstellung von Systemspezifikationen und gehen über den Architekturentwurf bis hin zur Programmierung. Beispiele für meine Arbeit finden Sie unter der Rubrik Projekte.",
     "location": {
       "address": "Melchior-Bauer-Straße 5",
       "postalCode": "99092",
@@ -117,6 +117,27 @@
       "releaseDate": "1999",
       "website": "/diplom/diplomarbeit.pdf",
       "summary": "Entwurf und Umsetzung einer Softwarearchitektur für ein Flottenmanagementsystem im Inter-/Intranet mit mobiler Kommunikation"
+    },
+    {
+      "name": "Die Straßeninformationsbank im Web",
+      "publisher": "",
+      "releaseDate": "21.05.2015",
+      "website": "http://www.fgsv-verlag.de/catalog/_pdf-files/002_110.i.pdf",
+      "summary": "Vortrag im Rahmen des 6. OKSTRA Symposiums."
+    },
+    {
+      "name": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI.",
+      "publisher": "",
+      "releaseDate": "19.10.2011",
+      "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
+      "summary": "Vortrag im Rahmen des 5. OKSTRA Symposiums."
+    },
+    {
+      "name": "Anwendung des neuen OKSTRASchema 'Schwerlast' für die fachliche Prüfung von Großraum und Schwerlasttransporten.",
+      "publisher": "",
+      "releaseDate": "19.10.2011",
+      "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
+      "summary": "Vortrag im Rahmen des 5. OKSTRA Symposiums."
     }
   ],
   "skills": [

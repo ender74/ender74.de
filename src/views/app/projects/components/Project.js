@@ -3,8 +3,31 @@ import { Grid, Row, Col, Label } from 'react-bootstrap'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
+const roleStyles = {
+    'Entwickler': 'info',
+    'Projektleiter': 'success',
+    'Architekt': 'warning'
+}
+
+const Schedule = ({start_date, end_date}) => {
+    if (typeof end_date == 'undefined')
+        return (
+            <Label>seit {start_date.month}/{start_date.year}</Label>
+        )
+    else
+        return (
+            <Label>{start_date.month}/{start_date.year} - {end_date.month}/{end_date.year}</Label>
+        )
+}
+
 class ProjectEntry extends Component {
   render() {
+    var roleText = typeof this.props.text.role == 'string' ? [ this.props.text.role ] : this.props.text.role
+    var roles = []
+    for (var key in roleText) {
+        const role = roleText[key]
+        roles.push(<span>&nbsp; <Label bsStyle={roleStyles[role]}>{role}</Label></span>)
+    }
     return (
         <div>
             <Row>
@@ -14,8 +37,8 @@ class ProjectEntry extends Component {
             </Row>
             <Row>
                 <Col sm={12}>
-                    <Label>{this.props.start_date.month}/{this.props.start_date.year} - {this.props.end_date.month}/{this.props.end_date.year}</Label>
-                    &nbsp; <Label bsStyle='info'>{this.props.text.role}</Label>
+                    <Schedule start_date={this.props.start_date} end_date={this.props.end_date} />
+                    { roles }
                  </Col>
             </Row>
            <Row>

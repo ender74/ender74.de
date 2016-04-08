@@ -164,6 +164,159 @@
         "role": "Entwickler",
         "text": "Weiterentwicklung NOVALAST, Anpassung für das Land Brandenburg (Fox Pro + DFÜ)."
       }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2005"
+      },
+      "end_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2007"
+      },
+      "text": {
+        "headline": "TT-SIB 5 / ASB 2005",
+        "role": [ "Entwickler", "Architekt" ],
+        "text": "Umsetzung einer Mehrschichtenarchitektur für die TT-SIB. Ich konnte die Architektur des Gesamtsystems entwerfen und war auch für den maßgeblichen Teil der Umsetzung verantwortlich. Die maßgeblichen Technologien waren Java EE (z.B. Servlets, JAXB), Spring Framework, Hibernate, SOAP."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2007"
+      },
+      "end_date": {
+        "month": "3",
+        "day": "1",
+        "year": "2008"
+      },
+      "text": {
+        "headline": "XVemags Unterstützung für NOVALAST",
+        "role": ["Entwickler", "Projektleiter"],
+        "text": "Realisierung der XVemags Schnittstelle für NOVALAST. VEMAGS ist das bundesweite Verfahrensmanagement für Großraum- und Schwerlasttransporte (http://www.vemags.de). Zur Anbindung von Drittsystemen wird eine XÖV / auf OSCI Tranport basierende Schnittstelle angeboten. NOVALAST war das erste Drittsystem für die fachliche Prüfung. Die Lösung wurde am Stand der Hessischen Straßenbauverwaltung (heute Hessen Mobil) auf der Cebit präsentiert."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "2",
+        "day": "1",
+        "year": "2008"
+      },
+      "end_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2009"
+      },
+      "text": {
+        "headline": "TT-SIB LRVN (Landesradverkehrswegenetz)",
+        "role": ["Projektleiter"],
+        "text": "Umsetzung des RCP Clients für das Landesradverkehrsnetz Sachsen-Anhalts. Aufgabe war die Umsetzung der Masken für die alphanumerische Darstellung und Pflege der Bestandsdaten für das Radwegenetz. Zusätzlich erfolgte die Integration einer interaktiven Karte und von verschiedenen Auswertungen. Grundlage dafür bildeten die Webdienste der TT-SIB 5. Meine Aufgabe war die Leitung des fünfköpfigen Projektteams und der Entwurf der Architektur des Gesamtsystems."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "6",
+        "day": "1",
+        "year": "2010"
+      },
+      "end_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2011"
+      },
+      "text": {
+        "headline": "Anpassung von NOVALAST an die neue RGST / den VEMAGS Statik Rechenkern",
+        "role": ["Projektleiter"],
+        "text": "Der Genehmigungsprozess für Großraum- und Schwerlasttransporte erfolgte auf Basis der RGST 92 und der DIN 1072. Dies war auch die Grundlage für NOVALAST. Im Rahmen des Projektes wurde die Anbindung eines neueren Rechenkerns zur besseren Unterstützung der neuen DIN FB 101 (VEMAGS Statik) und der angepasst RGST 2013 realisiert. Ich war als Projektleiter für die Erstellung der Pflichtenhefte und die Realisierung verantwortlich."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "2",
+        "day": "14",
+        "year": "2011"
+      },
+      "end_date": {
+        "month": "5",
+        "day": "1",
+        "year": "2014"
+      },
+      "text": {
+        "headline": "Realisierung des OKSTRA WFS (OkWS) für das BMVI",
+        "role": ["Projektleiter"],
+        "text": "Durch das Bundesministerium für Verkehr (BMVBS bzw. jetzt BMVI) wurde die Realisierung eines Web Feature Service (WFS) für das OKSTRA Datenschema beauftragt. NOVASIB beteiligte sich als Unterauftragsnehmer an dem Projekt. Meine Aufgabe war die Leitung des Projektteams bei NOVASIB. Hier konnten wir die Umsetzung der OKSTRA Schnittstelle auf Grundlage der OKSTRA Klassenbibliothek (OKLABI) und die Anbindung der TT-SIB realisieren."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "10",
+        "day": "17",
+        "year": "2013"
+      },
+      "end_date": {
+        "month": "11",
+        "day": "30",
+        "year": "2014"
+      },
+      "text": {
+        "headline": "Forschungsprojekt Integriertes Straßeninformationssystem (2013 FE 0099)",
+        "role": ["Projektleiter"],
+        "text": "Dieses mit Mitteln des Europäischen Fonds für regionale Entwicklung (EFRE) geförderte Forschungsprojekt hat ein Team von 9 Mitarbeitern zusammen mit mir als Projektleiter realisiert. Thema war die Realisierung einer neuartigen Oberfläche für die systemunabhängige Verfügbarkeit der Bestandsdaten innerhalb der Straßeninformationsbank. Ziel war die bessere Bereitstellung dieser Daten für die strategische Planung sowie den Betrieb der Straßen des überörtlichen Verkehrs. Die Ergebnisse des Projektes konnte ich im Rahmen des 6. OKSTRA Symposiums am 21.05.2015 einem Fachpublikum präsentieren."
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "1",
+        "day": "1",
+        "year": "2013"
+      },
+      "text": {
+        "headline": "TT-SIB INFOSYS 8",
+        "role": ["Entwickler", "Architekt", "Projektleiter"],
+        "text": [
+          "Mit INFOSYS 8 wirke ich an der Realisierung eines neuen WebClients auf Basis der TT-SIB 5 mit. Die technologische Umsetzung erfolgt auf Basis der Eclipse RAP Plattform und damit innerhalb der OSGI Runtime (Equinox).",
+          "Teile der Anwendung werden nativ in HTML 5 / Javascript realisiert. Dazu gehört z.B. die interaktive Karte auf Basis von Openlayers oder die schematische Darstellung von Straßendaten auf Basis von SVG. ",
+          "Ich arbeite maßgeblich an der Architektur mit und unterstütze das sechsköpfige Entwicklerteam bei der Realisierung. Für Teilprojekte bin ich als Projektleiter verantwortlich."
+        ]
+      }
     }
   ]
 }

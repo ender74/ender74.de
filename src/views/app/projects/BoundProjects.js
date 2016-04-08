@@ -16,7 +16,14 @@ class BoundProjects extends Component {
     }
 
     render() {
-        return <Projects {...this.state.data} />
+        return (
+            <div>
+                <Projects {...this.state.data} />
+                <footer>
+                Die Daten werden aus einer <a href="/projects.json">JSON Datei</a> geladen.
+                </footer>
+            </div>
+        )
     }
 }
 

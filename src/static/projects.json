@@ -313,7 +313,7 @@
         "role": ["Entwickler", "Architekt", "Projektleiter"],
         "text": [
           "Mit INFOSYS 8 wirke ich an der Realisierung eines neuen WebClients auf Basis der TT-SIB 5 mit. Die technologische Umsetzung erfolgt auf Basis der Eclipse RAP Plattform und damit innerhalb der OSGI Runtime (Equinox).",
-          "Teile der Anwendung werden nativ in HTML 5 / Javascript realisiert. Dazu gehört z.B. die interaktive Karte auf Basis von Openlayers oder die schematische Darstellung von Straßendaten auf Basis von SVG. ",
+          "Teile der Anwendung werden nativ in HTML 5 / Javascript realisiert. Dazu gehört z.B. die interaktive Karte auf Basis von Openlayers oder die schematische Darstellung von Straßendaten mit SVG. ",
           "Ich arbeite maßgeblich an der Architektur mit und unterstütze das sechsköpfige Entwicklerteam bei der Realisierung. Für Teilprojekte bin ich als Projektleiter verantwortlich."
         ]
       }

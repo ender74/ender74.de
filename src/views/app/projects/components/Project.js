@@ -43,7 +43,7 @@ class ProjectEntry extends Component {
             </Row>
            <Row>
                 <Col sm={12}>
-                    <p>{this.props.text.text}</p>
+                    <p style={{textAlign: 'justify'}}>{this.props.text.text}</p>
                 </Col>
             </Row>
         </div>

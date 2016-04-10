@@ -26,7 +26,7 @@ class ProjectEntry extends Component {
     var roles = []
     for (var key in roleText) {
         const role = roleText[key]
-        roles.push(<span>&nbsp; <Label bsStyle={roleStyles[role]}>{role}</Label></span>)
+        roles.push(<span key={key}>&nbsp; <Label bsStyle={roleStyles[role]}>{role}</Label></span>)
     }
     return (
         <div>

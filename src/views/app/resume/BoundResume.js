@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import $ from 'jquery'
-import Resume from './Resume'
+import Resume from './components/Resume'
 
 class BoundResume extends Component {
     constructor() {

@@ -10,14 +10,12 @@ const roleStyles = {
 }
 
 const Schedule = ({start_date, end_date}) => {
-    if (typeof end_date == 'undefined')
-        return (
-            <Label>seit {start_date.month}/{start_date.year}</Label>
-        )
-    else
-        return (
-            <Label>{start_date.month}/{start_date.year} - {end_date.month}/{end_date.year}</Label>
-        )
+    const text = typeof end_date == 'undefined' ?
+        <span>seit {start_date.month}/{start_date.year}</span> :
+        <span>{start_date.month}/{start_date.year} - {end_date.month}/{end_date.year}</span>
+    return (
+        <Label>{text}</Label>
+    )
 }
 
 class ProjectEntry extends Component {
@@ -30,11 +28,6 @@ class ProjectEntry extends Component {
     }
     return (
         <div>
-            <Row>
-                <Col sm={12}>
-                    <h4>{this.props.text.headline}</h4>
-                </Col>
-            </Row>
             <Row>
                 <Col sm={12}>
                     <Schedule start_date={this.props.start_date} end_date={this.props.end_date} />
@@ -56,10 +49,13 @@ class ProjectList extends Component {
     const entries = []
     for (var index in this.props.events) {
       var entry = this.props.events[index]
+      const text = entry.text ? entry.text.headline : ''
+      const title = <span>{text}</span>
       entries.push(
-        <ProjectEntry
-          key={index}  
-          {...entry} />
+        <WithGroupHeader key={index} title={title}>
+            <ProjectEntry
+              {...entry} />
+        </WithGroupHeader>
       )
     }
     return (

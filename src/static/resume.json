@@ -32,8 +32,7 @@
       "company": "NOVASIB GmbH",
       "position": "Leiter Technologie und Strategie SIB",
       "website": "http://www.novasib.de",
-      "startDate": "01.01.2013",
-      "endDate": "Heute",
+      "startDate": "2013",
       "summary": "",
       "highlights": [
         "Projektleitung", "Webanwendung", "OSGI", "Eclipse RAP", "Openlayers"
@@ -44,7 +43,7 @@
       "position": "Projektleiter Serviceorientierte Anwendungen",
       "website": "http://www.novasib.de",
       "startDate": "2007",
-      "endDate": "01.01.2013",
+      "endDate": "2013",
       "summary": "",
       "highlights": [
         "Projektleitung", "Mehrschichtenarchitektur", "SOAP", "JAX-RS", "Datenbanken"
@@ -54,7 +53,7 @@
       "company": "NOVASIB GmbH",
       "position": "Softwareentwickler",
       "website": "http://www.novasib.de",
-      "startDate": "1.10.1999",
+      "startDate": "1999",
       "endDate": "2007",
       "summary": "",
       "highlights": [
@@ -119,25 +118,25 @@
       "summary": "Entwurf und Umsetzung einer Softwarearchitektur für ein Flottenmanagementsystem im Inter-/Intranet mit mobiler Kommunikation"
     },
     {
-      "name": "Die Straßeninformationsbank im Web",
+      "name": "Vortrag im Rahmen des 6. OKSTRA Symposiums.",
       "publisher": "",
       "releaseDate": "21.05.2015",
       "website": "http://www.fgsv-verlag.de/catalog/_pdf-files/002_110.i.pdf",
-      "summary": "Vortrag im Rahmen des 6. OKSTRA Symposiums."
+      "summary": "Die Straßeninformationsbank im Web"
     },
     {
-      "name": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums.",
       "publisher": "",
       "releaseDate": "19.10.2011",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
-      "summary": "Vortrag im Rahmen des 5. OKSTRA Symposiums."
+      "summary": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI."
     },
     {
-      "name": "Anwendung des neuen OKSTRASchema 'Schwerlast' für die fachliche Prüfung von Großraum und Schwerlasttransporten.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums.",
       "publisher": "",
       "releaseDate": "19.10.2011",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
-      "summary": "Vortrag im Rahmen des 5. OKSTRA Symposiums."
+      "summary": "Anwendung des neuen OKSTRASchema 'Schwerlast' für die fachliche Prüfung von Großraum und Schwerlasttransporten."
     }
   ],
   "skills": [

@@ -9,7 +9,7 @@ class PublicationEntry extends Component {
         <div>
             <Row>
                 <Col sm={12}>
-                    <h3>{this.props.name}</h3>
+                    <h4>{this.props.name}</h4>
                 </Col>
             </Row>
             <Row>

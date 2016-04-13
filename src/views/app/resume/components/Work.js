@@ -1,7 +1,20 @@
 import React, { Component } from 'react'
+import { Label } from 'react-bootstrap'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 import Tags from './Tags'
+
+const Schedule = ({startDate, endDate}) => {
+    if (typeof endDate == 'undefined')
+        return (
+            <h3><u>seit {startDate}</u></h3>
+        )
+    else
+        return (
+            <h3><u>{startDate} - {endDate}</u></h3>
+        )
+}
+
 
 class Work extends Component {
   render() {
@@ -32,7 +45,7 @@ class WorkEntry extends Component {
   render() {
     return (
       <div>
-        <h3><u>{this.props.startDate} - {this.props.endDate}</u></h3>
+        <Schedule startDate={this.props.startDate} endDate={this.props.endDate} />
         <div>{this.props.position}</div>
         <Link href={this.props.website} text={this.props.company} />
         <div>{this.props.summary}</div>

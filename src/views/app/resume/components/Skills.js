@@ -6,7 +6,7 @@ class SkillEntry extends Component {
   render() {
     return (
       <div className="skillEntry">
-        <h3>{this.props.name}</h3>
+        <h4>{this.props.name}</h4>
         <Tags title="" tags={this.props.keywords} />
       </div>
     )

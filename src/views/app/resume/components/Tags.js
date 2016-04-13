@@ -4,7 +4,7 @@ import WithCondition from '../../lib/components/withCondition'
 
 const Tag = ( { tag } ) => {
     return (
-        <span style={{ padding: '5px 5px 5px 5px'}}><Label>{tag}</Label></span>
+        <span style={{ padding: '5px 5px 5px 0px'}}><Label>{tag}</Label></span>
     )
 }
 

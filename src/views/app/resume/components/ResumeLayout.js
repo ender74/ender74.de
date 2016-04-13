@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-bootstrap'
-import Title from './components/Title'
+import Title from './Title'
 
 class ResumeLayout extends Component {
   render() {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col, Label } from 'react-bootstrap'
+import Linkify from 'react-linkify'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 
@@ -26,6 +27,7 @@ class ProjectEntry extends Component {
         const role = roleText[key]
         roles.push(<span key={key}>&nbsp; <Label bsStyle={roleStyles[role]}>{role}</Label></span>)
     }
+    const text = <Linkify>{this.props.text.text}</Linkify>
     return (
         <div>
             <Row>
@@ -36,7 +38,7 @@ class ProjectEntry extends Component {
             </Row>
            <Row>
                 <Col sm={12}>
-                    <p style={{textAlign: 'justify'}}>{this.props.text.text}</p>
+                    <p style={{textAlign: 'justify'}}>{text}</p>
                 </Col>
             </Row>
         </div>

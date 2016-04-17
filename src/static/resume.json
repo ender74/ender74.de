@@ -16,9 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Github",
+        "network": "GitHub",
         "username": "ender74",
         "url": "https://github.com/ender74"
+      },
+      {
+        "network": "npm",
+        "username": "ender74",
+        "url": "https://www.npmjs.com/~ender74"
       },
       {
         "network": "Xing",

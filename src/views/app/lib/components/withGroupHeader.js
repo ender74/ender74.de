@@ -17,7 +17,7 @@ class WithGroupHeader extends Component {
         )
 
         return (
-            <Panel header = { title } collapsible expanded={this.state.open}>
+            <Panel header = { title } collapsible expanded={ this.state.open }>
                     {this.props.children}
             </Panel>
         )

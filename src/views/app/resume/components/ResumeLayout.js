@@ -12,7 +12,7 @@ class ResumeLayout extends Component {
         <main>
             {this.props.children}
         </main>
-        <footer>
+        <footer className='hide-when-printing'>
         Die Daten werden aus einer <a href="/resume.json">JSON Datei</a> geladen.
         </footer>
       </article>

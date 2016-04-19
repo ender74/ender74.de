@@ -28,7 +28,7 @@ class Education extends Component {
 class EducationEntry extends Component {
   render() {
     return (
-      <div className="educationEntry">
+      <div style={ style.entry }>
         <h3>{this.props.startDate} - {this.props.endDate}</h3>
         <div>{this.props.area}</div>
         <div>{this.props.institution}</div>
@@ -37,5 +37,12 @@ class EducationEntry extends Component {
     )
   }
 }
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
+}
+
 
 export default Education

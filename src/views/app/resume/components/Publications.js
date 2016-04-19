@@ -43,11 +43,20 @@ class Publications extends Component {
       )
     })
     return (
-      <WithGroupHeader title='Veröffentlichungen'>
-        {publications}
-      </WithGroupHeader>
+        <div style={ style.entry }>
+            <WithGroupHeader title='Veröffentlichungen'>
+                {publications}
+            </WithGroupHeader>
+        </div>
     )
   }
 }
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
+}
+
 
 export default Publications

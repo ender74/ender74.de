@@ -17,19 +17,27 @@ class Skills extends Component {
   render() {
     const skills = this.props.skills.map(function (skill, index) {
       return (
-        <SkillEntry
-          key={index}
-          name={skill.name}
-          level={skill.level}
-          keywords={skill.keywords} />
+        <div style={ style.entry }>
+            <SkillEntry
+              key={index}
+              name={skill.name}
+              level={skill.level}
+              keywords={skill.keywords} />
+        </div>
       )
     })
     return (
-      <WithGroupHeader title='Fähigkeiten'>
-        {skills}
-      </WithGroupHeader>
+        <WithGroupHeader title='Fähigkeiten'>
+            {skills}
+        </WithGroupHeader>
     )
   }
+}
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
 }
 
 export default Skills

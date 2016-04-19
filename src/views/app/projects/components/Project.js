@@ -54,10 +54,12 @@ class ProjectList extends Component {
       const text = entry.text ? entry.text.headline : ''
       const title = <span>{text}</span>
       entries.push(
-        <WithGroupHeader key={index} title={title}>
-            <ProjectEntry
-              {...entry} />
-        </WithGroupHeader>
+        <div style={ style.entry }>
+            <WithGroupHeader key={ index } title={ title }>
+                <ProjectEntry
+                  {...entry} />
+            </WithGroupHeader>
+        </div>
       )
     }
     return (
@@ -66,6 +68,12 @@ class ProjectList extends Component {
       </div>
     )
   }
+}
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
 }
 
 export default ProjectList

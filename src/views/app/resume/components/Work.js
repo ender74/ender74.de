@@ -44,7 +44,7 @@ class Work extends Component {
 class WorkEntry extends Component {
   render() {
     return (
-      <div>
+      <div style={ style.entry }>
         <Schedule startDate={this.props.startDate} endDate={this.props.endDate} />
         <div>{this.props.position}</div>
         <Link href={this.props.website} text={this.props.company} />
@@ -54,5 +54,12 @@ class WorkEntry extends Component {
     )
   }
 }
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
+}
+
 
 export default Work

@@ -15,10 +15,18 @@ class Resume extends Component {
         return <div>Lade Daten ...</div>
     return (
       <ResumeLayout data={this.props}>
-        <About basics={this.props.basics} />
-        <Contact basics={this.props.basics} />
-        <Location location={this.props.basics.location} />
-        <Profiles profiles={this.props.basics.profiles} />
+        <div style={ style.entry }>
+            <About basics={this.props.basics} />
+        </div>
+        <div style={ style.entry }>
+            <Contact basics={this.props.basics} />
+        </div>
+        <div className='hide-when-printing'>
+            <Location location={this.props.basics.location} />
+        </div>
+        <div style={ style.entry }>
+            <Profiles profiles={this.props.basics.profiles} />
+        </div>
         <Work work={this.props.work} />
         <Education education={this.props.education} />
         <Publications publications={this.props.publications} />
@@ -26,6 +34,12 @@ class Resume extends Component {
       </ResumeLayout>
     )
   }
+}
+
+const style = {
+    entry: {
+        pageBreakInside: 'avoid'
+    }
 }
 
 export default Resume

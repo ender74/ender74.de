@@ -1,3 +1,9 @@
 body {
     padding-top: 70px;
 }
+
+@media print {
+  .hide-when-printing {
+    display: none;
+  }
+}

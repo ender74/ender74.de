@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col, Label } from 'react-bootstrap'
+import { Jumbotron, Grid, Row, Col, Label } from 'react-bootstrap'
 import Linkify from 'react-linkify'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
@@ -54,8 +54,8 @@ class ProjectList extends Component {
       const text = entry.text ? entry.text.headline : ''
       const title = <span>{text}</span>
       entries.push(
-        <div style={ style.entry }>
-            <WithGroupHeader key={ index } title={ title }>
+        <div key={ index } style={ style.entry }>
+            <WithGroupHeader title={ title }>
                 <ProjectEntry
                   {...entry} />
             </WithGroupHeader>
@@ -64,6 +64,20 @@ class ProjectList extends Component {
     }
     return (
       <div>
+        <div className='hide-on-screen'>
+            <Jumbotron>
+                <Row>
+                    <Col sm={8}>
+                        <h3>Meine Projekte</h3>
+                    </Col>
+                    <Col sm={4}>
+                        <Row><Col>Heiko Hüter</Col></Row>
+                        <Row><Col>heiko.hueter@ender74.de</Col></Row>
+                        <Row><Col>+49(361)65499 52</Col></Row>
+                    </Col>
+                </Row>
+            </Jumbotron>
+        </div>
         {entries.reverse()}
       </div>
     )

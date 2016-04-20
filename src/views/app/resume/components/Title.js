@@ -19,7 +19,9 @@ class Title extends Component {
             <Col sm={8}>
                 <h2><Link href="" text={this.props.basics.name} /></h2>
                 <h3>{this.props.basics.label}</h3>
-                <Link href="/foaf.rdf" text="FOAF" />
+                <div className='hide-when-printing'>
+                    <Link href="/foaf.rdf" text="FOAF" />
+                </div>
             </Col>
         </Row>
       </Jumbotron>

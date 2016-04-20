@@ -19,8 +19,8 @@ class BoundProjects extends Component {
         return (
             <div>
                 <Projects {...this.state.data} />
-                <footer>
-                Die Daten werden aus einer <a href="/projects.json">JSON Datei</a> geladen.
+                <footer className='hide-when-printing'>
+                Die Daten werden aus einer <a href='/projects.json'>JSON Datei</a> geladen.
                 </footer>
             </div>
         )

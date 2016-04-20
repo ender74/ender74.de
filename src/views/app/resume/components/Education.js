@@ -29,9 +29,9 @@ class EducationEntry extends Component {
   render() {
     return (
       <div style={ style.entry }>
-        <h3>{this.props.startDate} - {this.props.endDate}</h3>
-        <div>{this.props.area}</div>
+        <h5>{this.props.startDate} - {this.props.endDate}</h5>
         <div>{this.props.institution}</div>
+        <div>{this.props.area}</div>
         <Tags title="Schwerpunkte" tags={this.props.courses} />
       </div>
     )

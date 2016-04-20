@@ -5,8 +5,8 @@ import Tags from './Tags'
 class SkillEntry extends Component {
   render() {
     return (
-      <div className="skillEntry">
-        <h4>{this.props.name}</h4>
+      <div>
+        <h5>{this.props.name}</h5>
         <Tags title="" tags={this.props.keywords} />
       </div>
     )
@@ -17,9 +17,8 @@ class Skills extends Component {
   render() {
     const skills = this.props.skills.map(function (skill, index) {
       return (
-        <div style={ style.entry }>
+        <div key={index}>
             <SkillEntry
-              key={index}
               name={skill.name}
               level={skill.level}
               keywords={skill.keywords} />
@@ -27,9 +26,11 @@ class Skills extends Component {
       )
     })
     return (
-        <WithGroupHeader title='Fähigkeiten'>
-            {skills}
-        </WithGroupHeader>
+        <div style={ style.entry }>
+            <WithGroupHeader title='Fähigkeiten'>
+                {skills}
+            </WithGroupHeader>
+        </div>
     )
   }
 }

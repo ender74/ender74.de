@@ -1,17 +1,17 @@
-body {
-    padding-top: 70px;
-}
-
 @media screen {
-  .hide-on-screen {
-    display: none;
-  }
+    body {
+        padding-top: 70px;
+    }
+
+    .hide-on-screen {
+        display: none;
+    }
 }
 
 @media print {
-  .hide-when-printing {
-    display: none;
-  }
+    .hide-when-printing {
+        display: none;
+    }
 }
 
 @media print {

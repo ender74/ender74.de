@@ -19,7 +19,7 @@ var path = {
     HTML: 'src/templates/index.html',
     STATIC: 'src/static/**/*.*',
     ALL: ['src/**/*.js', 'src/static/**/*.*'],
-    ENTRY_POINT: ['src/main.js'],
+    ENTRY_POINT: ['src/start.js'],
     MINIFIED_OUT: 'build.min.js',
     DEST_SRC: 'dist/src',
     DEST_BUILD: 'dist/',

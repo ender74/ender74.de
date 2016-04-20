@@ -9,7 +9,7 @@ class PublicationEntry extends Component {
         <div>
             <Row>
                 <Col sm={12}>
-                    <h4>{this.props.name}</h4>
+                    <h5>{this.props.name}</h5>
                 </Col>
             </Row>
             <Row>
@@ -20,7 +20,7 @@ class PublicationEntry extends Component {
                 <Col sm={2}><Label>Veröffentlicht</Label></Col>
                 <Col sm={10}>{this.props.releaseDate}</Col>
             </Row>
-            <Row>
+            <Row className='hide-when-printing'>
                 <Col sm={2}><Label>Link</Label></Col>
                 <Col sm={10}><Link href={this.props.website} text="PDF"/></Col>
             </Row>
@@ -33,21 +33,20 @@ class Publications extends Component {
   render() {
     const publications = this.props.publications.map(function (publication, index) {
       return (
-        <PublicationEntry
-          key={index}  
-          name={publication.name}
-          publisher={publication.publisher}
-          releaseDate={publication.releaseDate} 
-          website={publication.website} 
-          summary={publication.summary} />
+        <div key={index} style={ style.entry }>
+            <PublicationEntry
+              name={publication.name}
+              publisher={publication.publisher}
+              releaseDate={publication.releaseDate}
+              website={publication.website}
+              summary={publication.summary} />
+        </div>
       )
     })
     return (
-        <div style={ style.entry }>
-            <WithGroupHeader title='Veröffentlichungen'>
-                {publications}
-            </WithGroupHeader>
-        </div>
+        <WithGroupHeader title='Veröffentlichungen'>
+            {publications}
+        </WithGroupHeader>
     )
   }
 }

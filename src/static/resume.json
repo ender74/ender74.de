@@ -1,6 +1,8 @@
 {
   "basics": {
     "name": "Heiko Hüter",
+    "date_of_birth": "1974-03-20",
+    "place_of_birth": "Erfurt",
     "label": "\"Erfolg bedingt lebenslanges Lernen.\"",
     "picture": "/portrait.jpg",
     "email": "heiko.hueter@ender74.de",
@@ -10,6 +12,13 @@
     "location": {
       "address": "Melchior-Bauer-Straße 5",
       "postalCode": "99092",
+      "city": "Erfurt",
+      "countryCode": "DE",
+      "region": "Thüringen"
+    },
+    "location_private": {
+      "address": "Brühler Straße 40a",
+      "postalCode": "99084",
       "city": "Erfurt",
       "countryCode": "DE",
       "region": "Thüringen"
@@ -37,7 +46,7 @@
       "company": "NOVASIB GmbH",
       "position": "Leiter Technologie und Strategie SIB",
       "website": "http://www.novasib.de",
-      "startDate": "2013",
+      "startDate": "Januar 2013",
       "summary": "",
       "highlights": [
         "Projektleitung", "Webanwendung", "OSGI", "Eclipse RAP", "Openlayers"
@@ -45,10 +54,10 @@
     },
     {
       "company": "NOVASIB GmbH",
-      "position": "Projektleiter Serviceorientierte Anwendungen",
+      "position": "Projektleiter XML Anwendungen",
       "website": "http://www.novasib.de",
-      "startDate": "2007",
-      "endDate": "2013",
+      "startDate": "Oktober 2005",
+      "endDate": "Januar 2013",
       "summary": "",
       "highlights": [
         "Projektleitung", "Mehrschichtenarchitektur", "SOAP", "JAX-RS", "Datenbanken"
@@ -58,8 +67,8 @@
       "company": "NOVASIB GmbH",
       "position": "Softwareentwickler",
       "website": "http://www.novasib.de",
-      "startDate": "1999",
-      "endDate": "2007",
+      "startDate": "Oktober 1999",
+      "endDate": "Oktober 2005",
       "summary": "",
       "highlights": [
         "Java", "Java EE", "OGC", "Oracle", "Sql Server"
@@ -69,8 +78,8 @@
       "company": "Technotrend Systemtechnik GmbH",
       "position": "Softwareentwickler / Praktikant",
       "website": "",
-      "startDate": "1997",
-      "endDate": "1999",
+      "startDate": "Juni 1997",
+      "endDate": "Oktober 1999",
       "summary": "",
       "highlights": [
         "C++", "DVB-S", "Direct View", "Centura Sql Windows"
@@ -91,8 +100,8 @@
       "company": "OWiS Software GmbH Ilmenau",
       "position": "Software-Entwickler / Praktikant",
       "website": "",
-      "startDate": "07/1996",
-      "endDate": "09/1996",
+      "startDate": "Juni 1996",
+      "endDate": "September 1996",
       "summary": "",
       "highlights": [
         "UML", "Pascal", "Poet", "OODBMS"
@@ -123,21 +132,21 @@
       "summary": "Entwurf und Umsetzung einer Softwarearchitektur für ein Flottenmanagementsystem im Inter-/Intranet mit mobiler Kommunikation"
     },
     {
-      "name": "Vortrag im Rahmen des 6. OKSTRA Symposiums.",
+      "name": "Vortrag im Rahmen des 6. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "21.05.2015",
       "website": "http://www.fgsv-verlag.de/catalog/_pdf-files/002_110.i.pdf",
       "summary": "Die Straßeninformationsbank im Web"
     },
     {
-      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "19.10.2011",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
       "summary": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI."
     },
     {
-      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "19.10.2011",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
@@ -157,14 +166,27 @@
       ]
     },
     {
-      "name": "Java Entwicklung",
+      "name": "Programmierung",
       "level": "Experte",
       "keywords": [
         "Java EE",
         "Servlets", "JPA", "JAX-RS", "JAX-WS", "JAXB", "Java Mail", "Java Security",
         "Spring Framework",
         "Hibernate",
-        "OSGI"
+        "OSGI",
+        "Eclipse RAP",
+        "React",
+        "JSON",
+        "HTML5",
+        "JavaScript / ECMA script 2015",
+        "CSS",
+        "C# (Mono)",
+        "Scala",
+        "Open Layers",
+        "Leaflet",
+        "OSM",
+        "node.js",
+        "..."
       ]
     },
     {
@@ -187,7 +209,8 @@
         "OKSTRA",
         "XÖV / OSCI Transport",
         "WS-Security",
-        "SOAP"        
+        "SOAP",
+        "OGC Standards (u.a. WFS,WMS,SLD)"
       ]
     },
     {
@@ -199,38 +222,6 @@
         "Postgresql",
         "Mongo DB",
         "Derby"
-      ]
-    },
-    {
-      "name": "Web Entwicklung",
-      "level": "Experte",
-      "keywords": [
-        "Eclipse RAP",
-        "React",
-        "JSON",
-        "HTML5",
-        "JavaScript",
-        "CSS"
-      ]
-    },
-    {
-      "name": "Web GIS",
-      "level": "Experte",
-      "keywords": [
-        "OGC (u.a. WFS,WMS,SLD)",
-        "Open Layers",
-        "Leaflet",
-        "OSM",
-        "node.js"
-      ]
-    },
-    {
-      "name": "Weitere Programmiersprachen",
-      "level": "Erfahren",
-      "keywords": [
-        "C# (Mono)",
-        "Scala",
-        "ECMA script 2015"
       ]
     }
   ],

@@ -17,7 +17,7 @@ class Basics extends Component {
                     <Col sm={8}>{basics.name}</Col>
                 </Row>
                 <Row style={ styles.row }>
-                    <Col sm={4}><Label>Tel.</Label></Col>
+                    <Col sm={4}><Label>Telefon</Label></Col>
                     <Col sm={8}>{basics.phone}</Col>
                 </Row>
                 <Row style={ styles.row }>
@@ -51,7 +51,15 @@ class Basics extends Component {
                 </Row>
                 <Row style={ styles.row }>
                     <Col sm={4}><Label>Geb.</Label></Col>
-                    <Col sm={8}><FormattedDate value={new Date(basics.date_of_birth)}/> in {basics.place_of_birth}</Col>
+                    <Col sm={8}><FormattedDate value={new Date(basics.dateOfBirth)}/> in {basics.placeOfBirth}</Col>
+                </Row>
+                <Row style={ styles.row }>
+                    <Col sm={4}><Label>Familienstand</Label></Col>
+                    <Col sm={8}>{basics.personalStatus}</Col>
+                </Row>
+                <Row style={ styles.row }>
+                    <Col sm={4}><Label>Nationalität</Label></Col>
+                    <Col sm={8}>{basics.nationality}</Col>
                 </Row>
             </div>
         </WithGroupHeader>

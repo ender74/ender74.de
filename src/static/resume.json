@@ -1,8 +1,10 @@
 {
   "basics": {
     "name": "Heiko Hüter",
-    "date_of_birth": "1974-03-20",
-    "place_of_birth": "Erfurt",
+    "dateOfBirth": "1974-03-20",
+    "placeOfBirth": "Erfurt",
+    "personalStatus": "verheiratet",
+    "nationality": "Deutsch",
     "label": "\"Erfolg bedingt lebenslanges Lernen.\"",
     "picture": "/portrait.jpg",
     "email": "heiko.hueter@ender74.de",

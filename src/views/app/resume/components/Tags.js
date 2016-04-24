@@ -3,8 +3,21 @@ import { ButtonToolbar, Label } from 'react-bootstrap'
 import WithCondition from '../../lib/components/withCondition'
 
 const Tag = ( { tag } ) => {
+    const styles = ['default', 'primary', 'success', 'info']
+    var text = tag
+    var idx = 0
+    if (text.startsWith('***')) {
+        idx = 3
+        text = text.slice(3)
+    } else if (text.startsWith('**')) {
+        idx = 2
+        text = text.slice(2)
+    } else if (text.startsWith('*')) {
+        idx = 1
+        text = text.slice(1)
+    }
     return (
-        <span style={{ padding: '5px 5px 5px 0px'}}><Label>{tag}</Label></span>
+        <span style={{ padding: '5px 5px 5px 0px'}}><Label bsStyle={ styles[idx] }>{text}</Label></span>
     )
 }
 

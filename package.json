@@ -5,7 +5,7 @@
   "main": "components/main.js",
   "scripts": {
     "build": "gulp",
-    "build-min": "gulp release"
+    "build-min": "NODE_ENV=production gulp release"
   },
   "repository": {
     "type": "git",

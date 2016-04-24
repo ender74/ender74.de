@@ -140,7 +140,7 @@
       "text": {
         "headline": "NOVALAST (Thüringen)",
         "role": "Entwickler",
-        "text": "NOVALAST, Java Webstart basierte Anwendung zur Schwerlasttransportplanung."
+        "text": "NOVALAST, Java Webstart basierte Anwendung zur Schwerlasttransportplanung. NOVALAST ermöglicht die fachliche Prüfung von Großraum- und Schwerlasttransporten. Die Grundlage hierfür bildet eine interaktive Karte auf Basis des Straßennetzes einer Straßeninformationsbank. Mit der Umsetzung des Projektes konnte ich erstmals aufzeigen, dass eine Straßeninformationsbank routingfähig ist. Die Grundlage hierfür ist die Definition der verbotenen Fahrbeziehungen, wie sie auch in den Telematiknetzen (GDF Standard) definiert werden."
       }
     },
     {
@@ -274,7 +274,7 @@
       "text": {
         "headline": "Realisierung des OKSTRA WFS (OkWS) für das BMVI",
         "role": ["Projektleiter"],
-        "text": "Durch das Bundesministerium für Verkehr (BMVBS bzw. jetzt BMVI) wurde die Realisierung eines Web Feature Service (WFS) für das OKSTRA Datenschema beauftragt. NOVASIB beteiligte sich als Unterauftragsnehmer an dem Projekt. Meine Aufgabe war die Leitung des Projektteams bei NOVASIB. Hier konnten wir die Umsetzung der OKSTRA Schnittstelle auf Grundlage der OKSTRA Klassenbibliothek (OKLABI) und die Anbindung der TT-SIB realisieren."
+        "text": "Durch das Bundesministerium für Verkehr (BMVBS bzw. jetzt BMVI) wurde die Realisierung eines Web Feature Service (WFS) für das OKSTRA Datenschema beauftragt. NOVASIB beteiligte sich als Unterauftragnehmer an dem Projekt. Meine Aufgabe war die Leitung des Projektteams bei NOVASIB. Hier konnten wir die Umsetzung der OKSTRA Schnittstelle auf Grundlage der OKSTRA Klassenbibliothek (OKLABI) und die Anbindung der TT-SIB realisieren."
       }
     },
     {
@@ -318,7 +318,7 @@
       "text": {
         "headline": "Forschungsprojekt Integriertes Straßeninformationssystem (2013 FE 0099)",
         "role": ["Projektleiter"],
-        "text": "Dieses mit Mitteln des Europäischen Fonds für regionale Entwicklung (EFRE) geförderte Forschungsprojekt hat ein Team von 9 Mitarbeitern zusammen mit mir als Projektleiter umgesetzt. Thema war die Realisierung einer neuartigen Oberfläche für die systemunabhängige Verfügbarkeit der Bestandsdaten innerhalb der Straßeninformationsbank. Das Projekt zeigte auf, wie die Bestandsdaten des überörtlichen Verkehrs in einer modernen Weboberfläche präsentiert und fortgeschrieben werden können. Durch die Verknüpfung der verschiedenen Fachinformationssysteme wird eine verbesserte strategische Planung und ein effizienterer Betrieb der Straßen des überörtlichen Verkehrs erreicht. Die Ergebnisse des Projektes konnte ich im Rahmen des 6. OKSTRA Symposiums am 21.05.2015 einem Fachpublikum präsentieren."
+        "text": "Dieses mit Mitteln des Europäischen Fonds für regionale Entwicklung (EFRE) geförderte Forschungsprojekt hat ein Team von 9 Mitarbeitern zusammen mit mir als Projektleiter umgesetzt. Thema war die Realisierung einer neuartigen Oberfläche für die systemunabhängige Verfügbarkeit der Bestandsdaten innerhalb der Straßeninformationsbank. Das Projekt zeigte auf, wie die Bestandsdaten des überörtlichen Verkehrs in einer modernen Weboberfläche präsentiert und fortgeschrieben werden können. Durch die Verknüpfung der verschiedenen Fachinformationssysteme durch Ausnutzung verschiedener Webtechnologien wird eine verbesserte strategische Planung und ein effizienterer Betrieb der Straßen des überörtlichen Verkehrs erreicht. Die Ergebnisse des Projektes konnte ich im Rahmen des 6. OKSTRA Symposiums am 21.05.2015 einem Fachpublikum präsentieren."
       }
     },
     {

@@ -155,13 +155,22 @@
   ],
   "skills": [
     {
+      "name": "Schwerpunkte",
+      "level": "Erfahren",
+      "keywords": [
+        "**Javaentwicklung",
+        "**Webdienste",
+        "**Datenbanken"
+      ]
+    },
+    {
       "name": "Projektleitung",
       "level": "Erfahren",
       "keywords": [
         "Klassische Projektplanung",
         "Scrum",
-        "Anforderungsanalyse",
-        "Pflichtenhefterstellung",
+        "*Anforderungsanalyse",
+        "*Pflichtenhefterstellung",
         "UML"
       ]
     },
@@ -169,16 +178,17 @@
       "name": "Programmierung",
       "level": "Experte",
       "keywords": [
-        "Java EE",
+        "*Java",
+        "*Java EE",
         "Servlets", "JPA", "JAX-RS", "JAX-WS", "JAXB", "Java Mail", "Java Security",
-        "Spring Framework",
-        "Hibernate",
+        "*Spring Framework",
+        "*Hibernate",
         "OSGI",
         "Eclipse RAP",
         "React",
         "JSON",
-        "HTML5",
-        "JavaScript / ECMA script 2015",
+        "*HTML5",
+        "JavaScript", "*ECMA script 2015",
         "CSS",
         "C# (Mono)",
         "Scala",
@@ -190,10 +200,25 @@
       ]
     },
     {
+      "name": "Serviceorientierte Architekturen",
+      "level": "Experte",
+      "keywords": [
+        "INSPIRE",
+        "*GDI",
+        "OKSTRA",
+        "XÖV", "OSCI Transport",
+        "WS-Security",
+        "*SOAP",
+        "*REST",
+        "OGC Standards", "WFS", "WMS", "SLD"
+      ]
+    },
+    {
       "name": "Softwaretests",
       "level": "Erfahren",
       "keywords": [
-        "JUnit",
+        "*TDD",
+        "*JUnit",
         "Easymock",
         "SOAP-UI",
         "Selenium",
@@ -201,27 +226,51 @@
       ]
     },
     {
-      "name": "Serviceorientierte Architekturen",
-      "level": "Experte",
-      "keywords": [
-        "INSPIRE",
-        "GDI",
-        "OKSTRA",
-        "XÖV / OSCI Transport",
-        "WS-Security",
-        "SOAP",
-        "OGC Standards (u.a. WFS,WMS,SLD)"
-      ]
-    },
-    {
       "name": "Datenbanken",
       "level": "Experte",
       "keywords": [
-        "Oracle",
-        "SQL Server",
+        "*Oracle",
+        "Oracle Spatial",
+        "*SQL Server",
         "Postgresql",
+        "Postgis",
+        "Pgrouting",
         "Mongo DB",
         "Derby"
+      ]
+    },
+    {
+      "name": "Plattformen",
+      "level": "Experte",
+      "keywords": [
+        "*Tomcat",
+        "*Glassfish",
+        "JBoss (WildFly)",
+        "node.js",
+        "Equinox",
+        "Spring-Boot",
+        "IIS",
+        "Docker",
+        "Hyper-V", "VMware ESX", "Linux", "Microsoft Server"
+      ]
+    },
+    {
+      "name": "Netzwerk",
+      "level": "Experte",
+      "keywords": [
+        "*HTTP",
+        "SMTP",
+        "SSH",
+        "TCP/IP",
+        "FTP",
+        "DNS",
+        "LDAP",
+        "Active Directory",
+        "squid",
+        "iptables",
+        "Apache HTTP Server",
+        "*nginx",
+        "openssl"
       ]
     }
   ],

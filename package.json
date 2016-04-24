@@ -5,7 +5,7 @@
   "main": "components/main.js",
   "scripts": {
     "build": "gulp",
-    "build-min": "gulp release"
+    "build-min": "NODE_ENV=production gulp release"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "leaflet": "~0.7.7",
     "leaflet-routing-machine": "~2.6.2",
     "nominatim": "~0.1.0",
+    "radium": "^0.17.1",
     "react": "~0.14.7",
     "react-bootstrap": "~0.28.5",
     "react-dom": "~0.14.7",

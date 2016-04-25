@@ -49,15 +49,15 @@ class Basics extends Component {
                         <Row><Col sm={12}>{basics.location_private.postalCode} {basics.location_private.city}</Col></Row>
                     </Col>
                 </Row>
-                <Row style={ styles.row }>
+                <Row style={ styles.row } className='hide-on-screen'>
                     <Col sm={4}><Label>Geb.</Label></Col>
                     <Col sm={8}><FormattedDate value={new Date(basics.dateOfBirth)}/> in {basics.placeOfBirth}</Col>
                 </Row>
-                <Row style={ styles.row }>
+                <Row style={ styles.row } className='hide-on-screen'>
                     <Col sm={4}><Label>Familienstand</Label></Col>
                     <Col sm={8}>{basics.personalStatus}</Col>
                 </Row>
-                <Row style={ styles.row }>
+                <Row style={ styles.row } className='hide-on-screen'>
                     <Col sm={4}><Label>Nationalität</Label></Col>
                     <Col sm={8}>{basics.nationality}</Col>
                 </Row>

@@ -17,11 +17,11 @@ class Title extends Component {
                 {portrait}
             </Col>
             <Col sm={8}>
-                <h2><Link href="" text={this.props.basics.name} /></h2>
-                <h3>{this.props.basics.label}</h3>
+                <h3>{this.props.basics.name}</h3>
                 <div className='hide-when-printing'>
-                    <Link href="/foaf.rdf" text="FOAF" />
+                    (<Link href="/foaf.rdf" text="FOAF" />)
                 </div>
+                <h3>{this.props.basics.label}</h3>
             </Col>
         </Row>
       </Well>

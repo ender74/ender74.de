@@ -26,6 +26,7 @@ class Work extends Component {
           key={index}
           company={work.company}
           position={work.position}
+          description={work.description}
           website={work.website} 
           startDate={work.startDate}
           endDate={work.endDate}
@@ -44,14 +45,13 @@ class Work extends Component {
 
 class WorkEntry extends Component {
   render() {
+    const { description, startDate, endDate, position, website, company, summary } = this.props
     return (
-      <div style={ style.entry }>
-        <Schedule startDate={this.props.startDate} endDate={this.props.endDate} />
-        <div>{this.props.position}</div>
-        <Link href={this.props.website} text={this.props.company} />
-        <div>
-            {this.props.summary}
-        </div>
+      <div style={ style.entry } className={summary ? '' : 'hide-when-printing'}>
+        <Schedule startDate={startDate} endDate={endDate} />
+        <Link href={website} text={company} />
+        <div><Label>{position}</Label></div>
+        {summary ? <div>{summary}</div> : <div/> }
       </div>
     )
   }

@@ -4,7 +4,10 @@ class Link extends Component {
   render() {
       if (this.props.href) {
         return (
-            <a href={this.props.href} target="_blank">{this.props.text}</a>
+            <span>
+                <a className='hide-when-printing' href={this.props.href} target="_blank">{this.props.text}</a>
+                <span className='hide-on-screen'>{this.props.text}</span>
+            </span>
         )
       } else {
         return (

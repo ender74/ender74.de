@@ -49,7 +49,7 @@
       "position": "Leiter Technologie und Strategie SIB",
       "website": "http://www.novasib.de",
       "startDate": "Januar 2013",
-      "summary": "",
+      "summary": "Ich sorge weiterhin für die ständige technologische Erneuerung der TT-SIB. Momentane Trends sind die Entwicklung von Browserlösungen und mobilen Apps.",
       "highlights": [
         "Projektleitung", "Webanwendung", "OSGI", "Eclipse RAP", "Openlayers"
       ]
@@ -60,7 +60,7 @@
       "website": "http://www.novasib.de",
       "startDate": "Oktober 2005",
       "endDate": "Januar 2013",
-      "summary": "",
+      "summary": "Zusammen mit meinem Team baue ich die TT-SIB zu einer Java Enterprise Anwendung um.",
       "highlights": [
         "Projektleitung", "Mehrschichtenarchitektur", "SOAP", "JAX-RS", "Datenbanken"
       ]
@@ -71,7 +71,7 @@
       "website": "http://www.novasib.de",
       "startDate": "Oktober 1999",
       "endDate": "Oktober 2005",
-      "summary": "",
+      "summary": "Ich vertiefte meine Erfahrungen als Java Entwickler, mit Geodiensten und Datenbanken (u.a. durch Java Implementierung von WMS und WFS Diensten).",
       "highlights": [
         "Java", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
@@ -82,9 +82,9 @@
       "website": "",
       "startDate": "Juni 1997",
       "endDate": "Oktober 1999",
-      "summary": "",
+      "summary": "Begleitend zu meinem Studium sammle ich praktische Erfahrungen, u.a. mit Java Programmierung.",
       "highlights": [
-        "C++", "DVB-S", "Direct View", "Centura Sql Windows"
+        "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java"
       ]
     },
     {
@@ -114,7 +114,7 @@
   "education": [
     {
       "institution": "Technische Universität Ilmenau",
-      "area": "Abschluss als Dipl. Informatiker",
+      "area": "Abschluss als Dipl. Informatiker, Abschlussnote 1,9",
       "studyType": "Diplom",
       "startDate": "1.10.1994",
       "endDate": "30.09.1999",
@@ -158,7 +158,7 @@
   "skills": [
     {
       "name": "Schwerpunkte",
-      "level": "Erfahren",
+      "level": "Experte",
       "keywords": [
         "**Javaentwicklung",
         "**Webdienste",
@@ -198,7 +198,7 @@
         "Leaflet",
         "OSM",
         "node.js",
-        "..."
+        "Apache Cordova"
       ]
     },
     {

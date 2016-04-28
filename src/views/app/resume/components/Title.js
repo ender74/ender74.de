@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import { Jumbotron, Image, Grid, Row, Col } from 'react-bootstrap'
+import { Well, Jumbotron, Image, Grid, Row, Col } from 'react-bootstrap'
 import Link from '../../lib/components/link'
 
 class Title extends Component {
   render() {
     var portrait
     if (this.props.basics.picture) {
-        portrait = <Image style={{height: '240px'}} src={this.props.basics.picture} responsive />
+        portrait = <Image style={{height: '180'}} src={this.props.basics.picture} responsive />
     } else {
         portrait = "";
     }
     return (
-      <Jumbotron>
+      <Well>
         <Row>
             <Col sm={4}>
                 {portrait}
@@ -24,8 +24,8 @@ class Title extends Component {
                 </div>
             </Col>
         </Row>
-      </Jumbotron>
-    );
+      </Well>
+    )
   }
 }
 

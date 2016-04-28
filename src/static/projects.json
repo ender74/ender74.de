@@ -30,7 +30,7 @@
       "text": {
         "headline": "TT-SIB 4",
         "role": "Entwickler",
-        "text": "Mitarbeit an der Weiterentwicklung der TT-SIB, Projekt : Umsetzung der Ereignis bezogenen Fortführung (EBFF, im Team mit 3 Entwicklern, Centura SqlWindows und Datenbankprogrammierung und Oracle, Microsoft SqlServer und SqlBase)"
+        "text": "Mitarbeit an der Weiterentwicklung der TT-SIB, Projekt : Umsetzung der Ereignis bezogenen Fortführung (EBFF, im Team mit 3 Entwicklern, Centura SqlWindows und Datenbankprogrammierung mit Oracle, Microsoft SqlServer und SqlBase)"
       }
     },
     {
@@ -184,7 +184,7 @@
       "text": {
         "headline": "TT-SIB 5 und ASB 2005 (Netz, Bestand)",
         "role": [ "Entwickler", "Architekt" ],
-        "text": "Mit der Umsetzung des Projektes wurde die TT-SIB auf eine Mehrschichtenarchitektur umgestellt und gleichzeitig an die aktuellen Regelwerke angepasst. Die bislang ausschließlich im Client und in der Datenbank enthaltene Fachlogik wurde als eigenständige Dienste bereitgestellt. Ich konnte die Architektur des Gesamtsystems entwerfen und auch maßgeblich zur Umsetzung beitragen. Die wesentlichen Technologien waren Java EE (z.B. Servlets, JAXB), Spring Framework, Hibernate, SOAP. Als Laufzeitumgebung wurde der Apache Tomcat verwendet."
+        "text": "In diesem Projekt habe ich als Teil des Projektteams die TT-SIB auf eine Mehrschichtenarchitektur umgestellt und gleichzeitig an die aktuellen Regelwerke angepasst. Die bislang ausschließlich im Client und in der Datenbank enthaltene Fachlogik haben wir als eigenständige Dienste neu umgesetzt. Ich konnte die Architektur des Gesamtsystems entwerfen und auch maßgeblich die Umsetzung als Java Enterprise Anwendung realisieren. Die wesentlichen Technologien waren Java EE (z.B. Servlets, JAXB), Spring Framework, Hibernate, SOAP. Als Laufzeitumgebung wurde der Apache Tomcat ausgewählt."
       }
     },
     {
@@ -206,7 +206,7 @@
       "text": {
         "headline": "XVemags Unterstützung für NOVALAST",
         "role": ["Entwickler", "Projektleiter"],
-        "text": "Im Rahmen des Projektes wurde die XVemags Schnittstelle für NOVALAST realisiert. VEMAGS ist das bundesweite Verfahrensmanagement für Großraum- und Schwerlasttransporte (http://www.vemags.de). Zur Anbindung von Drittsystemen wird eine OSCI Tranport basierende Schnittstelle (XVemags) angeboten. Die Pflege des Standards erfolgt über die Koordinierungsstelle für IT-Standards (KoSIT) als 'XML Standard in der öffentlichen Verwaltung' (XÖV). NOVALAST war das erste Drittsystem für die fachliche Prüfung. Die Lösung konnte ich am Stand der Hessischen Straßenbauverwaltung (heute Hessen Mobil) auf der Cebit präsentiert."
+        "text": "Im Rahmen des Projektes habe ich die XVemags Schnittstelle für NOVALAST programmiert. VEMAGS ist das bundesweite Verfahrensmanagement für Großraum- und Schwerlasttransporte (http://www.vemags.de). Zur Anbindung von Drittsystemen wird eine OSCI Tranport basierende Schnittstelle (XVemags) angeboten. Die Pflege des Standards erfolgt über die Koordinierungsstelle für IT-Standards (KoSIT) als 'XML Standard in der öffentlichen Verwaltung' (http://www.xoev.de/). NOVALAST war das erste Drittsystem für die fachliche Prüfung. Die Lösung konnte ich am Stand der Hessischen Straßenbauverwaltung (heute Hessen Mobil) auf der Cebit präsentiert."
       }
     },
     {
@@ -227,8 +227,8 @@
       },
       "text": {
         "headline": "TT-SIB LRVN (Landesradverkehrsnetz)",
-        "role": ["Projektleiter"],
-        "text": ["Umsetzung des RCP Clients für das Landesradverkehrsnetz Sachsen-Anhalts. Aufgabe war die Umsetzung der Masken für die alphanumerische Darstellung und Pflege der Bestandsdaten für das Radwegenetz. Zusätzlich erfolgte die Integration einer interaktiven Karte und von verschiedenen Auswertungen. Grundlage dafür bildeten die Webdienste der TT-SIB 5. Meine Aufgabe war die Leitung des fünfköpfigen Projektteams und der Entwurf der Architektur des Gesamtsystems.",
+        "role": ["Projektleiter", "Entwickler"],
+        "text": ["Ziel des Projektes war die Umsetzung des Eclipse RCP basierten Clients für das Landesradverkehrsnetz Sachsen-Anhalts. Die fachliche Aufgabe bestand in der Umsetzung der Masken für die Darstellung und Pflege der Bestandsdaten für das Radwegenetz. Zusätzlich haben wir eine interaktiven Karte und verschiedene Auswertungen umgesetzt. Die Grundlage dafür waren die Webdienste der TT-SIB 5. Ich habe das fünfköpfige Projektteam geleitet und die Architektur des Gesamtsystems entworfen. Die Karte habe ich als Entwickler umgesetzt. ",
           "Das Projekt war ein Teilprojekt für die Entwicklung des Landesradverkehrsplans in Sachsen-Anhalt."]
       }
     },
@@ -251,7 +251,7 @@
       "text": {
         "headline": "Anpassung von NOVALAST an die neue RGST und den VEMAGS Statik Rechenkern",
         "role": ["Projektleiter"],
-        "text": [ "Grundlage für den Genehmigungsprozess für Großraum- und Schwerlasttransporte sind u.a. die RGST 92 und die DIN 1072. Diese Regelwerke waren auch die fachliche Basis für die Entwicklung von NOVALAST. Im Rahmen des Projektes wurde die Unterstützung der aktualisierten Regelwerke (DIN FB 101, RGST 2013) und die Anbindung eines neuen Rechenkerns zur statischen Prüfung von Brückenbauwerken (VEMAGS Statik) realisiert. Ich konnte als Projektleiter in Absprache mit den Experten die Pflichtenhefte erstellen und in der Realisierungsphase das Projektteam unterstützen.",
+        "text": [ "Grundlage für den Genehmigungsprozess für Großraum- und Schwerlasttransporte sind u.a. die RGST 92 und die DIN 1072. Diese Regelwerke waren auch die fachliche Basis für die Entwicklung von NOVALAST. Im Rahmen des Projektes wurde die Unterstützung der aktualisierten Regelwerke (DIN FB 101, RGST 2013) und die Anbindung eines neuen Rechenkerns zur statischen Prüfung von Brückenbauwerken (VEMAGS Statik) realisiert. Ich habe als Projektleiter in Absprache mit den Kunden die Pflichtenhefte erstellt und die spätere Umsetzung koordiniert.",
           "Die fachliche Umsetzung erfolgte in enger Zusammenarbeit mit dem damaligen Leiter der Fachgruppe VEMAGS Statik. Die Ergebnisse haben wir im Rahmen des 5. OKSTRA Symposiums gemeinsam vorgestellt." ]
       }
     },
@@ -274,7 +274,7 @@
       "text": {
         "headline": "Realisierung des OKSTRA WFS (OkWS) für das BMVI",
         "role": ["Projektleiter"],
-        "text": "Durch das Bundesministerium für Verkehr (BMVBS bzw. jetzt BMVI) wurde die Realisierung eines Web Feature Service (WFS) für das OKSTRA Datenschema beauftragt. NOVASIB beteiligte sich als Unterauftragnehmer an dem Projekt. Meine Aufgabe war die Leitung des Projektteams bei NOVASIB. Hier konnten wir die Umsetzung der OKSTRA Schnittstelle auf Grundlage der OKSTRA Klassenbibliothek (OKLABI) und die Anbindung der TT-SIB realisieren."
+        "text": "Durch das Bundesministerium für Verkehr (BMVBS bzw. jetzt BMVI) wurde die Realisierung eines Web Feature Service (WFS) für das OKSTRA Datenschema (http://www.okstra.de) beauftragt. NOVASIB beteiligte sich als Unterauftragnehmer an dem Projekt. Meine Aufgabe war die Leitung des Projektteams bei NOVASIB. Hier konnten wir die Umsetzung der OKSTRA Schnittstelle auf Grundlage der OKSTRA Klassenbibliothek (OKLABI) und die Anbindung der TT-SIB realisieren. Die Umsetzung erfolgte in Java. Mit Neo4J konnte ich auch Erfahrungen im Umgang mit nicht relationalen Datenbanken sammeln, auch wenn dies später auf Grund lizenzrechtlicher Bedenken nicht in die Produktion übernommen wurde."
       }
     },
     {
@@ -296,7 +296,7 @@
       "text": {
         "headline": "NOVATRANS",
         "role": ["Projektleiter"],
-        "text": "Im Rahmen dieses Projektes wurde eine Spezialsoftware zur Unterstützung der internen Prozesse bei der GENOSK (http://www.genosk.de/) realisiert. Die Umsetzung erfolgte durch ein externes Entwicklerteam im europäischen Ausland (4 Personen). Ich habe mich um die Projektsteuerung und die Analyse und Dokumentation der fachlichen Anforderungen des Kunden gekümmert."
+        "text": "Im Rahmen dieses Projektes wurde eine Browseranwendung zur Unterstützung der internen Prozesse bei der GENOSK (http://www.genosk.de/) realisiert. Die Umsetzung erfolgte durch ein externes Entwicklerteam im europäischen Ausland (4 Personen). Ich habe mich um die Projektsteuerung, die Analyse und Dokumentation der fachlichen Anforderungen des Kunden und die Pflichtenhefterstellung gekümmert."
       }
     },
     {
@@ -336,9 +336,9 @@
         "headline": "TT-SIB INFOSYS 8",
         "role": ["Entwickler", "Architekt", "Projektleiter"],
         "text": [
-          "Mit INFOSYS 8 wirke ich an der Realisierung eines neuen WebClients auf Basis der TT-SIB 5 mit. Die technologische Umsetzung erfolgt auf Basis der Eclipse RAP Plattform und damit als OSGI Module. Zur Laufzeit wird Equinox verwendet.",
-          "Teile der Anwendung werden nativ in HTML 5 / Javascript realisiert. Dazu gehört z.B. die interaktive Karte auf Basis von Openlayers und die schematische Darstellung von Straßendaten mit SVG. ",
-          "Ich arbeite maßgeblich am Entwurf der Architektur mit und unterstütze das sechsköpfige Entwicklerteam bei der Realisierung. Für Teilprojekte helfe ich als Projektleiter dem Projektteam bei der Realisierung."
+          "Mit INFOSYS 8 wirke ich an der Realisierung eines neuen WebClients für die TT-SIB 5 mit. Die technologische Umsetzung erfolgt auf Basis der Eclipse RAP Plattform und damit als OSGI Module. Zur Laufzeit wird Equinox verwendet.",
+          "Teile der Anwendung werden nativ in HTML 5 / Javascript realisiert. Dazu gehört z.B. die mit Openlayers realisierte interaktive Karte und die schematische SVG Darstellung von Straßendaten. ",
+          "Ich arbeite maßgeblich am Entwurf der Architektur und unterstütze das sechsköpfige Entwicklerteam. Für Teilprojekte koordiniere ich als Projektleiter die Umsetzung und erstelle in Absprache mit dem Kunden die Pflichtenhefte."
         ]
       }
     }

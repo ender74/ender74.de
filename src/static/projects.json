@@ -341,6 +341,28 @@
           "Ich arbeite maßgeblich am Entwurf der Architektur und unterstütze das sechsköpfige Entwicklerteam. Für Teilprojekte koordiniere ich als Projektleiter die Umsetzung und erstelle in Absprache mit dem Kunden die Pflichtenhefte."
         ]
       }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "1",
+        "day": "1",
+        "year": "2015"
+      },
+      "text": {
+        "headline": "TT-SIB 5 Public WFS Synchronisationsdienst",
+        "role": ["Entwickler", "Projektleiter"],
+        "text": [
+          "Parallel zu TT-SIB INFOSYS wird auch das Backend (die TT-SIB) ständig weiterentwickelt. Ein aktuelles Beispiel ist die Entwicklung eines servicebasierten Synchronisationsdienstes für die TT-SIB. ",
+          "Aufgabe dieses Dienstes ist es, mehrere TT-SIB Datenbestände synchron zu halten und Änderungen in einer Datenbank zu erkennen und in andere Instanzen zu übertragen. Der Einsatz der Replikationsmechanismen der Datenbanken wurde aus fachlichen Gründen verworfen. ",
+          "Meine Aufgabe war die Projekleitung und die Umsetzung des Backends. ",
+          "Der Synchronisationsdienst wird mit spring-boot bereitgestellt. Für die Programmierung verwende ich Scala. Als Schnittstelle zur Oberfläche stelle ich REST Webdienste bereit. Der Abgleich der Daten erfolgt über OGC WFS Dienste und teilweise spezielle Fachservices basierend auf JAX-WS (SOAP)."
+        ]
+      }
     }
   ]
 }

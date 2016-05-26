@@ -51,7 +51,7 @@
       "startDate": "Januar 2013",
       "summary": "Ich sorge weiterhin für die ständige technologische Erneuerung der TT-SIB. Momentane Trends sind die Entwicklung von Browserlösungen und mobilen Apps.",
       "highlights": [
-        "Projektleitung", "Webanwendung", "OSGI", "Eclipse RAP", "Openlayers"
+        "Java", "Webentwicklung", "Scala", "Eclipse RAP", "Openlayers"
       ]
     },
     {
@@ -62,7 +62,7 @@
       "endDate": "Januar 2013",
       "summary": "Zusammen mit meinem Team baue ich die TT-SIB zu einer Java Enterprise Anwendung um.",
       "highlights": [
-        "Projektleitung", "Mehrschichtenarchitektur", "SOAP", "JAX-RS", "Datenbanken"
+        "Java", "Projektleitung", "Spring / Hibernate", "SOAP", "JAX-RS", "Datenbanken"
       ]
     },
     {
@@ -71,9 +71,9 @@
       "website": "http://www.novasib.de",
       "startDate": "Oktober 1999",
       "endDate": "Oktober 2005",
-      "summary": "Ich vertiefte meine Erfahrungen als Java Entwickler, mit Geodiensten und Datenbanken (u.a. durch Java Implementierung von WMS und WFS Diensten).",
+      "summary": "Ich vertiefe meine Erfahrungen als Java Entwickler, mit Geodiensten und Datenbanken (u.a. durch die Java Implementierung von WMS und WFS Diensten).",
       "highlights": [
-        "Java", "Java EE", "OGC", "Oracle", "Sql Server"
+        "Java Entwicklung", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
     },
     {
@@ -84,7 +84,7 @@
       "endDate": "Oktober 1999",
       "summary": "Begleitend zu meinem Studium sammle ich praktische Erfahrungen, u.a. mit Java Programmierung.",
       "highlights": [
-        "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java"
+        "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Entwicklung"
       ]
     },
     {
@@ -162,7 +162,8 @@
       "keywords": [
         "**Javaentwicklung",
         "**Webdienste",
-        "**Datenbanken"
+        "**Datenbanken",
+        "**Spring Framework"
       ]
     },
     {
@@ -183,8 +184,6 @@
         "*Java",
         "*Java EE",
         "Servlets", "JPA", "JAX-RS", "JAX-WS", "JAXB", "Java Mail", "Java Security",
-        "*Spring Framework",
-        "*Hibernate",
         "OSGI",
         "Eclipse RAP",
         "React",
@@ -238,7 +237,8 @@
         "Postgis",
         "Pgrouting",
         "Mongo DB",
-        "Derby"
+        "Derby",
+        "*Hibernate"
       ]
     },
     {

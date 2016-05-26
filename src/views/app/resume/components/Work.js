@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Label } from 'react-bootstrap'
 import Radium from 'radium'
+import ReactTooltip from 'react-tooltip'
+
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
 import Tags from './Tags'
@@ -45,13 +47,22 @@ class Work extends Component {
 
 class WorkEntry extends Component {
   render() {
-    const { description, startDate, endDate, position, website, company, summary } = this.props
+    const { description, startDate, endDate, position, website, company, summary, highlights } = this.props
+
+    let hl = ""
+    let sep = ""
+    for (var k of highlights) {
+        hl = hl + sep + k
+        sep = ", "
+    }
+
     return (
       <div style={ style.entry } className={summary ? '' : 'hide-when-printing'}>
         <Schedule startDate={startDate} endDate={endDate} />
         <Link href={website} text={company} />
-        <div><Label>{position}</Label></div>
+        <div data-tip={ hl }><Label>{position}</Label></div>
         {summary ? <div>{summary}</div> : <div/> }
+        <ReactTooltip type='info' border='true'/>
       </div>
     )
   }

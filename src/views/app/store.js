@@ -9,6 +9,7 @@ const rootReducer = combineReducers({
     intl: intlReducer
 })
 
+const window = window || {}
 const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f
 
 const store = compose(applyMiddleware(thunk), devTools)(createStore)(rootReducer)

@@ -12,8 +12,12 @@ import watchify from 'watchify'
 import babelify from 'babelify'
 import streamify from 'gulp-streamify'
 
+import { Provider } from 'react-intl-redux'
 import App from './src/views/app/components/App'
 import Start from './src/views/app/start/Start'
+import store from './src/views/app/store'
+
+require('intl')
 
 var path = {
     HTML: 'src/templates/index.html',
@@ -85,7 +89,7 @@ gulp.task('build', function () {
 })
 
 gulp.task('renderStatic', function () {
-    var staticContent = <App><Start /></App>
+    var staticContent = <Provider store={store}><App><Start /></App></Provider>
     var staticReact = require('./src/renderToString')(
         staticContent)
 

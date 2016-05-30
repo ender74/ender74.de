@@ -3,15 +3,15 @@
     "name": "Heiko Hüter",
     "dateOfBirth": "1974-03-20",
     "placeOfBirth": "Erfurt",
-    "personalStatus": "married",
+    "personalStatus": "verheiratet",
     "nationality": "Deutsch",
-    "label": "\"Lifelong learning is a prerequisite for success.\"",
+    "label": "\"Erfolg bedingt lebenslanges Lernen.\"",
     "label2": "(Robert Schumann)",
     "picture": "/portrait.jpg",
     "email": "heiko.hueter@ender74.de",
     "phone": "+49(361)654 99-52",
     "website": "http://www.ender74.de",
-    "summary": "I work as a software developer and architect for more than 15 years. My main profession is building enterprise and web applications with Java and open source software. Since 2005 i work as lead developer and project manager. In this position i write technical specifications and discuss new functionality with our customers. But programming is still my passion and daily work. You can find a list of my projects under the topic Projects on this page.",
+    "summary": "Ich bin seit mehr als 15 Jahren als Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt ist die Umsetzung von Server- und Webanwendungen mit Java und Open Source Software. Seit 2005 arbeite ich auch an etlichen Projekten in der Rolle des Projektleiters mit. Meine abwechslungsreichen Aufgaben umfassen die fachliche Beratung unserer Kunden, die Anforderungsanalyse und die darauf aufbauende Erstellung von Systemspezifikationen und gehen über den Architekturentwurf bis hin zur Programmierung. Beispiele für meine Arbeit finden Sie in der Rubrik Projekte.",
     "location": {
       "address": "Melchior-Bauer-Straße 5",
       "postalCode": "99092",
@@ -50,9 +50,9 @@
       "position": "Leiter Technologie und Strategie SIB",
       "website": "http://www.novasib.de",
       "startDate": "2013-01",
-      "summary": "I'm still focused on adapting the TT-SIB to new technologies. Current trends are the development of browser and mobile applications.",
+      "summary": "Ich sorge weiterhin für die ständige technologische Erneuerung der TT-SIB. Momentane Trends sind die Entwicklung von Browserlösungen und mobilen Apps.",
       "highlights": [
-        "Java", "web development", "scala", "Eclipse RAP", "Openlayers"
+        "Java", "Webentwicklung", "Scala", "Eclipse RAP", "Openlayers"
       ]
     },
     {
@@ -61,9 +61,9 @@
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
       "endDate": "2013-1",
-      "summary": "Together with my team i gradually rebuild the TT-SIB into a modern Java EE application.",
+      "summary": "Zusammen mit meinem Team baue ich die TT-SIB zu einer Java Enterprise Anwendung um.",
       "highlights": [
-        "Java", "project management", "spring framework/ hibernate", "SOAP", "JAX-RS", "databases"
+        "Java", "Projektleitung", "Spring / Hibernate", "SOAP", "JAX-RS", "Datenbanken"
       ]
     },
     {
@@ -72,9 +72,9 @@
       "website": "http://www.novasib.de",
       "startDate": "1999-10",
       "endDate": "2005-10",
-      "summary": "I gain deeper experience as java developer, with focus on geomapping and relational databases.",
+      "summary": "Ich vertiefe meine Erfahrungen als Java Entwickler, mit Geodiensten und Datenbanken (u.a. durch die Java Implementierung von WMS und WFS Diensten).",
       "highlights": [
-        "Java Development", "Java EE", "OGC", "Oracle", "Sql Server"
+        "Java Entwicklung", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
     },
     {
@@ -83,14 +83,14 @@
       "website": "",
       "startDate": "1997-06",
       "endDate": "1999-10",
-      "summary": "Parallel to my studies i aquire first practical experience as developer (java, C++).",
+      "summary": "Begleitend zu meinem Studium sammle ich praktische Erfahrungen, u.a. mit Java Programmierung.",
       "highlights": [
-        "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Development"
+        "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Entwicklung"
       ]
     },
     {
       "company": "Fachgebiet Rechnerarchitekturen der TU-Ilmenau",
-      "position": "software developer / student assistant",
+      "position": "Studentische Hilfskraft",
       "website": "https://www.tu-ilmenau.de/ra/",
       "startDate": "1996-03",
       "endDate": "1997-05",
@@ -101,7 +101,7 @@
     },
     {
       "company": "OWiS Software GmbH Ilmenau",
-      "position": "software developer / practical training",
+      "position": "Software-Entwickler / Praktikant",
       "website": "",
       "startDate": "1996-01-06",
       "endDate": "1996-01-09",
@@ -115,41 +115,41 @@
   "education": [
     {
       "institution": "Technische Universität Ilmenau",
-      "area": "Degree Dipl. Informatiker, final grade 1.9",
+      "area": "Abschluss als Dipl. Informatiker, Abschlussnote 1,9",
       "studyType": "Diplom",
       "startDate": "1994-10-1",
       "endDate": "1999-9-30",
       "gpa": "",
       "courses": [
-          "mathematics", "graphical computer science", "artificial intelligence"
+          "Nebenfach Mathematik", "Graphische Datenverarbeitung", "Neuroinformatik"
       ]
     }
   ],
   "awards": [],
   "publications": [
     {
-      "name": "Diploma thesis.",
+      "name": "Diplomarbeit",
       "publisher": "",
       "releaseDate": "1999-09-30",
       "website": "/diplom/diplomarbeit.pdf",
       "summary": "Entwurf und Umsetzung einer Softwarearchitektur für ein Flottenmanagementsystem im Inter-/Intranet mit mobiler Kommunikation"
     },
     {
-      "name": "Talk given at the 6th OKSTRA Symposium.",
+      "name": "Vortrag im Rahmen des 6. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "2015-05-21",
       "website": "http://www.fgsv-verlag.de/catalog/_pdf-files/002_110.i.pdf",
       "summary": "Die Straßeninformationsbank im Web"
     },
     {
-      "name": "Talk given at the 5th OKSTRA Symposium.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "2011-10-19",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
       "summary": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI."
     },
     {
-      "name": "Talk given at the 5th OKSTRA Symposium.",
+      "name": "Vortrag im Rahmen des 5. OKSTRA Symposiums",
       "publisher": "",
       "releaseDate": "2011-10-19",
       "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
@@ -158,29 +158,29 @@
   ],
   "skills": [
     {
-      "name": "Major skills",
-      "level": "expert",
+      "name": "Schwerpunkte",
+      "level": "Experte",
       "keywords": [
-        "**Java developer",
-        "**Webservices",
-        "**Databases",
+        "**Javaentwicklung",
+        "**Webdienste",
+        "**Datenbanken",
         "**Spring Framework"
       ]
     },
     {
-      "name": "Project management",
-      "level": "advanced",
+      "name": "Projektleitung",
+      "level": "Erfahren",
       "keywords": [
-        "Classical Projectmanagment / Waterfall",
+        "Klassische Projektplanung",
         "Scrum",
-        "*Requirement engineering",
-        "*Technical specifications",
+        "*Anforderungsanalyse",
+        "*Pflichtenhefterstellung",
         "UML"
       ]
     },
     {
-      "name": "Software development",
-      "level": "expert",
+      "name": "Programmierung",
+      "level": "Experte",
       "keywords": [
         "*Java",
         "*Java EE",
@@ -202,8 +202,8 @@
       ]
     },
     {
-      "name": "Webservices",
-      "level": "expert",
+      "name": "Serviceorientierte Architekturen",
+      "level": "Experte",
       "keywords": [
         "INSPIRE",
         "*GDI",
@@ -216,8 +216,8 @@
       ]
     },
     {
-      "name": "Software testing",
-      "level": "advanced",
+      "name": "Softwaretests",
+      "level": "Erfahren",
       "keywords": [
         "*TDD",
         "*JUnit",
@@ -228,8 +228,8 @@
       ]
     },
     {
-      "name": "Databases",
-      "level": "expert",
+      "name": "Datenbanken",
+      "level": "Experte",
       "keywords": [
         "*Oracle",
         "Oracle Spatial",
@@ -243,8 +243,8 @@
       ]
     },
     {
-      "name": "Deployment",
-      "level": "expert",
+      "name": "Plattformen",
+      "level": "Experte",
       "keywords": [
         "*Tomcat",
         "*Glassfish",
@@ -258,8 +258,8 @@
       ]
     },
     {
-      "name": "Networking",
-      "level": "expert",
+      "name": "Netzwerk",
+      "level": "Experte",
       "keywords": [
         "*HTTP",
         "SMTP",
@@ -279,12 +279,12 @@
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
     },
     {
-      "language": "English",
-      "fluency": "Very good command"
+      "language": "Englisch",
+      "fluency": "Sehr gut"
     }
   ],
   "interests": [

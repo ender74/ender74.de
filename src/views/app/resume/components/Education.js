@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
+import { injectIntl, FormattedDate } from 'react-intl'
+
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './Tags'
 
 class Education extends Component {
   render() {
+    const { intl } = this.props
+    const title = intl.formatMessage({
+        id: 'resume.education',
+        defaultMessage: 'education'
+    })
+
     var education = this.props.education.map(function (education, index) {
       return (
         <EducationEntry
@@ -14,11 +22,12 @@ class Education extends Component {
           startDate={education.startDate}
           endDate={education.endDate}
           gpa={education.gpa}
-          courses={education.courses}/>
+          courses={education.courses}
+          intl={intl}/>
       )
     })
     return (
-      <WithGroupHeader title='Ausbildung'>
+      <WithGroupHeader title={title}>
         {education}
       </WithGroupHeader>
     )
@@ -27,12 +36,18 @@ class Education extends Component {
 
 class EducationEntry extends Component {
   render() {
+    const { intl, startDate, endDate } = this.props
+    const title = intl.formatMessage({
+        id: 'resume.focus',
+        defaultMessage: 'major subjects:'
+    })
+
     return (
       <div style={ style.entry }>
-        <h5>{this.props.startDate} - {this.props.endDate}</h5>
+        <h5><FormattedDate value={new Date(startDate)}/> - <FormattedDate value={new Date(endDate)}/></h5>
         <div>{this.props.institution}</div>
         <div>{this.props.area}</div>
-        <Tags title="Schwerpunkte" tags={this.props.courses} />
+        <Tags title={title} tags={this.props.courses} />
       </div>
     )
   }
@@ -45,4 +60,4 @@ const style = {
 }
 
 
-export default Education
+export default injectIntl(Education)

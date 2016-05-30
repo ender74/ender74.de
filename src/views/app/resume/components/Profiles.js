@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col, Label } from 'react-bootstrap'
+import { injectIntl } from 'react-intl'
 
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
@@ -26,6 +27,12 @@ class ProfileEntry extends Component {
 
 class Profiles extends Component {
   render() {
+    const { intl } = this.props
+    const title = intl.formatMessage({
+        id: 'resume.profiles',
+        defaultMessage: 'profiles'
+    })
+
     const profiles = this.props.profiles.map(function (profile, index) {
       return (
         <ProfileEntry
@@ -36,7 +43,7 @@ class Profiles extends Component {
       )
     })
     return (
-      <WithGroupHeader title='Profile'>
+      <WithGroupHeader title={title}>
         {profiles}
       </WithGroupHeader>
     )
@@ -49,4 +56,4 @@ const styles = {
     }
 }
 
-export default Profiles
+export default injectIntl(Profiles)

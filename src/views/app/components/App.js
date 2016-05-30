@@ -1,23 +1,47 @@
 import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
+import {connect} from 'react-redux'
 
 import Header from './Header'
 import Footer from './Footer'
+import LocaleActions from '../actions/LocaleActions'
 
-const App = ( {children} ) => {
-    return <div>
-        <header>
-            <Header />
-        </header>
-        <section>
-            <Grid>
-            {children}
-            </Grid>
-        </section>
-        <footer>
-            <Footer />
-        </footer>
-    </div>
+class App extends Component {
+    render() {
+        const { children, locale, setLocale } = this.props
+
+        return (
+            <div>
+                <header>
+                    <Header locale={locale} setLocale={setLocale} />
+                </header>
+                <section>
+                    <Grid>
+                    {children}
+                    </Grid>
+                </section>
+                <footer>
+                    <Footer locale={locale} />
+                </footer>
+            </div>
+        )
+    }
 }
 
-export default App
+function mapStateToProps(state) {
+    const locale = state.intl.locale
+
+    return {
+        locale
+    }
+}
+
+var mapDispatchToProps = function(dispatch) {
+    return {
+        setLocale: (locale) => dispatch(LocaleActions.setLocale(locale))
+    }
+}
+
+const BoundApp = connect(mapStateToProps, mapDispatchToProps)(App)
+
+export default BoundApp

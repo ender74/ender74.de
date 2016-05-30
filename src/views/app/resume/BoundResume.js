@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
-import $ from 'jquery'
+import 'whatwg-fetch'
+import checkStatus from 'fetch-check-http-status'
+import {connect} from 'react-redux'
 import Resume from './components/Resume'
 
-class BoundResume extends Component {
-    constructor() {
-        super()
-        this.state = {}
-        BoundResume.setState = this.setState.bind(this)
-    }
+function mapStateToProps(state) {
+    const locale = state.intl.locale
+    const data = state.resume.data
 
-    componentWillMount() {
-        $.getJSON( "/resume.json", function( data ) {
-            BoundResume.setState({data: data})
-        })
-    }
-
-    render() {
-        return <Resume {...this.state.data} />
+    return {
+        locale,
+        data
     }
 }
 
-export default BoundResume
+var mapDispatchToProps = function(dispatch) {
+    return {
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Resume)

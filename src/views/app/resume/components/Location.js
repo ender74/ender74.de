@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
+import { injectIntl } from 'react-intl'
 
 import WithCondition from '../../lib/components/withCondition'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
@@ -34,6 +35,12 @@ class Location extends Component {
         }
     }
     render() {
+        const { intl } = this.props
+        const title = intl.formatMessage({
+            id: 'resume.address',
+            defaultMessage: 'address'
+        })
+
         const Location = { lat: 51.3, lon: 0.7 }
         const adressStyle = {
             width: '20.0em',
@@ -50,7 +57,7 @@ class Location extends Component {
             position: 'relative'
         }
         return (
-            <WithGroupHeader title='Adresse (Arbeit)' >
+            <WithGroupHeader title={title} >
                 <div style= { adressStyle }>
                     <div>{ this.props.location.address } </div>
                     <div>{ this.props.location.postalCode } {this.props.location.city } </div>
@@ -74,4 +81,4 @@ class Location extends Component {
     }
 }
 
-export default Location
+export default injectIntl(Location)

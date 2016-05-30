@@ -47,7 +47,7 @@
   "work": [
     {
       "company": "NOVASIB GmbH",
-      "position": "Leiter Technologie und Strategie SIB",
+      "position": "Manager Technology and Strategy SIB",
       "website": "http://www.novasib.de",
       "startDate": "2013-01",
       "summary": "I'm still focused on adapting the TT-SIB to new technologies. Current trends are the development of browser and mobile applications.",
@@ -57,7 +57,7 @@
     },
     {
       "company": "NOVASIB GmbH",
-      "position": "Projektleiter XML Anwendungen",
+      "position": "Projectmanager XML Applications",
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
       "endDate": "2013-1",
@@ -68,7 +68,7 @@
     },
     {
       "company": "NOVASIB GmbH",
-      "position": "Softwareentwickler",
+      "position": "Software Developer",
       "website": "http://www.novasib.de",
       "startDate": "1999-10",
       "endDate": "2005-10",
@@ -79,7 +79,7 @@
     },
     {
       "company": "Technotrend Systemtechnik GmbH",
-      "position": "Softwareentwickler / Praktikant",
+      "position": "Software Developer / Practical Training",
       "website": "",
       "startDate": "1997-06",
       "endDate": "1999-10",
@@ -90,7 +90,7 @@
     },
     {
       "company": "Fachgebiet Rechnerarchitekturen der TU-Ilmenau",
-      "position": "software developer / student assistant",
+      "position": "Software Developer / Student Assistant",
       "website": "https://www.tu-ilmenau.de/ra/",
       "startDate": "1996-03",
       "endDate": "1997-05",
@@ -101,7 +101,7 @@
     },
     {
       "company": "OWiS Software GmbH Ilmenau",
-      "position": "software developer / practical training",
+      "position": "Software Developer / Practical Training",
       "website": "",
       "startDate": "1996-01-06",
       "endDate": "1996-01-09",
@@ -121,7 +121,7 @@
       "endDate": "1999-9-30",
       "gpa": "",
       "courses": [
-          "mathematics", "graphical computer science", "artificial intelligence"
+          "Mathematics", "Graphical Computer Science", "Artificial Intelligence"
       ]
     }
   ],

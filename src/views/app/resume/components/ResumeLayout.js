@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-bootstrap'
+import { FormattedMessage } from 'react-intl'
 import Title from './Title'
 
 class ResumeLayout extends Component {
@@ -13,7 +14,21 @@ class ResumeLayout extends Component {
             {this.props.children}
         </main>
         <footer className='hide-when-printing'>
-        Die Daten werden aus einer <a href="/resume.json">JSON Datei</a> geladen.
+            <FormattedMessage
+                id='json.note1'
+                defaultMessage='The data is loaded from a'
+            />
+            &nbsp;
+            <a href="/resume.json">
+            <FormattedMessage
+                id='json.note2'
+                defaultMessage='JSON file'
+            />
+            <FormattedMessage
+                id='json.note3'
+                defaultMessage='geladen.'
+            />
+            </a>
         </footer>
       </article>
     )

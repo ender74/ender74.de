@@ -17,11 +17,15 @@ class Title extends Component {
                 {portrait}
             </Col>
             <Col sm={8}>
-                <h3>{this.props.basics.name}</h3>
-                <div className='hide-when-printing'>
-                    (<Link href="/foaf.rdf" text="FOAF" />)
-                </div>
-                <h3>{this.props.basics.label}</h3>
+                <Row>
+                    <Col><h3>{this.props.basics.name}</h3></Col>
+                </Row>
+                <Row>
+                    <Col><h3>{this.props.basics.label}</h3></Col>
+                </Row>
+                <Row>
+                    <Col>{this.props.basics.label2}</Col>
+                </Row>
             </Col>
         </Row>
       </Jumbotron>

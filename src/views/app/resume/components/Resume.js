@@ -8,49 +8,60 @@ import Education from './Education'
 import Location from './Location'
 import Profiles from './Profiles'
 import Publications from './Publications'
+import LanguageSkills from './LanguageSkills'
 import Skills from './Skills'
 import Work from './Work'
 
 class Resume extends Component {
   render() {
-    if (!this.props.basics)
+    const { data } = this.props
+
+    if (!data)
         return <div>Lade Daten ...</div>
+
+    const { basics, education, work, skills, languages, publications } = data
+
     return (
-      <ResumeLayout data={this.props}>
+      <ResumeLayout data={data}>
         <Row className='hide-when-printing'>
             <Col sm={12}>
                 <div style={ style.entry }>
-                    <About basics={this.props.basics} />
+                    <About basics={basics} />
                 </div>
             </Col>
         </Row>
         <Row className='hide-when-printing'>
             <Col sm={12}>
-                <Location location={this.props.basics.location} />
+                <Location location={basics.location} />
             </Col>
         </Row>
         <Row>
             <Col sm={6}>
                 <div style={ style.entry }>
-                    <Basics basics={this.props.basics} />
+                    <Basics basics={basics} />
                 </div>
                 <div className='hide-when-printing' style={ style.entry }>
-                    <Profiles profiles={this.props.basics.profiles} />
+                    <Profiles profiles={basics.profiles} />
                 </div>
-                <Education education={this.props.education} />
+                <Education education={education} />
             </Col>
             <Col sm={6}>
-                <Work work={this.props.work} style={{height: '100%'}}/>
+                <Work work={work} style={{height: '100%'}}/>
             </Col>
         </Row>
         <Row>
             <Col sm={12}>
-                <Skills skills={this.props.skills} />
+                <LanguageSkills languages={languages} />
             </Col>
         </Row>
         <Row>
             <Col sm={12}>
-                <Publications publications={this.props.publications} />
+                <Skills skills={skills} />
+            </Col>
+        </Row>
+        <Row>
+            <Col sm={12}>
+                <Publications publications={publications} />
             </Col>
         </Row>
       </ResumeLayout>

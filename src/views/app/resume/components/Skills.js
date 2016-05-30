@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { injectIntl } from 'react-intl'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './Tags'
 
@@ -6,7 +7,7 @@ class SkillEntry extends Component {
   render() {
     return (
       <div>
-        <h5>{this.props.name}</h5>
+        <h5>{this.props.name}:</h5>
         <Tags title="" tags={this.props.keywords} />
       </div>
     )
@@ -15,6 +16,12 @@ class SkillEntry extends Component {
 
 class Skills extends Component {
   render() {
+    const { intl } = this.props
+    const title = intl.formatMessage({
+        id: 'resume.skills',
+        defaultMessage: 'skills'
+    })
+
     const skills = this.props.skills.map(function (skill, index) {
       return (
         <div key={index}>
@@ -27,7 +34,7 @@ class Skills extends Component {
     })
     return (
         <div style={ style.entry }>
-            <WithGroupHeader title='Fähigkeiten'>
+            <WithGroupHeader title={title}>
                 {skills}
             </WithGroupHeader>
         </div>
@@ -41,4 +48,4 @@ const style = {
     }
 }
 
-export default Skills
+export default injectIntl(Skills)

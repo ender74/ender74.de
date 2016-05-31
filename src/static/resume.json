@@ -57,7 +57,7 @@
     },
     {
       "company": "NOVASIB GmbH",
-      "position": "Projectmanager XML Applications",
+      "position": "Project Manager XML Applications",
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
       "endDate": "2013-01",
@@ -72,7 +72,7 @@
       "website": "http://www.novasib.de",
       "startDate": "1999-10",
       "endDate": "2005-10",
-      "summary": "I gain deeper experience as java developer, with focus on geomapping and relational databases.",
+      "summary": "I gain deeper experience developing with Java. My focus is on Geo mapping and relational databases.",
       "highlights": [
         "Java Development", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
@@ -83,7 +83,7 @@
       "website": "",
       "startDate": "1997-06",
       "endDate": "1999-10",
-      "summary": "Parallel to my studies i aquire first practical experience as developer (java, C++).",
+      "summary": "Parallel to my studies i aquire more practical experience as developer (Java, C++).",
       "highlights": [
         "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Development"
       ]
@@ -158,20 +158,20 @@
   ],
   "skills": [
     {
-      "name": "Major skills",
+      "name": "Major Skills",
       "level": "expert",
       "keywords": [
-        "**Java developer",
+        "**Java Developer",
         "**Webservices",
         "**Databases",
         "**Spring Framework"
       ]
     },
     {
-      "name": "Project management",
+      "name": "Project Management",
       "level": "advanced",
       "keywords": [
-        "Classical Projectmanagment / Waterfall",
+        "Classical Project Management",
         "Scrum",
         "*Requirement engineering",
         "*Technical specifications",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "name": "Software development",
+      "name": "Software Development",
       "level": "expert",
       "keywords": [
         "*Java",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "name": "Software testing",
+      "name": "Software Test",
       "level": "advanced",
       "keywords": [
         "*TDD",

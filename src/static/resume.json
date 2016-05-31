@@ -60,7 +60,7 @@
       "position": "Projectmanager XML Applications",
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
-      "endDate": "2013-1",
+      "endDate": "2013-01",
       "summary": "Together with my team i gradually rebuild the TT-SIB into a modern Java EE application.",
       "highlights": [
         "Java", "project management", "spring framework/ hibernate", "SOAP", "JAX-RS", "databases"
@@ -117,8 +117,8 @@
       "institution": "Technische Universität Ilmenau",
       "area": "Degree Dipl. Informatiker, final grade 1.9",
       "studyType": "Diplom",
-      "startDate": "1994-10-1",
-      "endDate": "1999-9-30",
+      "startDate": "1994-10-01",
+      "endDate": "1999-09-30",
       "gpa": "",
       "courses": [
           "Mathematics", "Graphical Computer Science", "Artificial Intelligence"

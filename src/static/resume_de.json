@@ -60,7 +60,7 @@
       "position": "Projektleiter XML Anwendungen",
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
-      "endDate": "2013-1",
+      "endDate": "2013-01",
       "summary": "Zusammen mit meinem Team baue ich die TT-SIB zu einer Java Enterprise Anwendung um.",
       "highlights": [
         "Java", "Projektleitung", "Spring / Hibernate", "SOAP", "JAX-RS", "Datenbanken"
@@ -117,8 +117,8 @@
       "institution": "Technische Universität Ilmenau",
       "area": "Abschluss als Dipl. Informatiker, Abschlussnote 1,9",
       "studyType": "Diplom",
-      "startDate": "1994-10-1",
-      "endDate": "1999-9-30",
+      "startDate": "1994-10-01",
+      "endDate": "1999-09-30",
       "gpa": "",
       "courses": [
           "Nebenfach Mathematik", "Graphische Datenverarbeitung", "Neuroinformatik"

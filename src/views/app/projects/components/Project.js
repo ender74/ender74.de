@@ -28,7 +28,7 @@ class ProjectEntry extends Component {
         roles.push(<span key={key}>&nbsp; <Label bsStyle={roleStyles[role]}>{role}</Label></span>)
     }
     const desc = this.props.text.text
-    const text = <Linkify>{desc}</Linkify>
+    const text = <span><span className='hide-when-printing'><Linkify>{desc}</Linkify></span><span className='hide-on-screen'>{desc}</span></span>
     return (
         <div>
             <Row>

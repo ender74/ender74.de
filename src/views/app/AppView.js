@@ -10,6 +10,7 @@ import BoundProjects from './projects/BoundProjects'
 import Disclaimer from './legal/Disclaimer'
 import LocaleActions from './actions/LocaleActions'
 import ResumeActions from './actions/ResumeActions'
+import ProjectActions from './actions/ProjectActions'
 import Start from './start/Start'
 import store from './store'
 
@@ -32,6 +33,7 @@ class AppView extends Component {
         let wLocale = watch(store.getState, 'intl.locale')
         store.subscribe(wLocale((newVal, oldVal, objectPath) => {
             store.dispatch(ResumeActions.loadResume(newVal))
+            store.dispatch(ProjectActions.loadProjects(newVal))
         }))
     }
 

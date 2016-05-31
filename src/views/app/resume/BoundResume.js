@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import 'whatwg-fetch'
-import checkStatus from 'fetch-check-http-status'
 import {connect} from 'react-redux'
 import Resume from './components/Resume'
 

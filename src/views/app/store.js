@@ -3,9 +3,11 @@ import thunk from 'redux-thunk'
 import { intlReducer } from 'react-intl-redux'
 
 import resumeReducer from './actions/ResumeReducers'
+import projectReducer from './actions/ProjectReducers'
 
 const rootReducer = combineReducers({
     resume: resumeReducer,
+    projects: projectReducer,
     intl: intlReducer
 })
 

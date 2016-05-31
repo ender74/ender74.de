@@ -1,24 +1,12 @@
 import React, { Component } from 'react'
-import $ from 'jquery'
+import {connect} from 'react-redux'
 import Projects from './components/Projects'
 
 class BoundProjects extends Component {
-    constructor() {
-        super()
-        this.state = {}
-        BoundProjects.setState = this.setState.bind(this)
-    }
-
-    componentWillMount() {
-        $.getJSON( "/projects.json", function( data ) {
-            BoundProjects.setState({data: data})
-        })
-    }
-
     render() {
         return (
             <div>
-                <Projects {...this.state.data} />
+                <Projects {...this.props.data} />
                 <footer className='hide-when-printing'>
                 Die Daten werden aus einer <a href='/projects.json'>JSON Datei</a> geladen.
                 </footer>
@@ -27,4 +15,19 @@ class BoundProjects extends Component {
     }
 }
 
-export default BoundProjects
+function mapStateToProps(state) {
+    const locale = state.intl.locale
+    const data = state.projects.data
+
+    return {
+        locale,
+        data
+    }
+}
+
+var mapDispatchToProps = function(dispatch) {
+    return {
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BoundProjects)

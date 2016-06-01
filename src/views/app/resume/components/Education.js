@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { injectIntl, FormattedDate } from 'react-intl'
+import { injectIntl, FormattedDate, FormattedMessage } from 'react-intl'
+import { Row, Col } from 'react-bootstrap'
 
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Tags from './Tags'
@@ -36,18 +37,37 @@ class Education extends Component {
 
 class EducationEntry extends Component {
   render() {
-    const { intl, startDate, endDate } = this.props
+    const { intl, startDate, endDate, institution, area, courses } = this.props
     const title = intl.formatMessage({
         id: 'resume.focus',
-        defaultMessage: 'major subjects:'
+        defaultMessage: 'Major subjects:'
     })
+
+    let hl = ""
+    let sep = ""
+    for (var k of courses) {
+        hl = hl + sep + k
+        sep = ", "
+    }
 
     return (
       <div style={ style.entry }>
-        <h5><FormattedDate value={new Date(startDate)}/> - <FormattedDate value={new Date(endDate)}/></h5>
-        <div>{this.props.institution}</div>
-        <div>{this.props.area}</div>
-        <Tags title={title} tags={this.props.courses} />
+        <Row>
+            <Col sm={2}>
+                <h5><FormattedDate value={new Date(startDate)}/> - <FormattedDate value={new Date(endDate)}/></h5>
+            </Col>
+            <Col sm={10}>
+                <div style={style.text}>{institution}</div>
+                <div style={style.summary}>{area}</div>
+                <b>
+                    <FormattedMessage
+                        id='resume.focus'
+                        defaultMessage='Major Subjects'
+                    />:
+                </b>
+                &nbsp;{hl}
+            </Col>
+        </Row>
       </div>
     )
   }
@@ -56,8 +76,15 @@ class EducationEntry extends Component {
 const style = {
     entry: {
         pageBreakInside: 'avoid'
+    },
+    summary: {
+        textAlign: 'justify',
+        paddingTop: '5px',
+        paddingBottom: '5px'
+    },
+    text: {
+        paddingTop: '7px'
     }
 }
-
 
 export default injectIntl(Education)

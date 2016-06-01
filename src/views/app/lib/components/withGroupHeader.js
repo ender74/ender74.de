@@ -17,10 +17,19 @@ class WithGroupHeader extends Component {
         )
 
         return (
-            <Panel header = { title } collapsible expanded={ this.state.open }>
-                    {this.props.children}
-            </Panel>
+            <div>
+                <h5 style={styles.title}>{this.props.title}</h5>
+                {this.props.children}
+            </div>
         )
+    }
+}
+
+const styles = {
+    title: {
+        borderBottomStyle: 'solid',
+        borderColor: 'darkGray',
+        color: 'darkGray'
     }
 }
 

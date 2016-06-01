@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Label } from 'react-bootstrap'
+import { Label, Row, Col } from 'react-bootstrap'
 import Radium from 'radium'
 import ReactTooltip from 'react-tooltip'
 import { injectIntl, FormattedDate, FormattedMessage } from 'react-intl'
@@ -11,17 +11,17 @@ import Tags from './Tags'
 const Schedule = ({startDate, endDate}) => {
     if (typeof endDate == 'undefined')
         return (
-            <h5><u>
+            <h5 style={style.schedule}>
                 <FormattedMessage
                     id='resume.since'
                     defaultMessage='since'
                 />&nbsp;
                 <FormattedDate value={new Date(startDate)}/>
-            </u></h5>
+            </h5>
         )
     else
         return (
-            <h5><u><FormattedDate value={new Date(startDate)}/> - <FormattedDate value={new Date(endDate)}/></u></h5>
+            <h5 style={style.schedule}><FormattedDate value={new Date(startDate)}/> - <FormattedDate value={new Date(endDate)}/></h5>
         )
 }
 
@@ -71,11 +71,26 @@ class WorkEntry extends Component {
 
     return (
       <div style={ style.entry } className={summary ? '' : 'hide-when-printing'}>
-        <Schedule startDate={startDate} endDate={endDate} />
-        <Link href={website} text={company} />
-        <div data-tip={ hl }><Label>{position}</Label></div>
-        {summary ? <div>{summary}</div> : <div/> }
-        <ReactTooltip type='info' border='true'/>
+        <Row>
+            <Col sm={2}>
+                <Schedule startDate={startDate} endDate={endDate} />
+            </Col>
+            <Col sm={10}>
+                <div style={ style.text }>
+                    <Link href={website} text={company} />
+                    <div data-tip={ hl }><Label>{position}</Label></div>
+                    {summary ? <div style={style.summary}>{summary}</div> : <div/> }
+                    <b>
+                        <FormattedMessage
+                            id='resume.focusSkills'
+                            defaultMessage='Major skills'
+                        />:
+                    </b>
+                    &nbsp;{hl}
+                </div>
+            </Col>
+            <ReactTooltip type='info' border='true'/>
+        </Row>
       </div>
     )
   }
@@ -83,9 +98,21 @@ class WorkEntry extends Component {
 
 const style = {
     entry: {
-        pageBreakInside: 'avoid'
+        pageBreakInside: 'avoid',
+        paddingBottom: '10px'
+    },
+    summary: {
+        textAlign: 'justify',
+        paddingTop: '5px',
+        paddingBottom: '5px'
+    },
+    schedule: {
+        paddingTop: '0px',
+        borderTop: '0px'
+    },
+    text: {
+        paddingTop: '7px'
     }
 }
-
 
 export default injectIntl(Work)

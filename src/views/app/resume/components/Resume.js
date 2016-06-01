@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col, Label } from 'react-bootstrap'
+import { FormattedMessage } from 'react-intl'
 
 import ResumeLayout from './ResumeLayout'
 import About from './About'
@@ -23,6 +24,16 @@ class Resume extends Component {
 
     return (
       <ResumeLayout data={data}>
+        <Row className='hide-on-screen'>
+            <Col sm={12}>
+                <h3 style={style.title}>
+                    <FormattedMessage
+                        id='resume.resume'
+                        defaultMessage='Resume'
+                    />
+                </h3>
+            </Col>
+        </Row>
         <Row className='hide-when-printing'>
             <Col sm={12}>
                 <div style={ style.entry }>
@@ -35,17 +46,34 @@ class Resume extends Component {
                 <Location location={basics.location} />
             </Col>
         </Row>
-        <Row>
+        <Row className='hide-when-printing'>
             <Col sm={6}>
                 <div style={ style.entry }>
                     <Basics basics={basics} />
                 </div>
-                <div className='hide-when-printing' style={ style.entry }>
-                    <Profiles profiles={basics.profiles} />
-                </div>
-                <Education education={education} />
             </Col>
             <Col sm={6}>
+                <div style={ style.entry }>
+                    <Profiles profiles={basics.profiles} />
+                </div>
+            </Col>
+        </Row>
+        <Row className='hide-on-screen'>
+            <Col sm={12}>
+                <div style={ style.entry }>
+                    <Basics basics={basics} />
+                </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col sm={12}>
+                <div style={ style.entry }>
+                    <Education education={education} />
+                </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col sm={12}>
                 <Work work={work} style={{height: '100%'}}/>
             </Col>
         </Row>
@@ -72,6 +100,9 @@ class Resume extends Component {
 const style = {
     entry: {
         pageBreakInside: 'avoid'
+    },
+    title: {
+        color: 'darkGray'
     }
 }
 

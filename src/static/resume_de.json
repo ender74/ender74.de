@@ -52,7 +52,7 @@
       "startDate": "2013-01",
       "summary": "Ich sorge weiterhin für die ständige technologische Erneuerung der TT-SIB. Momentane Trends sind die Entwicklung von Browserlösungen und mobilen Apps.",
       "highlights": [
-        "Java", "Webentwicklung", "Scala", "Eclipse RAP", "Openlayers"
+        "Softwareentwicklung (Java, Scala, Javascript)", "Projektleitung", "Spring / Hibernate", "Webservices", "Softwarearchitekturen", "Datenbanken", "NoSQL", "Glassfish"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "endDate": "2013-01",
       "summary": "Zusammen mit meinem Team baue ich die TT-SIB zu einer Java Enterprise Anwendung um.",
       "highlights": [
-        "Java", "Projektleitung", "Spring / Hibernate", "SOAP", "JAX-RS", "Datenbanken"
+        "Softwareentwicklung (Java)", "Architekturentwurf", "Projektleitung", "Spring / Hibernate", "SOAP", "JAX-RS", "Datenbanken", "Tomcat", "Maven"
       ]
     },
     {
@@ -74,7 +74,7 @@
       "endDate": "2005-10",
       "summary": "Ich vertiefe meine Erfahrungen als Java Entwickler, mit Geodiensten und Datenbanken (u.a. durch die Java Implementierung von WMS und WFS Diensten).",
       "highlights": [
-        "Java Entwicklung", "Java EE", "OGC", "Oracle", "Sql Server"
+        "Softwareentwicklung (Java, C++)", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
     },
     {
@@ -83,7 +83,7 @@
       "website": "",
       "startDate": "1997-06",
       "endDate": "1999-10",
-      "summary": "Begleitend zu meinem Studium sammle ich praktische Erfahrungen, u.a. mit Java Programmierung.",
+      "summary": "",
       "highlights": [
         "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Entwicklung"
       ]
@@ -239,7 +239,8 @@
         "Pgrouting",
         "Mongo DB",
         "Derby",
-        "*Hibernate"
+        "*Hibernate",
+        "Apache Solr"
       ]
     },
     {

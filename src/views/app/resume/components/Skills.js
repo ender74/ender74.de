@@ -33,19 +33,11 @@ class Skills extends Component {
       )
     })
     return (
-        <div style={ style.entry }>
-            <WithGroupHeader title={title}>
-                {skills}
-            </WithGroupHeader>
-        </div>
+        <WithGroupHeader title={title}>
+            {skills}
+        </WithGroupHeader>
     )
   }
-}
-
-const style = {
-    entry: {
-        pageBreakInside: 'avoid'
-    }
 }
 
 export default injectIntl(Skills)

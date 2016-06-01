@@ -11,7 +11,7 @@ class Title extends Component {
         portrait = "";
     }
     return (
-      <Jumbotron style={{padding: '15px'}}>
+      <Jumbotron className='hide-when-printing' style={{padding: '15px'}}>
         <Row>
             <Col sm={4}>
                 {portrait}

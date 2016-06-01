@@ -3,8 +3,8 @@
     "name": "Heiko Hüter",
     "dateOfBirth": "1974-03-20",
     "placeOfBirth": "Erfurt",
-    "personalStatus": "married",
-    "nationality": "Deutsch",
+    "personalStatus": "Married",
+    "nationality": "German",
     "label": "\"Lifelong learning is a prerequisite for success.\"",
     "label2": "(Robert Schumann)",
     "picture": "/portrait.jpg",
@@ -52,7 +52,7 @@
       "startDate": "2013-01",
       "summary": "I'm still focused on adapting the TT-SIB to new technologies. Current trends are the development of browser and mobile applications.",
       "highlights": [
-        "Java", "web development", "scala", "Eclipse RAP", "Openlayers"
+        "Software Development (Java, Scala, Javascript)", "Project Management", "Spring / Hibernate", "Webservices", "Software Architectures", "Databases", "NoSQL", "Glassfish"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "endDate": "2013-01",
       "summary": "Together with my team i gradually rebuild the TT-SIB into a modern Java EE application.",
       "highlights": [
-        "Java", "project management", "spring framework/ hibernate", "SOAP", "JAX-RS", "databases"
+        "Software Development (Java)", "Project Management", "Spring / Hibernate", "SOAP", "JAX-RS", "Databases"
       ]
     },
     {
@@ -74,7 +74,7 @@
       "endDate": "2005-10",
       "summary": "I gain deeper experience developing with Java. My focus is on Geo mapping and relational databases.",
       "highlights": [
-        "Java Development", "Java EE", "OGC", "Oracle", "Sql Server"
+        "Software Development (Java)", "Java EE", "OGC", "Oracle", "Sql Server"
       ]
     },
     {
@@ -83,7 +83,7 @@
       "website": "",
       "startDate": "1997-06",
       "endDate": "1999-10",
-      "summary": "Parallel to my studies i aquire more practical experience as developer (Java, C++).",
+      "summary": "",
       "highlights": [
         "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Development"
       ]
@@ -239,7 +239,8 @@
         "Pgrouting",
         "Mongo DB",
         "Derby",
-        "*Hibernate"
+        "*Hibernate",
+        "Apache Solr"
       ]
     },
     {

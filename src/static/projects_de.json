@@ -359,6 +359,11 @@
         "day": "1",
         "year": "2013"
       },
+      "end_date": {
+        "month": "12",
+        "day": "31",
+        "year": "2016"
+      },
       "text": {
         "headline": "TT-SIB\u00ae INFOSYS 8",
         "role": ["Entwickler", "Architekt", "Projektleiter"],
@@ -380,6 +385,11 @@
         "day": "1",
         "year": "2005"
       },
+      "end_date": {
+        "month": "12",
+        "day": "31",
+        "year": "2016"
+      },
       "text": {
         "headline": "TT-SIB\u00ae 5",
         "role": ["Entwickler", "Architekt", "Projektleiter"],
@@ -387,6 +397,25 @@
           "Die TT-SIB\u00ae 5 ist ein Hauptprodukt der Firma NOVASIB, an welchem ich in unterschiedlichen Rollen beteiligt bin. Die TT-SIB\u00ae ist eine Straßeninformationsbank. Diese ist in 13 Bundesländern und mehreren privaten Unternehmen im Einsatz. Sie dient der Inventarisierung des Anlagevermögens rund um die Straße. Dazu gehört das Straßennetz sowie eine Vielzahl relevanter Objektklassen in dessen Umfeld. Insgesamt gibt es über 100 solcher Objektklassen, wie z.B. Bäume, Lichtsignalanlagen und Rastanlagen. In einer typischen Datenbank gibt es mehr als 20 Millionen Einzelobjekte. Diese werden in einer relationalen Datenbank abgelegt. ",
           "Die TT-SIB\u00ae ist die Grundlage für eine Vielzahl von Geschäftsprozessen innerhalb der Straßenbauverwaltung der Bundesländer (siehe z.B. http://www.list.smwa.sachsen.de/204.htm). Damit ist das System ständig im Einsatz. Typischerweise liegt die Zahl gleichzeitiger Zugriffe im Bereich von 100-200 Anwendern. In einigen Ländern arbeiten über 2000 Anwender mit dem System. Ich habe wesentliche Teile des Systems entwickelt und bin der Hauptentwickler für das Java Backend. In dieser Position sorge ich dafür, dass sich die TT-SIB\u00ae regelmäßig technologisch erneuert. ",
           "Gestartet als eine reine Client-Server Lösung wurden mehr und mehr Funktionalitäten in Webdienste gekapselt. Derzeit werden Teile des entstandenen Monolithen als eigenständige Komponenten (Microservices) herausgelöst. "
+        ]
+      }
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "3",
+        "day": "1",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "GridSorter",
+        "role": ["Entwickler"],
+        "text": [
+          "Entwicklung der Logik zur Rutschenbelegung für den Einsatz des GridSorters für Zalando (http://www.gebhardt-foerdertechnik.de/de/produkte/sortiertechnik/gridsorter/). Die Umsetzung erfolgt als Spring-Boot basierter Microservice. Dieser läuft innerhalb von AWS (https://stups.io/). Das Backend, eine AWS RDS Instanz (Postgresql), ist über JPA eingebunden. Externe Daten werden über REST Schnittstellen abgefragt. Der Schnittstellencode wird automatisch über die bereitgestellten Swagger Files generiert. Die exportierte Schnittstelle für den GridSorter ist ebenfalls als REST Service realisiert. Grundlage hierfür ist entsprechend dem API first Ansatz eine Swagger Datei, aus welcher dann der Spring RestController generiert wird (siehe https://github.com/swagger-api/swagger-codegen)."
         ]
       }
     }

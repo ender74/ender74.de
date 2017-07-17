@@ -10,11 +10,11 @@
     "email": "heiko.hueter@ender74.de",
     "phone": "+49(361)654 99-52",
     "website": "http://www.ender74.de",
-    "summary": "Ich bin seit mehr als 15 Jahren als Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt ist die Umsetzung von Server- und Webanwendungen mit Java und Open Source Software. Seit 2005 arbeite ich auch an etlichen Projekten in der Rolle des Projektleiters mit. Meine abwechslungsreichen Aufgaben umfassen die fachliche Beratung unserer Kunden, die Anforderungsanalyse und die darauf aufbauende Erstellung von Systemspezifikationen und gehen über den Architekturentwurf bis hin zur Programmierung. Beispiele für meine Arbeit finden Sie in der Rubrik Projekte.",
+    "summary": "Ich bin seit 1999 als Java Softwareentwickler und -architekt tätig. Mein inhaltlicher Schwerpunkt ist die Umsetzung von Server- und Webanwendungen mit Java und Open Source Software. Seit 2005 arbeite ich auch an etlichen Projekten in der Rolle des Projektleiters mit. Meine abwechslungsreichen Aufgaben umfassen die fachliche Beratung unserer Kunden, die Anforderungsanalyse und die darauf aufbauende Erstellung von Systemspezifikationen und gehen über den Architekturentwurf bis hin zur Programmierung. Beispiele für meine Arbeit finden Sie in der Rubrik Projekte.",
     "location": {
-      "address": "Melchior-Bauer-Straße 5",
-      "postalCode": "99092",
-      "city": "Erfurt",
+      "address": "In der Hochstedter Ecke 2",
+      "postalCode": "99098",
+      "city": "Erfurt (Hochstedt)",
       "countryCode": "DE",
       "region": "Thüringen"
     },
@@ -45,15 +45,45 @@
   },
   "work": [
     {
+      "company": "Zalando SE",
+      "position": "Senior Java Backend Developer",
+      "website": "https://tech.zalando.com/",
+      "startDate": "2017-01",
+      "summary": "Mein Schwerpunkt liegt in der Entwicklung von Microservices zur Steuerung der Technik der Zalando Warenhäuser. Dabei habe ich die faszinierende Möglichkeit, neueste Technologien in einem dynamischen Team auszuprobieren (https://zalando.github.io/tech-radar/).",
+      "highlights": [
+        "Software Entwicklung (Java)", "Spring Boot", "REST", "API first", "Swagger", "Postgresql", "JPA", "AWS", "Kubernetes"
+      ]
+    },
+    {
       "company": "NOVASIB GmbH",
       "position": "Leiter Technologie und Strategie SIB",
       "website": "http://www.novasib.de",
       "startDate": "2013-01",
+      "endDate": "2016-12",
       "summary": "Ich sorge weiterhin für die ständige technologische Erneuerung der TT-SIB. Momentane Trends sind die Entwicklung von Browserlösungen und mobilen Apps.",
       "highlights": [
         "Softwareentwicklung (Java, Scala, Javascript)", "Projektleitung", "Spring / Hibernate", "Webservices", "Softwarearchitekturen", "Datenbanken", "NoSQL", "Glassfish"
       ]
-    },
+    },,
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "start_date": {
+        "month": "3",
+        "day": "1",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "GridSorter",
+        "role": ["Entwickler"],
+        "text": [
+          "Entwicklung der Logik zur Rutschenbelegung für den Einsatz des GridSorters für Zalando (http://www.gebhardt-foerdertechnik.de/de/produkte/sortiertechnik/gridsorter/). Die Umsetzung erfolgt als Spring-Boot basierter Microservice. Dieser läuft innerhalb von AWS (https://stups.io/). Das Backend, eine AWS RDS Instanz (Postgresql), ist über JPA eingebunden. Externe Daten werden über REST Schnittstellen abgefragt. Der Schnittstellencode wird automatisch über die bereitgestellten Swagger Files generiert. Die exportierte Schnittstelle für den GridSorter ist ebenfalls als REST Service realisiert. Grundlage hierfür ist entsprechend dem API first Ansatz ebenfalls eine Swagger Datei, aus welcher dann der Spring RestController generiert wird (siehe https://github.com/swagger-api/swagger-codegen)."
+        ]
+      }
+    }
     {
       "company": "NOVASIB GmbH",
       "position": "Projektleiter XML Anwendungen",

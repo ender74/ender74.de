@@ -10,11 +10,11 @@
     "email": "heiko.hueter@ender74.de",
     "phone": "+49(361)654 99-52",
     "website": "http://www.ender74.de",
-    "summary": "I work as a software developer and architect for more than 15 years. My main profession is building enterprise and web applications with Java and open source software. Since 2005 i work as lead developer and project manager. In this position i write technical specifications and discuss new functionality with our customers. But programming is still my passion and daily work. You can find a list of my projects under the topic Projects on this page.",
+    "summary": "I work as a Java software developer and architect since 1999. My main profession is building enterprise and web applications with Java and open source software. Since 2005 i work as lead developer and project manager. In this position i write technical specifications and discuss new functionality with our customers. But programming is still my passion and daily work. You can find a list of my projects under the topic Projects on this page.",
     "location": {
-      "address": "Melchior-Bauer-Straße 5",
-      "postalCode": "99092",
-      "city": "Erfurt",
+      "address": "In der Hochstedter Ecke 2",
+      "postalCode": "99098",
+      "city": "Erfurt (Hochstedt)",
       "countryCode": "DE",
       "region": "Thüringen"
     },
@@ -45,10 +45,21 @@
   },
   "work": [
     {
+      "company": "Zalando SE",
+      "position": "Senior Java Backend Developer",
+      "website": "https://tech.zalando.com/",
+      "startDate": "2017-01",
+      "summary": "Building microservices to keep the Zalando Warehouses running. Trying out and using State of the Art Technologies (https://zalando.github.io/tech-radar/).",
+      "highlights": [
+        "Software Development (Java)", "Spring Boot", "REST", "API first", "Swagger", "Postgresql", "JPA", "AWS", "Kubernetes"
+      ]
+    },
+    {
       "company": "NOVASIB GmbH",
       "position": "Manager Technology and Strategy SIB",
       "website": "http://www.novasib.de",
       "startDate": "2013-01",
+      "endDate": "2016-12",
       "summary": "I'm still focused on adapting the TT-SIB to new technologies. Current trends are the development of browser and mobile applications.",
       "highlights": [
         "Software Development (Java, Scala, Javascript)", "Project Management", "Spring / Hibernate", "Webservices", "Software Architectures", "Databases", "NoSQL", "Glassfish"

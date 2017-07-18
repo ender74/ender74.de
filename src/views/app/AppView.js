@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
+import {
+  HashRouter,
+  Route,
+  Link,
+  Redirect,
+  Switch
+} from 'react-router-dom';
 
-import { Router, Route, Redirect, browserHistory } from 'react-router'
 import { Provider } from 'react-intl-redux'
 import watch from 'redux-watch'
+import { connect } from 'react-redux'
 
 import App from './components/App'
 import BoundResume from './resume/BoundResume'
@@ -40,17 +47,17 @@ class AppView extends Component {
     render() {
         return (
             <Provider store={ store }>
-                <Router history={ browserHistory }>
+                <HashRouter>
+                  <App>
                     <Redirect from='/' to='/app/start' />
-                    <Route component = { App }>
-                        <Route path='/app'>
-                            <Route path='start' component= { Start } />
-                            <Route path='resume' component= { BoundResume } />
-                            <Route path='projects' component= { BoundProjects } />
-                            <Route path='disclaimer' component= { Disclaimer } />
-                        </Route>
-                    </Route>
-                </Router>
+                    <Switch>
+                      <Route path='/app/start' component= { Start } />
+                      <Route path='/app/resume'><BoundResume /></Route>
+                      <Route path='/app/projects'><BoundProjects /></Route>
+                      <Route path='/app/disclaimer'><Disclaimer /></Route>
+                    </Switch>
+                  </App>
+                </HashRouter>
             </Provider>
         )
     }

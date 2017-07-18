@@ -98,10 +98,10 @@ gulp.task('renderStatic', function () {
         pipe(gulp.dest(path.DEST_BUILD))
 })
 
-gulp.task('release', ['copy', 'build', 'renderStatic']);
+gulp.task('release', ['copy', 'build']);
 
 gulp.task('watch', ['copy', 'build-watch']);
 
-gulp.task('dev', ['copy', 'build-dev', 'renderStatic']);
+gulp.task('dev', ['copy', 'build-dev']);
 
 gulp.task('default', ['watch'])

@@ -2,6 +2,8 @@
 
 - [Summary](#summary)
 - [Map implementation](#map-implementation)
+- [Running Locally](#running-locally)
+- [Updating dependencies](#updating-dependencies)
 - [TODO List](#todo-list)
 
 #### Summary
@@ -23,7 +25,7 @@ npm -g install gulp
 ```
 
 After that you need to install the project dependencies. The needed dependencies can be installed with
-the following command: 
+the following command:
 
 ```
 npm install
@@ -32,7 +34,7 @@ after this you can build the website by running either
 ```
 gulp release
 ```
-or 
+or
 ```
 npm run build
 ```
@@ -43,6 +45,34 @@ some needed resources. Simply open this file in your browser or copy
 the whole directory to your webserver.
 
 To create an un-uglified version you may use ```gulp dev``` or just ```gulp```.
+
+#### Running Locally
+First you need to install the http-server npm module (globally).
+
+```
+npm install http-server -g
+```
+
+The you can change into the dist folder and start a local http-server:
+
+```
+cd dist
+http-server -o
+```
+
+#### Updating dependencies
+First install global npm module:
+
+```
+npm i -g npm-check-updates
+```
+
+Then you can use:
+
+```
+npm-check-updates -u
+npm install
+```
 
 #### Map implementation
 the map is based on the following open source projects:

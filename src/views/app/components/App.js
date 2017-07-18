@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -42,6 +43,6 @@ var mapDispatchToProps = function(dispatch) {
     }
 }
 
-const BoundApp = connect(mapStateToProps, mapDispatchToProps)(App)
+const BoundApp = withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
 
 export default BoundApp

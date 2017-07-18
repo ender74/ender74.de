@@ -15,7 +15,7 @@ import Work from './Work'
 
 class Resume extends Component {
   render() {
-    const { data } = this.props
+    const { data, locale } = this.props
 
     if (!data)
         return <div>Lade Daten ...</div>

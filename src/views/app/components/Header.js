@@ -66,8 +66,6 @@ class Header extends Component {
                                 />
                             </NavItem>
                         </NavDropdown>
-                    </Nav>
-                    <Nav>
                         <NavItemLink to='/app/start' onClick={this.navItemClicked}>
                             <FormattedMessage
                                 id='app.start'

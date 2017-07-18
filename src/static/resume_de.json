@@ -64,26 +64,7 @@
       "highlights": [
         "Softwareentwicklung (Java, Scala, Javascript)", "Projektleitung", "Spring / Hibernate", "Webservices", "Softwarearchitekturen", "Datenbanken", "NoSQL", "Glassfish"
       ]
-    },,
-    {
-      "media": {
-        "url": "",
-        "caption": "",
-        "credit": ""
-      },
-      "start_date": {
-        "month": "3",
-        "day": "1",
-        "year": "2017"
-      },
-      "text": {
-        "headline": "GridSorter",
-        "role": ["Entwickler"],
-        "text": [
-          "Entwicklung der Logik zur Rutschenbelegung für den Einsatz des GridSorters für Zalando (http://www.gebhardt-foerdertechnik.de/de/produkte/sortiertechnik/gridsorter/). Die Umsetzung erfolgt als Spring-Boot basierter Microservice. Dieser läuft innerhalb von AWS (https://stups.io/). Das Backend, eine AWS RDS Instanz (Postgresql), ist über JPA eingebunden. Externe Daten werden über REST Schnittstellen abgefragt. Der Schnittstellencode wird automatisch über die bereitgestellten Swagger Files generiert. Die exportierte Schnittstelle für den GridSorter ist ebenfalls als REST Service realisiert. Grundlage hierfür ist entsprechend dem API first Ansatz ebenfalls eine Swagger Datei, aus welcher dann der Spring RestController generiert wird (siehe https://github.com/swagger-api/swagger-codegen)."
-        ]
-      }
-    }
+    },
     {
       "company": "NOVASIB GmbH",
       "position": "Projektleiter XML Anwendungen",

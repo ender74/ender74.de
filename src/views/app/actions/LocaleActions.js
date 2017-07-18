@@ -1,6 +1,6 @@
 import 'whatwg-fetch'
 import checkStatus from 'fetch-check-http-status'
-import { update } from 'react-intl-redux'
+import { updateIntl } from 'react-intl-redux'
 
 
 const setLocale = (locale) => {
@@ -11,7 +11,7 @@ const setLocale = (locale) => {
             return fetch( src )
                 .then(checkStatus)
                 .then(response => { return response.json() })
-                .then(messages => { dispatch(update({locale, messages})) })
+                .then(messages => { dispatch(updateIntl({locale, messages})) })
         }
         doFetch(localMessages)
             .catch(error => { doFetch(defaultMessages) })

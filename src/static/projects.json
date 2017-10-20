@@ -402,6 +402,30 @@
     },
     {
       "media": {
+        "url": "https://www.youtube.com/embed/Ayt2QMOfW0M?ecver=1",
+        "caption": "GridSorter",
+        "credit": "youtube"
+      },
+      "start_date": {
+        "month": "3",
+        "day": "1",
+        "year": "2017"
+      },
+      "end_date": {
+        "month": "4",
+        "day": "1",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "GridSorter",
+        "role": ["Entwickler"],
+        "text": [
+          "Meine Aufgabe ist die Entwicklung der Logik zur Rutschenbelegung für den Einsatz des GridSorters für Zalando (http://www.gebhardt-foerdertechnik.de/de/produkte/sortiertechnik/gridsorter/). Umgesetzt habe ich dies als Spring-Boot basierten Microservice. Dieser läuft innerhalb von AWS und der Zalando Stups Plattform (https://stups.io/). Das Backend, eine AWS RDS Instanz (Postgresql), habe ich über JPA eingebunden. Die exportierte Schnittstelle für den GridSorter habe ich als REST Service realisiert. Grundlage hierfür ist entsprechend dem API first Ansatz eine Swagger Datei, aus welcher dann der Spring RestController generiert wird (siehe https://github.com/swagger-api/swagger-codegen)."
+        ]
+      }
+    },
+    {
+      "media": {
         "url": "",
         "caption": "",
         "credit": ""
@@ -412,10 +436,29 @@
         "year": "2017"
       },
       "text": {
-        "headline": "GridSorter",
+        "headline": "BagSorter",
         "role": ["Entwickler"],
         "text": [
-          "Entwicklung der Logik zur Rutschenbelegung für den Einsatz des GridSorters für Zalando (http://www.gebhardt-foerdertechnik.de/de/produkte/sortiertechnik/gridsorter/). Die Umsetzung erfolgt als Spring-Boot basierter Microservice. Dieser läuft innerhalb von AWS (https://stups.io/). Das Backend, eine AWS RDS Instanz (Postgresql), ist über JPA eingebunden. Externe Daten werden über REST Schnittstellen abgefragt. Der Schnittstellencode wird automatisch über die bereitgestellten Swagger Files generiert. Die exportierte Schnittstelle für den GridSorter ist ebenfalls als REST Service realisiert. Grundlage hierfür ist entsprechend dem API first Ansatz eine Swagger Datei, aus welcher dann der Spring RestController generiert wird (siehe https://github.com/swagger-api/swagger-codegen)."
+          "Bei Zalando arbeite ich in einem 6 köpfigen Team zur Anbindung des Taschensorters der Firma Dürrkopp Fördertechnik (http://www.duerkopp.com/de/produkt-sortertasche.php) mit. Das Projekt basiert auf spring-boot und verwendet verschiedene spring Module (spring-security, spring-data, spring-web, spring-web-mvc). Ich kann in dem bereits seit 2016 laufenden Projekt bei der Weiterentwicklung und der Korrektur von Fehlern helfen. Meine erste Aufgabe war die Umstellung des Nakadi Clients. Nakadi stellt einen verteilten Eventbus bereit (https://github.com/zalando/nakadi). Der Zugriff erfolgt über eine REST Schnittstelle. Die Umsetzung basiert auf Apache Kafka. In das Bagsorter Projekt habe ich den Nakadi Fahrschein Client eingebunden (https://github.com/zalando-nakadi/fahrschein). Hierfür habe ich eine spring-boot Bibliothek geschrieben, welche die Einbindung und Konfiguration über Annotations unterstützt. Diese Bibliothek wird mittlerweile in verschiedenen Projekten bei Zalando eingesetzt. "
+        ]
+      }
+    },
+    {
+      "media": {
+        "url": "https://www.youtube.com/embed/hTJlRckPEgs?ecver=1",
+        "caption": "OSM",
+        "credit": "Youtube"
+      },
+      "start_date": {
+        "month": "9",
+        "day": "18",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Detour",
+        "role": ["Entwickler"],
+        "text": [
+          "Innerhalb eines Warenhauses gibt es eine Vielzahl von Transportobjekten (z.B. Carts, Wannen, Paletten) und Transportsystemen (z.B. Förderbänder, Wannenwagen, selbstfahrende Systeme). Detour wird als einheitliche Plattform zur Verwaltung dieser Transporte komplett neu umgesetzt. Ich bin der hauptverantwortliche Entwickler in einem 4 köpfigen Team. Detour ist als System von verteilten Microservices realisiert. Die einzelnen Dienste sind spring-boot Anwendungen. Als wesentliche Technologien verwende ich spring-data / jpa, postgresql, swagger, REST und Nakadi. Die Anbindung der selbstfahrenden Shuttles erfolgt über eine bereitgestellte REST Schnittstelle."
         ]
       }
     }

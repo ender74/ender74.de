@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Jumbotron, Grid, Row, Col, Label } from 'react-bootstrap'
 import Linkify from 'react-linkify'
+import WithCondition from '../../lib/components/withCondition'
 import WithGroupHeader from '../../lib/components/withGroupHeader'
 import Link from '../../lib/components/link'
+import Media from './Media'
 
 const roleStyles = {
     'Entwickler': 'info',
@@ -54,11 +56,15 @@ class ProjectList extends Component {
       var entry = this.props.events[index]
       const text = entry.text ? entry.text.headline : ''
       const title = <span>{text}</span>
+      const media = this.props.events[index].media
       entries.push(
         <div key={ index } style={ style.entry }>
             <WithGroupHeader title={ title }>
                 <ProjectEntry
                   {...entry} />
+                <WithCondition condition = { typeof media.url !== 'undefined' && media.url.length > 0}>
+                  <Media {...media} />
+                </WithCondition>
             </WithGroupHeader>
         </div>
       )
@@ -74,7 +80,6 @@ class ProjectList extends Component {
                     <Col sm={4}>
                         <Row><Col>Heiko Hüter</Col></Row>
                         <Row><Col>heiko.hueter@ender74.de</Col></Row>
-                        <Row><Col>+49(361)65499 52</Col></Row>
                     </Col>
                 </Row>
             </Jumbotron>

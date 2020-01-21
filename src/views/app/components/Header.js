@@ -52,20 +52,22 @@ class Header extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavDropdown eventKey={1} title={ language } id='select-language'>
-                            <NavItem eventKey={1.1} onClick={ wrapCollapse(() => setLocale('en')) } active={ locale === 'en' }>
-                                <FormattedMessage
-                                    id='app.language_en'
-                                    defaultMessage='English'
-                                />
-                            </NavItem>
-                            <NavItem eventKey={1.2} onClick={ wrapCollapse(() => setLocale('de')) } active={ locale === 'de' }>
-                                <FormattedMessage
-                                    id='app.language_de'
-                                    defaultMessage='German'
-                                />
-                            </NavItem>
-                        </NavDropdown>
+                        <NavItem>
+                            <NavDropdown eventKey={1} title={ language } id='select-language'>
+                                <NavItem eventKey={1.1} onClick={ wrapCollapse(() => setLocale('en')) } active={ locale === 'en' }>
+                                    <FormattedMessage
+                                        id='app.language_en'
+                                        defaultMessage='English'
+                                    />
+                                </NavItem>
+                                <NavItem eventKey={1.2} onClick={ wrapCollapse(() => setLocale('de')) } active={ locale === 'de' }>
+                                    <FormattedMessage
+                                        id='app.language_de'
+                                        defaultMessage='German'
+                                    />
+                                </NavItem>
+                            </NavDropdown>
+                        </NavItem>
                         <NavItemLink to='/app/start' onClick={this.navItemClicked}>
                             <FormattedMessage
                                 id='app.start'

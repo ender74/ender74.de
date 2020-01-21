@@ -6,7 +6,7 @@ RUN mkdir -p /var/lib/project/
 VOLUME ["/var/lib/project/"]
 WORKDIR "/var/lib/project"
 
-RUN npm install -g gulp gulp-babel babel-core babel-register babel-preset-es2015 babel-preset-react
+RUN npm install -g gulp gulp-babel @babel/core @babel/register @babel/preset-env @babel/preset-react
 
 ADD entry.sh /root/entry.sh
 RUN chmod +x /root/entry.sh

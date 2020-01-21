@@ -46,9 +46,20 @@
   "work": [
     {
       "company": "Zalando SE",
-      "position": "Senior Java Backend Developer",
+      "position": "Principal Software Engineer",
+      "website": "https://tech.zalando.com/",
+      "startDate": "2019-07",
+      "summary": "Working as principal engineer on the core architecture for Zalando Logistics.",
+      "highlights": [
+        "Software Development (Java)", "Architecture", "REST", "API first", "Swagger", "AWS", "Kubernetes"
+      ]
+    },
+    {
+      "company": "Zalando SE",
+      "position": "Senior Software Engineer",
       "website": "https://tech.zalando.com/",
       "startDate": "2017-01",
+      "endDate": "2019-06-30",
       "summary": "Building microservices to keep the Zalando Warehouses running. Trying out and using State of the Art Technologies (https://zalando.github.io/tech-radar/).",
       "highlights": [
         "Software Development (Java)", "Spring Boot", "REST", "API first", "Swagger", "Postgresql", "JPA", "AWS", "Kubernetes"
@@ -59,7 +70,7 @@
       "position": "Manager Technology and Strategy SIB",
       "website": "http://www.novasib.de",
       "startDate": "2013-01",
-      "endDate": "2016-12",
+      "endDate": "2016-12-31",
       "summary": "I'm still focused on adapting the TT-SIB to new technologies. Current trends are the development of browser and mobile applications.",
       "highlights": [
         "Software Development (Java, Scala, Javascript)", "Project Management", "Spring / Hibernate", "Webservices", "Software Architectures", "Databases", "NoSQL", "Glassfish"
@@ -70,7 +81,7 @@
       "position": "Project Manager XML Applications",
       "website": "http://www.novasib.de",
       "startDate": "2005-10",
-      "endDate": "2013-01",
+      "endDate": "2013-01-31",
       "summary": "Together with my team i gradually rebuild the TT-SIB into a modern Java EE application.",
       "highlights": [
         "Software Development (Java)", "Project Management", "Spring / Hibernate", "SOAP", "JAX-RS", "Databases"
@@ -81,7 +92,7 @@
       "position": "Software Developer",
       "website": "http://www.novasib.de",
       "startDate": "1999-10",
-      "endDate": "2005-10",
+      "endDate": "2005-10-31",
       "summary": "I gain deeper experience developing with Java. My focus is on Geo mapping and relational databases.",
       "highlights": [
         "Software Development (Java)", "Java EE", "OGC", "Oracle", "Sql Server"
@@ -92,7 +103,7 @@
       "position": "Software Developer / Practical Training",
       "website": "",
       "startDate": "1997-06",
-      "endDate": "1999-10",
+      "endDate": "1999-10-31",
       "summary": "",
       "highlights": [
         "C++", "DVB-S", "Direct View", "Centura Sql Windows", "Java Development"
@@ -103,7 +114,7 @@
       "position": "Software Developer / Student Assistant",
       "website": "https://www.tu-ilmenau.de/ra/",
       "startDate": "1996-03",
-      "endDate": "1997-05",
+      "endDate": "1997-05-31",
       "summary": "",
       "highlights": [
         "Petri Netze", "Peneca", "DATEV", "Pascal"
@@ -113,8 +124,8 @@
       "company": "OWiS Software GmbH Ilmenau",
       "position": "Software Developer / Practical Training",
       "website": "",
-      "startDate": "1996-01-06",
-      "endDate": "1996-01-09",
+      "startDate": "1996-06-01",
+      "endDate": "1996-09-30",
       "summary": "",
       "highlights": [
         "UML", "Pascal", "Poet", "OODBMS"
@@ -148,21 +159,21 @@
       "name": "Talk given at the 6th OKSTRA Symposium.",
       "publisher": "",
       "releaseDate": "2015-05-21",
-      "website": "http://www.fgsv-verlag.de/catalog/_pdf-files/002_110.i.pdf",
+      "website": "https://www.fgsv-verlag.de/pub/media/pdf/002_110.i.pdf",
       "summary": "Die Straßeninformationsbank im Web"
     },
     {
       "name": "Talk given at the 5th OKSTRA Symposium.",
       "publisher": "",
       "releaseDate": "2011-10-19",
-      "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
+      "website": "https://www.fgsv-verlag.de/pub/media/pdf/002_98.i.pdf",
       "summary": "Umsetzung einer standardisierten und performanten Datenbereitstellung auf Grundlage des OKSTRA und der OKLABI."
     },
     {
       "name": "Talk given at the 5th OKSTRA Symposium.",
       "publisher": "",
       "releaseDate": "2011-10-19",
-      "website": "http://www.fgsv.de/uploads/media/Programm-Flyer_OKSTRA_01.pdf",
+      "website": "https://www.fgsv-verlag.de/pub/media/pdf/002_98.i.pdf",
       "summary": "Anwendung des neuen OKSTRASchema 'Schwerlast' für die fachliche Prüfung von Großraum und Schwerlasttransporten."
     }
   ],

@@ -36,6 +36,8 @@ class AppView extends Component {
     componentDidMount() {
         const locale = detectLocale()
         store.dispatch(LocaleActions.setLocale(locale))
+        store.dispatch(ResumeActions.loadResume(locale))
+        store.dispatch(ProjectActions.loadProjects(locale))
 
         let wLocale = watch(store.getState, 'intl.locale')
         store.subscribe(wLocale((newVal, oldVal, objectPath) => {

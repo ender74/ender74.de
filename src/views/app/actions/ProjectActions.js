@@ -1,4 +1,3 @@
-import 'whatwg-fetch'
 import checkStatus from 'fetch-check-http-status'
 import { update } from 'react-intl-redux'
 import C from './ProjectConstants'
@@ -10,7 +9,12 @@ const loadProjects = (locale) => {
         const doFetch = (src) => {
             return fetch( src )
                 .then(checkStatus)
-                .then(response => { return response.json() })
+                .then(response => {
+                        if (!response.ok) {
+                          throw new Error('Network response was not ok');
+                        }
+                        return response.json()
+                })
                 .then(projects => { dispatch({
                     type: C.PROJECT_SET,
                     projects: projects

@@ -34,7 +34,7 @@ var path = {
 
 function bundler() {
     const transformer = babelify.configure({
-        presets: ["es2015", "react"]
+        presets: ["@babel/preset-env", "@babel/react"]
     })
     var props = {
         cache: {}, packageCache: {}, fullPaths: true,
@@ -50,13 +50,13 @@ function baseBuild() {
         entries: [path.ENTRY_POINT]
     }).
         transform(babelify.configure({
-            presets: ["es2015", "react"]
+            presets: ["@babel/preset-env", "@babel/react"]
         }))
         .bundle()
         .pipe(source(path.MINIFIED_OUT));
 }
 
-gulp.task('build-watch', function () {
+gulp.task('build-watch', function (done) {
     gulp.watch(path.STATIC, ['copy'])
     const myBundler = watchify(bundler())
     const bundle = function () {
@@ -70,22 +70,26 @@ gulp.task('build-watch', function () {
     }
     myBundler.on('update', bundle)
     bundle();
+    done();
 })
 
-gulp.task('copy', function () {
+gulp.task('copy', function (done) {
     gulp.src([path.STATIC, path.HTML])
         .pipe(gulp.dest(path.DEST));
+    done();
 })
 
-gulp.task('build-dev', function () {
+gulp.task('build-dev', function (done) {
     baseBuild()
         .pipe(gulp.dest(path.DEST_BUILD));
+    done();
 })
 
-gulp.task('build', function () {
+gulp.task('build', function (done) {
     baseBuild()
         .pipe(streamify(uglify()))
         .pipe(gulp.dest(path.DEST_BUILD));
+    done();
 })
 
 gulp.task('renderStatic', function () {
@@ -98,10 +102,10 @@ gulp.task('renderStatic', function () {
         pipe(gulp.dest(path.DEST_BUILD))
 })
 
-gulp.task('release', ['copy', 'build']);
+gulp.task('release', gulp.series('copy', 'build'));
 
-gulp.task('watch', ['copy', 'build-watch']);
+gulp.task('watch', gulp.series('copy', 'build-watch'));
 
-gulp.task('dev', ['copy', 'build-dev']);
+gulp.task('dev', gulp.series('copy', 'build-dev'));
 
-gulp.task('default', ['watch'])
+gulp.task('default', gulp.series('watch'))

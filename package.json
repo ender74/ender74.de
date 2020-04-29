@@ -27,7 +27,7 @@
   "dependencies": {
     "fetch-check-http-status": "^2.0.0",
     "intl": "^1.2.5",
-    "jquery": "~3.4.1",
+    "jquery": "~3.5.0",
     "keymirror": "^0.1.1",
     "leaflet": "~1.6.0",
     "leaflet-routing-machine": "~3.2.12",
